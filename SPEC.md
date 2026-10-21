@@ -18,7 +18,7 @@ Références : `docs/projet-react.md` (cahier des charges), `docs/PROMPT_CLAUDE_
 
 ## 1. Données et requêtes
 
-- R10 [V1] La liste vient de `VITE_PRODUCTS_URL` (DummyJSON Custom Response). Si la variable est absente, l'app affiche une erreur claire au lieu de planter. Un `.env.example` est fourni.
+- R10 [V1] La liste vient de `VITE_PRODUCTS_URL` (DummyJSON Custom Response). Si la variable est absente, l'app affiche une erreur claire au lieu de planter. Un `.env.example` est fourni. L'URL reçoit `?origin=<adresse du site>` pour contourner le cache CORS de DummyJSON (décision du 2026-10-21).
 - R11 [V1] Les 45 produits sont chargés **une seule fois** ; l'app n'importe jamais `data/products.json` (copie de sauvegarde seulement).
 - R12 [V1] `httpRequest<T>()` vérifie `response.ok` ; sinon il lève une `HttpError` avec le code HTTP et un message en français.
 - R13 [V1] Les requêtes lancées dans un `useEffect` sont annulées (`AbortController`) au démontage ; une annulation n'est pas affichée comme une erreur.

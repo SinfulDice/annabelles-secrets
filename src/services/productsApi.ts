@@ -10,6 +10,17 @@ export async function fetchProducts(signal?: AbortSignal): Promise<Product[]> {
   if (!API_URLS.products) {
     throw new Error(MISSING_URL_MESSAGE)
   }
-  const data = await httpRequest<ProductsResponse>(API_URLS.products, { signal })
+  const data = await httpRequest<ProductsResponse>(withOriginInUrl(API_URLS.products), { signal })
   return data.products
+}
+
+/**
+ * Workaround for a DummyJSON bug: Custom Response answers are cached for 24 h together with
+ * the CORS permission of the first site that asked, so every other site gets blocked.
+ * Putting our own address in the URL gives each site its own cache entry.
+ */
+function withOriginInUrl(url: string): string {
+  const urlWithOrigin = new URL(url)
+  urlWithOrigin.searchParams.set('origin', window.location.origin)
+  return urlWithOrigin.toString()
 }
