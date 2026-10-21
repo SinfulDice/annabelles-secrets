@@ -2,6 +2,7 @@ import type { Category, SortOption } from '../types'
 
 export const PAGE_SIZE = 12
 export const DEBOUNCE_MS = 300
+export const TOAST_DURATION_MS = 4000
 
 export const MIN_REVIEWS_PER_PRODUCT = 4
 export const MAX_REVIEWS_PER_PRODUCT = 12

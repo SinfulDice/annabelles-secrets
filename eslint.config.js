@@ -30,6 +30,12 @@ export default tseslint.config(
       },
     },
   },
+  {
+    // Each context file exports its Provider and its hook (useFilters…) side by side, which is
+    // the clearest pattern. The cost: editing these files reloads the page instead of hot-updating.
+    files: ['src/contexts/**/*.tsx'],
+    rules: { 'react-refresh/only-export-components': 'off' },
+  },
   // Must stay last: turns off the style rules that Prettier already handles.
   prettier,
 )
