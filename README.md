@@ -5,7 +5,7 @@ Trois univers : **Femme**, **Homme** et **Goodies** (produits dérivés de la ma
 Aucun paiement, aucune vraie commande : c'est une démonstration.
 
 - **Site en ligne** : _à compléter après le déploiement Vercel_
-- **Dépôt** : _à compléter_
+- **Dépôt** : <https://github.com/SinfulDice/annabelles-secrets>
 
 ## Sujet et API
 
@@ -27,8 +27,8 @@ déterministe : un même produit affiche toujours les mêmes avis.
 ## Installation et lancement
 
 ```bash
-git clone <url-du-depot>
-cd projet-b3-front-end
+git clone https://github.com/SinfulDice/annabelles-secrets.git
+cd annabelles-secrets
 npm install
 cp .env.example .env        # puis coller l'URL de l'API dans .env (voir Configuration)
 npm run dev                 # http://localhost:5173
