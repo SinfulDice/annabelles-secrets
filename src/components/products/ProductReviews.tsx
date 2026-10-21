@@ -37,7 +37,7 @@ export function ProductReviews({ reviews, productRating }: ProductReviewsProps) 
   }
 
   return (
-    <section id="avis" aria-labelledby="reviews-title" className="flex scroll-mt-6 flex-col gap-4">
+    <section id="avis" aria-labelledby="reviews-title" className="flex flex-col gap-4">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 id="reviews-title" className="text-2xl font-bold">

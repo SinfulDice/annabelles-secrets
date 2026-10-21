@@ -21,8 +21,9 @@ export function Header() {
   const closeMenu = useCallback(() => setIsMenuOpen(false), [])
   const isCreatePage = pathname === '/produits/nouveau'
 
+  // sticky + top-0: the header stays at the top of the screen while the page scrolls.
   return (
-    <header className="border-b border-line bg-surface">
+    <header className="sticky top-0 z-30 border-b border-line bg-surface">
       <div className="mx-auto max-w-6xl px-4 py-3">
         <div className="flex items-center justify-between gap-4">
           <button

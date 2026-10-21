@@ -27,11 +27,7 @@ export function NewsletterPage() {
           </h2>
           <SubscribeForm initialEmail={email} />
         </section>
-        <section
-          id="se-desabonner"
-          aria-labelledby="unsubscribe-title"
-          className={`${panelClasses} scroll-mt-6`}
-        >
+        <section id="se-desabonner" aria-labelledby="unsubscribe-title" className={panelClasses}>
           <h2 id="unsubscribe-title" className="text-2xl font-bold">
             Se désabonner
           </h2>

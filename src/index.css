@@ -79,6 +79,20 @@
 }
 
 @layer base {
+  /*
+   * The header is sticky: when the page scrolls by itself (link to #avis, focus moved with Tab…),
+   * keep its height free so the target is not hidden under it. One row on mobile, two on desktop.
+   */
+  html {
+    scroll-padding-top: 5.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    html {
+      scroll-padding-top: 9rem;
+    }
+  }
+
   body {
     @apply bg-page font-sans text-ink antialiased;
   }
