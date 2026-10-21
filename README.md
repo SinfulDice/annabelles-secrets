@@ -53,7 +53,7 @@ npm run dev                 # http://localhost:5173
 | `npm run lint`                    | ESLint (échoue au moindre avertissement)              |
 | `npm run format` / `format:check` | Prettier : corrige / vérifie la mise en forme         |
 | `npm run typecheck`               | Vérification TypeScript                               |
-| `npm test`                        | Tests Vitest (306 tests)                              |
+| `npm test`                        | Tests Vitest (322 tests)                              |
 
 ## Configuration
 
@@ -182,10 +182,18 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
   affiche « C'était une fausse pub ». Jamais avant la vérification d'âge, et pas d'`aria-live` pour ne
   pas les annoncer en boucle aux lecteurs d'écran.
 
+- **Mode SFW / NSFW** (bouton « ● SFW » dans l'en-tête, SFW par défaut, choix mémorisé) : le passage
+  en NSFW demande une confirmation (focus sur « Rester en SFW ») et n'est possible qu'après la
+  vérification d'âge. En NSFW, les vraies photos produits (`nsfwImages`) s'affichent **floutées**
+  avec « Contenu adulte · Afficher l'image », puis « Masquer » ; un bandeau propose « Tout afficher »
+  et « Revenir en SFW ». Le texte alternatif reste neutre ; si une photo ne charge pas, l'image SFW
+  la remplace. Les goodies sont identiques dans les deux modes. Un seul composant (`ProductImage`)
+  connaît le mode.
+
 **Bonus réalisés** : TypeScript, recherche automatique 300 ms après la dernière frappe (debounce),
 déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
 
-**Prévus ensuite (extras)** : mode SFW / NSFW, newsletter, thème sombre.
+**Prévus ensuite (extras)** : newsletter, thème sombre.
 
 ## Limites et problèmes connus
 
@@ -227,5 +235,27 @@ déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`
 
 - Données produits et avis : fictifs, écrits pour le projet.
 - Polices : Space Grotesk, Inter, JetBrains Mono (Google Fonts).
-- Les images du mode NSFW (extra) viennent d'Unsplash (licence Unsplash) : liste dans
-  `docs/NSFW_IMAGES.md`.
+- Photos du mode NSFW : publiées sur [Unsplash](https://unsplash.com) par les marques elles-mêmes,
+  sous [licence Unsplash](https://unsplash.com/license) (usage libre, crédit non obligatoire mais
+  donné dans l'application sous chaque photo). Détail par produit : `docs/NSFW_IMAGES.md`.
+
+| Photographe / marque   | Page Unsplash                             |
+| ---------------------- | ----------------------------------------- |
+| Andrey Matveev         | <https://unsplash.com/photos/WydWcF2EPjc> |
+| IFONNX Toys            | <https://unsplash.com/photos/BBe9HSHIEiw> |
+| IFONNX Toys            | <https://unsplash.com/photos/CSTQ08NXKOE> |
+| IFONNX Toys            | <https://unsplash.com/photos/Id_jzYP7h6s> |
+| IFONNX Toys            | <https://unsplash.com/photos/Ii43JmypSLY> |
+| IFONNX Toys            | <https://unsplash.com/photos/TfCFzMaYaok> |
+| IFONNX Toys            | <https://unsplash.com/photos/ZJX8EGDYDd4> |
+| IFONNX Toys            | <https://unsplash.com/photos/bW7y5PhWcuQ> |
+| IFONNX Toys            | <https://unsplash.com/photos/ck1ZlJbXrlg> |
+| IFONNX Toys            | <https://unsplash.com/photos/pi3HvaHRJo4> |
+| Lovense Toys           | <https://unsplash.com/photos/K5I89cBdcvM> |
+| Lovense Toys           | <https://unsplash.com/photos/Tvc9z5AepWg> |
+| Lovense Toys           | <https://unsplash.com/photos/dNfRmv93ztw> |
+| My Rose Toy            | <https://unsplash.com/photos/OzI2rMrywUk> |
+| Myvelvettouch Official | <https://unsplash.com/photos/hbI9UUaNabU> |
+| Tracy's Dog            | <https://unsplash.com/photos/_43ENzvNBYs> |
+| Tracy's Dog            | <https://unsplash.com/photos/uXt2OFSPA2s> |
+| Womanizer Toys         | <https://unsplash.com/photos/gmFZ0qxd_cg> |

@@ -2,12 +2,16 @@ import type { ReactNode } from 'react'
 import { AccountProvider } from '../contexts/AccountContext'
 import { AdsProvider } from '../contexts/AdsContext'
 import { AgeGateProvider } from '../contexts/AgeGateContext'
+import { ContentModeProvider } from '../contexts/ContentModeContext'
 import { FavoritesProvider } from '../contexts/FavoritesContext'
 import { FiltersProvider } from '../contexts/FiltersContext'
 import { ProductsProvider } from '../contexts/ProductsContext'
 import { ToastProvider } from '../contexts/ToastContext'
 
-/** Order matters: FavoritesProvider shows toasts, so it must be inside ToastProvider. */
+/**
+ * Order matters: a provider can only use the contexts ABOVE it. FavoritesProvider shows toasts
+ * (inside ToastProvider); ContentModeProvider reads the age check (inside AgeGateProvider).
+ */
 export function AppProviders({ children }: { children: ReactNode }) {
   return (
     <ToastProvider>
@@ -16,7 +20,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
           <FavoritesProvider>
             <AccountProvider>
               <AgeGateProvider>
-                <AdsProvider>{children}</AdsProvider>
+                <ContentModeProvider>
+                  <AdsProvider>{children}</AdsProvider>
+                </ContentModeProvider>
               </AgeGateProvider>
             </AccountProvider>
           </FavoritesProvider>

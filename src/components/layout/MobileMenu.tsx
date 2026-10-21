@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router'
 import { useAccount } from '../../contexts/AccountContext'
+import { ContentModeToggle } from '../content-mode/ContentModeToggle'
 import { buttonClasses } from '../ui/buttonClasses'
 import { PlusIcon, UserIcon } from '../ui/icons'
 import { MainNav } from './MainNav'
@@ -26,6 +27,7 @@ export function MobileMenu({ id, onClose }: MobileMenuProps) {
     <div id={id} className="border-t border-line bg-surface px-4 py-4 md:hidden">
       <MainNav direction="column" onNavigate={onClose} />
       <div className="mt-4 flex flex-col gap-2">
+        <ContentModeToggle className="justify-center" />
         <Link to="/compte" onClick={onClose} className={`${buttonClasses('secondary')} w-full`}>
           <UserIcon />
           {currentUser ? `Mon compte (${currentUser.firstName})` : 'Se connecter'}

@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { useAccount } from '../../contexts/AccountContext'
+import { ContentModeToggle } from '../content-mode/ContentModeToggle'
 import { buttonClasses } from '../ui/buttonClasses'
 import { CloseIcon, MenuIcon, PlusIcon } from '../ui/icons'
 import { AccountLink } from './AccountLink'
@@ -58,6 +59,7 @@ export function Header() {
           )}
           <FavoritesLink />
           <AccountLink />
+          <ContentModeToggle />
         </div>
       </div>
 

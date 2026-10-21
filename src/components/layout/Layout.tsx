@@ -1,6 +1,7 @@
 import { Outlet, ScrollRestoration } from 'react-router'
 import { useAgeGate } from '../../contexts/AgeGateContext'
 import { AdPopup } from '../ads/AdPopup'
+import { NsfwNotice } from '../content-mode/NsfwNotice'
 import { AgeGate } from './AgeGate'
 import { Footer } from './Footer'
 import { Header } from './Header'
@@ -21,6 +22,7 @@ export function Layout() {
         </a>
         <Header />
         <main id="contenu" tabIndex={-1} className="flex-1 focus:outline-none">
+          <NsfwNotice />
           <Outlet />
         </main>
         <Footer />

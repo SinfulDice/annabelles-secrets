@@ -1,5 +1,6 @@
 export type * from './account'
 export type * from './ad'
+export type * from './contentMode'
 export type * from './favorite'
 export type * from './filters'
 export type * from './product'

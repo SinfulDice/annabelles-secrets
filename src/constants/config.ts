@@ -32,6 +32,7 @@ export const STORAGE_KEYS = {
   accounts: 'annabelle:accounts',
   /** E-mail of the signed-in account, or null. */
   session: 'annabelle:session',
+  contentMode: 'annabelle:content-mode',
   /** In sessionStorage: the pop-up ad was already shown in this tab (R123). */
   adPopupShown: 'annabelle:ad-popup-shown',
 } as const

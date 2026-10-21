@@ -23,7 +23,7 @@ export function FavoriteRow({ favorite, onRemove }: FavoriteRowProps) {
       <div
         className={`size-20 shrink-0 overflow-hidden rounded-field sm:size-24 ${styles.imageBackground}`}
       >
-        <ProductImage src={favorite.thumbnail} title={favorite.title} type={favorite.type} />
+        <ProductImage subject={favorite} compact />
       </div>
 
       <div className="min-w-0 flex-1">

@@ -24,12 +24,7 @@ export function ProductCard({ product, priority }: ProductCardProps) {
       <div
         className={`relative aspect-square overflow-hidden rounded-field ${styles.imageBackground}`}
       >
-        <ProductImage
-          src={product.thumbnail}
-          title={product.title}
-          type={product.type}
-          priority={priority}
-        />
+        <ProductImage subject={product} priority={priority} />
         <span
           className={`absolute bottom-2 left-2 rounded-full bg-surface px-2.5 py-1 text-xs font-semibold sm:top-2 sm:bottom-auto ${styles.badgeText}`}
         >
