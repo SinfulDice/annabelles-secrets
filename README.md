@@ -4,7 +4,7 @@ Boutique en ligne **fictive** de bien-être intime (projet de cours React, B3 fr
 Trois univers : **Femme**, **Homme** et **Goodies** (produits dérivés de la marque).
 Aucun paiement, aucune vraie commande : c'est une démonstration.
 
-- **Site en ligne** : _à compléter après le déploiement Vercel_
+- **Site en ligne** : <https://annabelles-secrets.vercel.app>
 - **Dépôt** : <https://github.com/SinfulDice/annabelles-secrets>
 
 ## Sujet et API
