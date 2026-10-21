@@ -29,7 +29,7 @@ export function SegmentedControl<T extends string>(props: SegmentedControlProps<
         {options.map((option) => (
           <label
             key={option.value}
-            className="grid min-h-9 cursor-pointer place-items-center rounded-[10px] px-0.5 text-xs text-ink-muted has-checked:bg-surface has-checked:font-semibold has-checked:text-ink has-checked:shadow-sm has-focus-visible:outline-3 has-focus-visible:outline-homme sm:text-sm"
+            className="grid min-h-10 cursor-pointer place-items-center rounded-[10px] px-0.5 text-xs text-ink-muted has-checked:bg-surface has-checked:font-semibold has-checked:text-ink has-checked:shadow-sm has-focus-visible:outline-3 has-focus-visible:outline-homme sm:text-sm"
           >
             <input
               type="radio"

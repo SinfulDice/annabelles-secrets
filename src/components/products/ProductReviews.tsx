@@ -55,7 +55,7 @@ export function ProductReviews({ reviews, productRating }: ProductReviewsProps) 
             {FILTERS.map((filter) => (
               <label
                 key={filter.value}
-                className="flex min-h-9 cursor-pointer items-center rounded-full border border-line bg-surface px-3 text-sm has-checked:border-ink has-checked:bg-ink has-checked:text-white has-focus-visible:outline-3 has-focus-visible:outline-homme"
+                className="flex min-h-11 cursor-pointer items-center rounded-full border border-line bg-surface px-3 text-sm has-checked:border-ink has-checked:bg-ink has-checked:text-white has-focus-visible:outline-3 has-focus-visible:outline-homme sm:min-h-9"
               >
                 <input
                   type="radio"

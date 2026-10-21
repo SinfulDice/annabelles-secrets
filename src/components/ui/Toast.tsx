@@ -37,7 +37,7 @@ function ToastItem({ toast, onDismiss }: ToastItemProps) {
         type="button"
         onClick={() => onDismiss(toast.id)}
         aria-label="Fermer la notification"
-        className="grid size-8 place-items-center rounded-full hover:bg-white/15"
+        className="grid size-11 shrink-0 place-items-center rounded-full hover:bg-white/15"
       >
         <span aria-hidden="true">×</span>
       </button>

@@ -49,7 +49,7 @@ export function ProductsPage() {
 
   function changePage(pageNumber: number) {
     dispatch({ type: 'pageChanged', page: pageNumber })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0 })
   }
 
   return (

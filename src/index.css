@@ -14,7 +14,8 @@
   --color-ink: #1d1820;
   --color-ink-muted: #5e5662;
   --color-line: #e4dcd8;
-  --color-field: #cfc4bf;
+  /* Mockup value #cfc4bf darkened: field outlines need 3:1 contrast (WCAG 1.4.11). */
+  --color-field: #8f8389;
 
   --color-femme: #8a2846;
   --color-femme-hover: #6b1c35;
@@ -54,5 +55,16 @@
 
   :focus-visible {
     @apply outline-3 outline-offset-2 outline-homme;
+  }
+}
+
+/* People who asked their system for less motion get no spinning or sliding. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
