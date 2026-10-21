@@ -11,6 +11,10 @@ type FavoritesContextValue = {
   toggleFavorite: (product: Product) => void
   removeFromFavorites: (id: number) => void
   clearFavorites: () => void
+  /** Silent removal, when the product itself was deleted (R113). */
+  forgetProduct: (id: number) => void
+  /** Updates the saved snapshot after the product was edited. */
+  refreshFavorite: (product: Product) => void
 }
 
 const FavoritesContext = createContext<FavoritesContextValue | null>(null)
@@ -51,9 +55,40 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
     showToast('Tous les favoris ont été retirés', 'info')
   }, [setFavorites, showToast])
 
+  const forgetProduct = useCallback(
+    (id: number) => setFavorites((previous) => removeFavorite(previous, id)),
+    [setFavorites],
+  )
+
+  const refreshFavorite = useCallback(
+    (product: Product) =>
+      setFavorites((previous) =>
+        previous.map((favorite) =>
+          favorite.id === product.id ? toFavoriteSnapshot(product) : favorite,
+        ),
+      ),
+    [setFavorites],
+  )
+
   const value = useMemo(
-    () => ({ favorites, isFavorite, toggleFavorite, removeFromFavorites, clearFavorites }),
-    [favorites, isFavorite, toggleFavorite, removeFromFavorites, clearFavorites],
+    () => ({
+      favorites,
+      isFavorite,
+      toggleFavorite,
+      removeFromFavorites,
+      clearFavorites,
+      forgetProduct,
+      refreshFavorite,
+    }),
+    [
+      favorites,
+      isFavorite,
+      toggleFavorite,
+      removeFromFavorites,
+      clearFavorites,
+      forgetProduct,
+      refreshFavorite,
+    ],
   )
 
   return <FavoritesContext value={value}>{children}</FavoritesContext>

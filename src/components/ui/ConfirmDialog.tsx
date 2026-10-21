@@ -10,6 +10,8 @@ type ConfirmDialogProps = {
   onCancel: () => void
   /** Disables both buttons while the action runs (e.g. a DELETE request). */
   isBusy?: boolean
+  /** Shown when the action failed; the dialog stays open so the user can try again. */
+  error?: string
 }
 
 /**
@@ -17,7 +19,7 @@ type ConfirmDialogProps = {
  * « Annuler » (the safe choice) and Escape cancels.
  */
 export function ConfirmDialog(props: ConfirmDialogProps) {
-  const { title, message, confirmLabel, onConfirm, onCancel, isBusy = false } = props
+  const { title, message, confirmLabel, onConfirm, onCancel, isBusy = false, error } = props
   const cancelRef = useRef<HTMLButtonElement>(null)
 
   return (
@@ -34,6 +36,14 @@ export function ConfirmDialog(props: ConfirmDialogProps) {
       <p id="confirm-message" className="mt-3 text-ink-muted">
         {message}
       </p>
+      {error && (
+        <p
+          role="alert"
+          className="mt-4 rounded-field bg-danger-soft p-3 text-sm font-semibold text-danger"
+        >
+          {error}
+        </p>
+      )}
       <div className="mt-6 flex flex-wrap justify-end gap-3">
         <button
           ref={cancelRef}

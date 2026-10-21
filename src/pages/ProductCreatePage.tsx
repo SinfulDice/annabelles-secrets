@@ -45,6 +45,7 @@ export function ProductCreatePage() {
             isSubmitting={state.status === 'submitting'}
             submitError={state.status === 'error' ? state.message : null}
             onSubmit={(values) => void submit(values)}
+            cancelPath="/produits"
           />
         </div>
       )}

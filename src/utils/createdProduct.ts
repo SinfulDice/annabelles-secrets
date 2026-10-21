@@ -46,7 +46,7 @@ export function firstFreeId(wantedId: number, usedIds: number[]): number {
   return id
 }
 
-function availabilityFor(stock: number): AvailabilityStatus {
+export function availabilityFor(stock: number): AvailabilityStatus {
   if (stock === 0) return 'Out of Stock'
   return stock <= LOW_STOCK_MAX ? 'Low Stock' : 'In Stock'
 }

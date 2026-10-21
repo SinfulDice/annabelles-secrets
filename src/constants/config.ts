@@ -16,6 +16,8 @@ export const REVIEW_DIP_CHANCE = 0.12
 export const API_URLS = {
   products: import.meta.env.VITE_PRODUCTS_URL,
   createProduct: 'https://dummyjson.com/products/add',
+  /** PUT and DELETE go to `${productsBase}/{id}`. */
+  productsBase: 'https://dummyjson.com/products',
 } as const
 
 /** Product form rules (R71). */

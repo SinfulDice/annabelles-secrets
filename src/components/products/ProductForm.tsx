@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { CATEGORY_LABELS, MIN_DESCRIPTION_LENGTH } from '../../constants/config'
 import type { Category, ProductFormValues } from '../../types'
@@ -17,6 +17,10 @@ type ProductFormProps = {
   /** Message of the last failed request, or null. */
   submitError: string | null
   onSubmit: (values: ProductFormValues) => void
+  /** Where « Annuler » goes. */
+  cancelPath: string
+  /** Extra button at the end of the action row (e.g. « Supprimer le produit »). */
+  extraAction?: ReactNode
 }
 
 const CATEGORY_OPTIONS = (Object.keys(CATEGORY_LABELS) as Category[]).map((category) => ({
@@ -28,7 +32,7 @@ const fieldId = (field: keyof ProductFormValues) => `product-${field}`
 
 /** Shared by creation and (later) edition: same fields, same checks (R70–R75). */
 export function ProductForm(props: ProductFormProps) {
-  const { initialValues, submitLabel, isSubmitting, submitError, onSubmit } = props
+  const { initialValues, submitLabel, isSubmitting, submitError, onSubmit, cancelPath } = props
   // Controlled form: React state is the single source of truth for every field.
   const [values, setValues] = useState(initialValues)
   const [failedAttempts, setFailedAttempts] = useState(0)
@@ -133,9 +137,10 @@ export function ProductForm(props: ProductFormProps) {
             {isSubmitting && 'Envoi en cours…'}
             {!isSubmitting && (submitError ? "Réessayer l'envoi" : submitLabel)}
           </button>
-          <Link to="/produits" className={buttonClasses('secondary')}>
+          <Link to={cancelPath} className={buttonClasses('secondary')}>
             Annuler
           </Link>
+          {props.extraAction && <div className="sm:ml-auto">{props.extraAction}</div>}
         </div>
       </fieldset>
     </form>

@@ -6,6 +6,7 @@ import { HomePage } from '../pages/HomePage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { ProductCreatePage } from '../pages/ProductCreatePage'
 import { ProductDetailRoute } from '../pages/ProductDetailRoute'
+import { ProductEditPage } from '../pages/ProductEditPage'
 import { ProductsPage } from '../pages/ProductsPage'
 import { RequireAdmin } from '../routes/RequireAdmin'
 
@@ -29,6 +30,14 @@ export const router = createBrowserRouter([
         ),
       },
       { path: 'produits/:id', element: <ProductDetailRoute /> },
+      {
+        path: 'produits/:id/modifier',
+        element: (
+          <RequireAdmin>
+            <ProductEditPage />
+          </RequireAdmin>
+        ),
+      },
       { path: 'favoris', element: <FavoritesPage /> },
       { path: 'compte', element: <AccountPage /> },
       { path: '*', element: <NotFoundPage /> },

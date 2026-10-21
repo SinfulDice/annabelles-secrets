@@ -5,6 +5,7 @@ import { formatCount, formatRating } from '../../utils/formatRating'
 import { getOriginalPrice } from '../../utils/originalPrice'
 import { CATEGORY_STYLES } from './categoryStyles'
 import { FavoriteToggle } from './FavoriteToggle'
+import { ProductAdminActions } from './ProductAdminActions'
 
 type ProductSummaryProps = {
   product: Product
@@ -74,6 +75,7 @@ export function ProductSummary({ product, reviewCount }: ProductSummaryProps) {
       <div className="hidden md:block">
         <FavoriteToggle product={product} className="w-full" />
       </div>
+      <ProductAdminActions product={product} />
 
       <div className="rounded-card border border-line bg-surface p-4 text-sm">
         <p>{product.shippingInformation}</p>

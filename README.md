@@ -25,6 +25,7 @@ Le site utilise l'API [DummyJSON](https://dummyjson.com/) de deux façons :
 | -------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Lire les 45 produits | [Custom Response](https://dummyjson.com/custom-response) (`VITE_PRODUCTS_URL`) | Les produits de DummyJSON (téléphones, parfums…) ne collent pas au thème : j'ai publié mon propre jeu de données (`data/products.json`). |
 | Créer un produit     | `POST https://dummyjson.com/products/add`                                      | Endpoint de création officiel ; DummyJSON simule l'enregistrement et renvoie le produit avec un id.                                      |
+| Modifier / supprimer | `PUT` / `DELETE https://dummyjson.com/products/{id}`                           | Endpoints officiels ; DummyJSON simule la modification et la suppression.                                                                |
 
 Les **500 avis clients** (`src/data/reviews.json`) sont livrés avec l'application et répartis de façon
 déterministe : un même produit affiche toujours les mêmes avis.
@@ -52,7 +53,7 @@ npm run dev                 # http://localhost:5173
 | `npm run lint`                    | ESLint (échoue au moindre avertissement)              |
 | `npm run format` / `format:check` | Prettier : corrige / vérifie la mise en forme         |
 | `npm run typecheck`               | Vérification TypeScript                               |
-| `npm test`                        | Tests Vitest (256 tests)                              |
+| `npm test`                        | Tests Vitest (299 tests)                              |
 
 ## Configuration
 
@@ -88,7 +89,7 @@ résultats sont calculés pendant le rendu (pas stockés dans un état), donc to
 
 | Contexte           | Rôle                                                                                                                                                                                                                                 |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `ProductsContext`  | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et les produits créés pendant la session.                                                                                      |
+| `ProductsContext`  | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et applique par-dessus les créations, modifications et suppressions de la session (un `useReducer` testé à part).              |
 | `FiltersContext`   | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
 | `AccountContext`   | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
 | `FavoritesContext` | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
@@ -168,10 +169,16 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
   « Réservé à l'administratrice » aux autres, avec un bouton qui ramène à la page demandée après
   connexion. Le bouton « Ajouter un produit » n'apparaît que pour l'admin.
 
+- **CRUD complet** (admin) : boutons « Modifier » / « Supprimer » sur la fiche ; formulaire de
+  modification prérempli (le même composant que la création) envoyé en `PUT`, avec les mêmes états
+  d'envoi, de succès et d'erreur ; suppression avec fenêtre de confirmation (focus sur « Annuler »,
+  Échap ferme), `DELETE`, notification et retour à la boutique. Un produit supprimé disparaît aussi
+  des favoris.
+
 **Bonus réalisés** : TypeScript, recherche automatique 300 ms après la dernière frappe (debounce),
 déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
 
-**Prévus ensuite (extras)** : modification / suppression (CRUD complet),
+**Prévus ensuite (extras)** :
 fausses publicités parodiques, mode SFW / NSFW, newsletter, thème sombre.
 
 ## Limites et problèmes connus
@@ -186,6 +193,11 @@ fausses publicités parodiques, mode SFW / NSFW, newsletter, thème sombre.
 - **DummyJSON renvoie toujours l'id 195** à la création : l'application donne au produit le premier
   id libre (195, 196…) pour que deux produits créés n'aient pas la même adresse. Le récapitulatif
   affiche l'id renvoyé par l'API et signale l'écart.
+- **Réponse de `PUT` ignorée** : pour les ids 1 à 45, DummyJSON renvoie _son_ produit du même id
+  (un mascara…) mélangé avec nos champs. L'application ne garde que le statut HTTP et applique ce
+  qu'elle a envoyé.
+- **Produits créés modifiés et supprimés localement** : DummyJSON ne les connaît pas (`PUT` et
+  `DELETE` répondent 404), donc l'application applique le changement sans appel réseau.
 - **La réponse de création ne contient pas** le type, le matériau ni l'étanchéité : ils sont repris du
   formulaire. Un produit créé n'a ni note ni avis.
 - **Mot de passe stocké en clair dans le navigateur** : c'est une **faille volontaire de
