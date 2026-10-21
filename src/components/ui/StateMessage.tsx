@@ -6,6 +6,8 @@ type StateMessageProps = {
   children: ReactNode
   /** The way out: « Réessayer », « Réinitialiser les filtres », a link… */
   action: ReactNode
+  /** Replaces the default "!" or "?" symbol (e.g. a heart for favorites). */
+  icon?: ReactNode
 }
 
 const iconByTone = {
@@ -14,8 +16,8 @@ const iconByTone = {
 }
 
 /** The card that replaces a list when it can't be shown: error (R42) or no result (R43). */
-export function StateMessage({ tone, title, children, action }: StateMessageProps) {
-  const icon = iconByTone[tone]
+export function StateMessage({ tone, title, children, action, icon }: StateMessageProps) {
+  const defaultIcon = iconByTone[tone]
   return (
     <div
       role={tone === 'error' ? 'alert' : undefined}
@@ -23,9 +25,9 @@ export function StateMessage({ tone, title, children, action }: StateMessageProp
     >
       <span
         aria-hidden="true"
-        className={`grid size-14 place-items-center rounded-full font-display text-2xl font-bold ${icon.classes}`}
+        className={`grid size-14 place-items-center rounded-full font-display text-2xl font-bold ${defaultIcon.classes}`}
       >
-        {icon.symbol}
+        {icon ?? defaultIcon.symbol}
       </span>
       <h2 className="text-2xl font-bold">{title}</h2>
       <div className="text-ink-muted">{children}</div>

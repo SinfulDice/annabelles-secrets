@@ -7,7 +7,7 @@ import { ProductSpecs } from '../components/products/ProductSpecs'
 import { ProductSummary } from '../components/products/ProductSummary'
 import { StickyFavoriteBar } from '../components/products/StickyFavoriteBar'
 import { buttonClasses } from '../components/ui/buttonClasses'
-import { Spinner } from '../components/ui/Spinner'
+import { PageLoading } from '../components/ui/PageLoading'
 import { StateMessage } from '../components/ui/StateMessage'
 import { SHOP_PATH } from '../constants/navigation'
 import { useProductsContext } from '../contexts/ProductsContext'
@@ -25,16 +25,7 @@ export function ProductDetailPage() {
   const lookup = lookupProduct(state, id)
   usePageTitle(lookup.status === 'found' ? lookup.product.title : 'Fiche produit')
 
-  if (lookup.status === 'loading') {
-    return (
-      <div className={pageClasses}>
-        <p role="status" className="flex items-center gap-2 font-semibold">
-          <Spinner />
-          Chargement du produit…
-        </p>
-      </div>
-    )
-  }
+  if (lookup.status === 'loading') return <PageLoading label="Chargement du produit…" />
 
   if (lookup.status === 'error') {
     return (

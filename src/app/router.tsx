@@ -4,7 +4,7 @@ import { FavoritesPage } from '../pages/FavoritesPage'
 import { HomePage } from '../pages/HomePage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { ProductCreatePage } from '../pages/ProductCreatePage'
-import { ProductDetailPage } from '../pages/ProductDetailPage'
+import { ProductDetailRoute } from '../pages/ProductDetailRoute'
 import { ProductsPage } from '../pages/ProductsPage'
 
 /**
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: 'produits', element: <ProductsPage /> },
       { path: 'produits/nouveau', element: <ProductCreatePage /> },
-      { path: 'produits/:id', element: <ProductDetailPage /> },
+      { path: 'produits/:id', element: <ProductDetailRoute /> },
       { path: 'favoris', element: <FavoritesPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
