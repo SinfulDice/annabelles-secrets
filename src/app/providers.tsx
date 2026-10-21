@@ -7,6 +7,7 @@ import { FavoritesProvider } from '../contexts/FavoritesContext'
 import { FiltersProvider } from '../contexts/FiltersContext'
 import { NewsletterProvider } from '../contexts/NewsletterContext'
 import { ProductsProvider } from '../contexts/ProductsContext'
+import { ThemeProvider } from '../contexts/ThemeContext'
 import { ToastProvider } from '../contexts/ToastContext'
 
 /**
@@ -15,22 +16,24 @@ import { ToastProvider } from '../contexts/ToastContext'
  */
 export function AppProviders({ children }: { children: ReactNode }) {
   return (
-    <ToastProvider>
-      <ProductsProvider>
-        <FiltersProvider>
-          <FavoritesProvider>
-            <AccountProvider>
-              <AgeGateProvider>
-                <ContentModeProvider>
-                  <AdsProvider>
-                    <NewsletterProvider>{children}</NewsletterProvider>
-                  </AdsProvider>
-                </ContentModeProvider>
-              </AgeGateProvider>
-            </AccountProvider>
-          </FavoritesProvider>
-        </FiltersProvider>
-      </ProductsProvider>
-    </ToastProvider>
+    <ThemeProvider>
+      <ToastProvider>
+        <ProductsProvider>
+          <FiltersProvider>
+            <FavoritesProvider>
+              <AccountProvider>
+                <AgeGateProvider>
+                  <ContentModeProvider>
+                    <AdsProvider>
+                      <NewsletterProvider>{children}</NewsletterProvider>
+                    </AdsProvider>
+                  </ContentModeProvider>
+                </AgeGateProvider>
+              </AccountProvider>
+            </FavoritesProvider>
+          </FiltersProvider>
+        </ProductsProvider>
+      </ToastProvider>
+    </ThemeProvider>
   )
 }

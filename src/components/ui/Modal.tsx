@@ -28,7 +28,7 @@ export function Modal({
   }
 
   return (
-    <div className="fixed inset-0 z-40 grid place-items-center overflow-y-auto bg-ink/70 p-4">
+    <div className="fixed inset-0 z-40 grid place-items-center overflow-y-auto bg-black/60 p-4">
       <div
         ref={dialogRef}
         role={role}

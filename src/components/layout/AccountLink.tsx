@@ -13,7 +13,7 @@ export function AccountLink() {
 
   let colors = 'border-line bg-surface text-ink hover:border-ink-muted'
   if (currentUser)
-    colors = isAdmin ? 'border-ink bg-ink text-white' : 'border-femme bg-femme text-white'
+    colors = isAdmin ? 'border-ink bg-ink text-on-accent' : 'border-femme bg-femme text-on-accent'
 
   return (
     <Link
@@ -26,7 +26,7 @@ export function AccountLink() {
       {isAdmin && (
         <span
           aria-hidden="true"
-          className="absolute -bottom-2 rounded-full bg-ad px-1.5 text-[10px] leading-4 font-bold text-ink"
+          className="absolute -bottom-2 rounded-full bg-ad px-1.5 text-[10px] leading-4 font-bold text-ad-ink"
         >
           ADMIN
         </span>

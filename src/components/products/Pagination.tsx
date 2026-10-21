@@ -40,7 +40,7 @@ export function Pagination({ currentPage, totalPages, onPageChange }: Pagination
                   onClick={() => onPageChange(page)}
                   aria-current={isCurrent ? 'page' : undefined}
                   aria-label={`Page ${page}`}
-                  className={`${pageButton} ${isCurrent ? 'border-ink bg-ink text-white' : 'border-line bg-surface'}`}
+                  className={`${pageButton} ${isCurrent ? 'border-ink bg-ink text-on-accent' : 'border-line bg-surface'}`}
                 >
                   {page}
                 </button>

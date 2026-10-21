@@ -20,7 +20,7 @@ export function FilterChips({ activeFilters, onRemove, onReset }: FilterChipsPro
               type="button"
               onClick={() => onRemove(filter.key)}
               aria-label={`Retirer le filtre ${filter.label}`}
-              className="flex min-h-11 items-center gap-1.5 rounded-full bg-femme-soft px-3 text-xs font-semibold text-femme hover:bg-femme hover:text-white sm:min-h-9"
+              className="flex min-h-11 items-center gap-1.5 rounded-full bg-femme-soft px-3 text-xs font-semibold text-femme hover:bg-femme hover:text-on-accent sm:min-h-9"
             >
               {filter.label}
               <span aria-hidden="true">×</span>

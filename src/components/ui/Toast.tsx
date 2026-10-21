@@ -11,9 +11,9 @@ export type ToastMessage = {
 
 // Dark toasts, as on mockup 04.
 const toneClasses: Record<ToastTone, string> = {
-  success: 'border-ink bg-ink text-white',
-  info: 'border-ink bg-ink text-white',
-  error: 'border-danger bg-danger text-white',
+  success: 'border-ink bg-ink text-on-accent',
+  info: 'border-ink bg-ink text-on-accent',
+  error: 'border-danger bg-danger text-on-accent',
 }
 
 type ToastItemProps = {
@@ -37,7 +37,7 @@ function ToastItem({ toast, onDismiss }: ToastItemProps) {
         type="button"
         onClick={() => onDismiss(toast.id)}
         aria-label="Fermer la notification"
-        className="grid size-11 shrink-0 place-items-center rounded-full hover:bg-white/15"
+        className="grid size-11 shrink-0 place-items-center rounded-full hover:bg-on-accent/15"
       >
         <span aria-hidden="true">×</span>
       </button>

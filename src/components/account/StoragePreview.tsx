@@ -7,8 +7,11 @@ import type { Account } from '../../types'
  */
 export function StoragePreview({ account }: { account: Account }) {
   return (
-    <section aria-labelledby="storage-title" className="rounded-panel bg-ink p-5 text-white">
-      <h2 id="storage-title" className="font-mono text-xs text-white/70">
+    <section
+      aria-labelledby="storage-title"
+      className="rounded-panel bg-ink p-5 text-on-accent dark:border dark:border-line dark:bg-black/40 dark:text-ink"
+    >
+      <h2 id="storage-title" className="font-mono text-xs text-on-accent/70 dark:text-ink-muted">
         Ce que contient le navigateur · localStorage › {STORAGE_KEYS.accounts}
       </h2>
       <pre className="mt-3 overflow-x-auto font-mono text-sm leading-relaxed">

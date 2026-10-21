@@ -30,11 +30,11 @@ export function ContentModeToggle({ className = '' }: { className?: string }) {
         type="button"
         onClick={handleClick}
         aria-label={isNsfw ? 'Mode NSFW activé. Revenir en SFW' : 'Mode SFW activé. Passer en NSFW'}
-        className={`inline-flex min-h-11 items-center gap-2 rounded-full border px-4 text-sm font-bold ${isNsfw ? 'border-danger bg-danger text-white' : 'border-line bg-surface text-ink hover:border-ink-muted'} ${className}`}
+        className={`inline-flex min-h-11 items-center gap-2 rounded-full border px-4 text-sm font-bold ${isNsfw ? 'border-danger bg-danger text-on-accent' : 'border-line bg-surface text-ink hover:border-ink-muted'} ${className}`}
       >
         <span
           aria-hidden="true"
-          className={`size-2 rounded-full ${isNsfw ? 'bg-white' : 'bg-success'}`}
+          className={`size-2 rounded-full ${isNsfw ? 'bg-on-accent' : 'bg-success'}`}
         />
         {isNsfw ? 'NSFW' : 'SFW'}
       </button>

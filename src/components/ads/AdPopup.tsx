@@ -32,7 +32,7 @@ function PopupDialog({ onClose }: { onClose: () => void }) {
       <div
         ref={contentRef}
         tabIndex={-1}
-        className="-m-6 flex flex-col items-center gap-4 rounded-panel border-3 border-ad-border bg-ad p-8 text-center text-ink outline-none sm:-m-10"
+        className="-m-6 flex flex-col items-center gap-4 rounded-panel border-3 border-ad-border bg-ad p-8 text-center text-ad-ink outline-none sm:-m-10"
       >
         <AdTag />
         <p
@@ -48,11 +48,11 @@ function PopupDialog({ onClose }: { onClose: () => void }) {
           type="button"
           onClick={onClose}
           disabled={!canClose}
-          className="min-h-11 rounded-full px-4 text-sm font-semibold text-ink-muted enabled:text-ink enabled:underline disabled:cursor-not-allowed"
+          className="min-h-11 rounded-full px-4 text-sm font-semibold text-ad-ink/70 enabled:text-ad-ink enabled:underline disabled:cursor-not-allowed"
         >
           {canClose ? 'Fermer la publicité' : `Fermer dans ${secondsLeft} s`}
         </button>
-        <p className="text-xs text-ink-muted">Publicité parodique · aucun lien réel</p>
+        <p className="text-xs text-ad-ink/70">Publicité parodique · aucun lien réel</p>
       </div>
     </Modal>
   )

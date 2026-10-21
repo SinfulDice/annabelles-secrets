@@ -5,7 +5,7 @@ import { CloseIcon } from '../ui/icons'
 
 export function AdTag() {
   return (
-    <span className="rounded-md bg-ink px-2.5 py-1 text-sm font-bold tracking-wider text-ad">
+    <span className="rounded-md bg-ad-ink px-2.5 py-1 text-sm font-bold tracking-wider text-ad">
       PUB
     </span>
   )
@@ -34,7 +34,7 @@ export function AdCloseButton({ onClose }: { onClose: () => void }) {
       type="button"
       onClick={onClose}
       aria-label="Fermer la publicité"
-      className="grid size-11 shrink-0 place-items-center rounded-full text-ink hover:bg-ink/10"
+      className="grid size-11 shrink-0 place-items-center rounded-full text-ad-ink hover:bg-ad-ink/10"
     >
       <CloseIcon />
     </button>
@@ -51,4 +51,4 @@ export function AdCaption() {
 
 /** Yellow box with the dotted red border of the mockup. */
 export const adBoxClasses =
-  'rounded-panel border-4 border-dashed border-ad-border bg-ad p-5 text-ink sm:p-8'
+  'rounded-panel border-4 border-dashed border-ad-border bg-ad p-5 text-ad-ink sm:p-8'

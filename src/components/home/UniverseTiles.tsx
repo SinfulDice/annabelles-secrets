@@ -36,7 +36,7 @@ export function UniverseTiles({ products }: UniverseTilesProps) {
                   {products.length > 0 &&
                     ` · ${formatCount(countIn(category), 'produit', 'produits')}`}
                 </span>
-                <span className="grid size-11 shrink-0 place-items-center rounded-full bg-white text-ink transition-transform group-hover:translate-x-1">
+                <span className="grid size-11 shrink-0 place-items-center rounded-full bg-page text-ink transition-transform group-hover:translate-x-1">
                   <ArrowRightIcon />
                 </span>
               </span>

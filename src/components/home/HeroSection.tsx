@@ -46,9 +46,11 @@ export function HeroSection({ productCount }: HeroSectionProps) {
         <div className="grid aspect-square place-items-center rounded-panel bg-homme-soft">
           <span className="size-1/2 rounded-full border-[14px] border-homme/60" />
         </div>
-        <div className="flex flex-col justify-end rounded-panel bg-ink p-5 text-white">
+        <div className="flex flex-col justify-end rounded-panel bg-ink p-5 text-on-accent dark:border dark:border-line dark:bg-surface dark:text-ink">
           <p className="font-display text-4xl font-bold">{productCount ?? '…'}</p>
-          <p className="text-sm text-white/80">produits sélectionnés, testés et notés</p>
+          <p className="text-sm text-on-accent/80 dark:text-ink-muted">
+            produits sélectionnés, testés et notés
+          </p>
         </div>
       </div>
     </section>

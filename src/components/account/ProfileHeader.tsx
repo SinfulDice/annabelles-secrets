@@ -13,7 +13,7 @@ export function ProfileHeader({ account, subtitle }: ProfileHeaderProps) {
     <div className="flex items-center gap-4">
       <span
         aria-hidden="true"
-        className={`grid size-14 shrink-0 place-items-center rounded-full font-display text-xl font-bold text-white ${isAdmin ? 'bg-ink' : 'bg-femme'}`}
+        className={`grid size-14 shrink-0 place-items-center rounded-full font-display text-xl font-bold text-on-accent ${isAdmin ? 'bg-ink' : 'bg-femme'}`}
       >
         {getInitials(account)}
       </span>

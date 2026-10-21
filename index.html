@@ -17,6 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
     />
     <title>Annabelle's Secrets</title>
+    <!--
+      Runs before React to avoid a white flash in dark mode: applies the saved theme (or the
+      system one) at once. ThemeContext takes over after. Same key as STORAGE_KEYS.theme.
+    -->
+    <script>
+      try {
+        var choice = JSON.parse(localStorage.getItem('annabelle:theme'))
+        var dark = choice ? choice === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (error) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

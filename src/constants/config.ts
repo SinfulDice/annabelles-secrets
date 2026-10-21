@@ -36,6 +36,8 @@ export const STORAGE_KEYS = {
   session: 'annabelle:session',
   contentMode: 'annabelle:content-mode',
   newsletter: 'annabelle:newsletter',
+  /** Must stay in sync with the small script in index.html. */
+  theme: 'annabelle:theme',
   /** In sessionStorage: the pop-up ad was already shown in this tab (R123). */
   adPopupShown: 'annabelle:ad-popup-shown',
 } as const

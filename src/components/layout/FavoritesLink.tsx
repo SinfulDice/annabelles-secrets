@@ -12,13 +12,13 @@ export function FavoritesLink() {
       to="/favoris"
       aria-label={`Favoris (${count})`}
       aria-current={isCurrentPage ? 'page' : undefined}
-      className={`relative grid size-11 place-items-center rounded-full border ${isCurrentPage ? 'border-femme bg-femme text-white' : 'border-line bg-surface text-ink hover:border-ink-muted'}`}
+      className={`relative grid size-11 place-items-center rounded-full border ${isCurrentPage ? 'border-femme bg-femme text-on-accent' : 'border-line bg-surface text-ink hover:border-ink-muted'}`}
     >
       <HeartIcon filled={isCurrentPage} />
       {count > 0 && (
         <span
           aria-hidden="true"
-          className="absolute -top-1 -right-1 grid min-w-5 place-items-center rounded-full bg-ink px-1 text-xs font-bold text-white ring-2 ring-surface"
+          className="absolute -top-1 -right-1 grid min-w-5 place-items-center rounded-full bg-ink px-1 text-xs font-bold text-on-accent ring-2 ring-surface"
         >
           {count}
         </span>

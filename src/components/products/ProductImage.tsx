@@ -76,7 +76,7 @@ export function ProductImage(props: ProductImageProps) {
         width={600}
         height={600}
         onError={() => setFailedSrc(source.src)}
-        className={`size-full object-cover ${isBlurred ? 'scale-110 blur-2xl' : ''}`}
+        className={`size-full object-cover ${isBlurred ? 'scale-110 blur-2xl' : ''} ${isExplicit ? '' : 'dark:brightness-75'}`}
       />
       {isBlurred && !compact && (
         <BlurredOverlay title={subject.title} onReveal={() => reveal(subject.id)} />

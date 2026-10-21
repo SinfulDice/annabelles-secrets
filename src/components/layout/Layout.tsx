@@ -17,7 +17,7 @@ export function Layout() {
       <div inert={!isAgeConfirmed} className="flex min-h-dvh flex-col">
         <a
           href="#contenu"
-          className="sr-only rounded-full bg-ink px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50"
+          className="sr-only rounded-full bg-ink px-4 py-2 text-on-accent focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50"
         >
           Aller au contenu
         </a>

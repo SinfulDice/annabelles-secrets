@@ -57,7 +57,7 @@ export function ProductSummary({ product, reviewCount }: ProductSummaryProps) {
               <span className="sr-only">Prix d&apos;origine : </span>
               {formatPrice(originalPrice)}
             </p>
-            <p className="rounded-full bg-ink px-2.5 py-1 text-sm font-semibold text-white">
+            <p className="rounded-full bg-ink px-2.5 py-1 text-sm font-semibold text-on-accent">
               −{product.discountPercentage} %
             </p>
           </>

@@ -136,6 +136,19 @@ Dans `contexts/FiltersContext.tsx`, avec le reducer `contexts/filtersReducer.ts`
 - Je n'utilise **pas** `useMemo` pour filtrer les 45 produits : c'est instantané, l'optimisation serait
   inutile.
 
+### Le thème sombre : des variables CSS plutôt que `dark:` partout
+
+- Toutes les couleurs sont des variables (`--color-page`, `--color-ink`…) déclarées dans
+  `src/index.css`. Sous la classe `.dark`, on leur donne d'autres valeurs : **toutes** les classes
+  Tailwind (`bg-page`, `text-ink`…) changent d'un coup, sans écrire `dark:` dans chaque composant.
+- `ThemeContext` met la classe `dark` sur `<html>` avec un `useEffect` (`<html>` est en dehors de
+  React : c'est une synchronisation avec l'extérieur, le vrai rôle d'un effet).
+- On ne sauvegarde que le **choix** de l'utilisateur. Sans choix, on suit `prefers-color-scheme`, et
+  un second effet écoute les changements du réglage système (avec nettoyage de l'écouteur).
+- Un petit script dans `index.html` applique le thème **avant** que React démarre : sinon la page
+  s'afficherait en blanc une fraction de seconde (« flash ») avant de passer en sombre.
+- Les contrastes de la palette sombre ont tous été vérifiés (≥ 4,5:1 pour le texte).
+
 ### `lazy` + `Suspense` (pas des hooks, mais à connaître)
 
 `pages/ProductDetailRoute.tsx` : la fiche produit et ses 500 avis forment un fichier séparé, téléchargé
@@ -159,6 +172,11 @@ la logique des composants pour la réutiliser et la nommer.
 | `useCreateProduct` | Envoi du formulaire de création, états envoi / succès / erreur. |
 | `useEditProduct` / `useDeleteProduct` | `PUT` / `DELETE`, mise à jour de la boutique et des favoris. |
 | `useRandomAd` | Pub parodique qui change toutes les 8 s, jamais deux fois la même. |
+
+Autres contextes ajoutés avec les extras : `AccountContext` (comptes et session), `AgeGateContext`
+(réponse 18+), `ContentModeContext` (SFW / NSFW), `AdsContext` (pubs fermées, blague),
+`NewsletterContext` (abonnés), `ThemeContext` (thème). Même schéma partout : Provider + hook qui
+lève une erreur hors du Provider, valeur mémorisée avec `useMemo`.
 
 ---
 

@@ -11,12 +11,12 @@ export const UNIVERSE_TILES: { category: Category; description: string; classes:
   {
     category: 'femme',
     description: 'Stimulateurs, vibromasseurs, boules de geisha…',
-    classes: 'bg-femme text-white',
+    classes: 'bg-femme text-on-accent',
   },
   {
     category: 'homme',
     description: 'Masturbateurs, anneaux, stimulateurs prostatiques…',
-    classes: 'bg-homme text-white',
+    classes: 'bg-homme text-on-accent',
   },
   {
     category: 'goodies',

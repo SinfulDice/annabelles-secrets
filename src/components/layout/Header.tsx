@@ -9,6 +9,7 @@ import { FavoritesLink } from './FavoritesLink'
 import { Logo } from './Logo'
 import { MainNav } from './MainNav'
 import { MobileMenu } from './MobileMenu'
+import { ThemeToggle } from './ThemeToggle'
 
 const MOBILE_MENU_ID = 'menu-mobile'
 
@@ -40,7 +41,9 @@ export function Header() {
           <div className="hidden md:block">
             <MainNav direction="row" />
           </div>
-          <div className="md:hidden">
+          {/* Mobile header (mockup 13): theme and favorites stay outside the burger menu. */}
+          <div className="flex gap-2 md:hidden">
+            <ThemeToggle />
             <FavoritesLink />
           </div>
         </div>
@@ -60,6 +63,7 @@ export function Header() {
           <FavoritesLink />
           <AccountLink />
           <ContentModeToggle />
+          <ThemeToggle />
         </div>
       </div>
 

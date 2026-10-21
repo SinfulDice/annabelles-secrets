@@ -17,7 +17,7 @@ export function AdminProfile({ account, onSignOut }: AdminProfileProps) {
       <ProfileHeader
         account={account}
         subtitle={
-          <span className="rounded-full bg-ad px-2 py-0.5 text-xs font-bold text-ink">
+          <span className="rounded-full bg-ad px-2 py-0.5 text-xs font-bold text-ad-ink">
             Propriétaire · admin
           </span>
         }

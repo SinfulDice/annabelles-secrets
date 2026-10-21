@@ -53,7 +53,7 @@ npm run dev                 # http://localhost:5173
 | `npm run lint`                    | ESLint (échoue au moindre avertissement)              |
 | `npm run format` / `format:check` | Prettier : corrige / vérifie la mise en forme         |
 | `npm run typecheck`               | Vérification TypeScript                               |
-| `npm test`                        | Tests Vitest (336 tests)                              |
+| `npm test`                        | Tests Vitest (342 tests)                              |
 
 ## Configuration
 
@@ -87,14 +87,18 @@ résultats sont calculés pendant le rendu (pas stockés dans un état), donc to
 
 **Contextes React** (dans `src/contexts/`, chacun avec son hook qui lève une erreur hors du Provider) :
 
-| Contexte            | Rôle                                                                                                                                                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `ProductsContext`   | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et applique par-dessus les créations, modifications et suppressions de la session (un `useReducer` testé à part).              |
-| `FiltersContext`    | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
-| `AccountContext`    | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
-| `NewsletterContext` | Abonnés de la newsletter factice dans `localStorage` (`annabelle:newsletter`), avec une attente simulée.                                                                                                                             |
-| `FavoritesContext`  | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
-| `ToastContext`      | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
+| Contexte             | Rôle                                                                                                                                                                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `ProductsContext`    | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et applique par-dessus les créations, modifications et suppressions de la session (un `useReducer` testé à part).              |
+| `FiltersContext`     | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
+| `AccountContext`     | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
+| `ThemeContext`       | Thème clair / sombre : choix sauvegardé, sinon réglage du système ; met la classe `dark` sur `<html>`.                                                                                                                               |
+| `AgeGateContext`     | Réponse à la vérification d'âge, utilisée par la modale, les pubs et le mode NSFW.                                                                                                                                                   |
+| `ContentModeContext` | Mode SFW / NSFW et images déjà affichées.                                                                                                                                                                                            |
+| `AdsContext`         | Formats de pubs fermés et étapes de la blague des pubs.                                                                                                                                                                              |
+| `NewsletterContext`  | Abonnés de la newsletter factice dans `localStorage` (`annabelle:newsletter`), avec une attente simulée.                                                                                                                             |
+| `FavoritesContext`   | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
+| `ToastContext`       | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
 
 **Requêtes** : une seule fonction `httpRequest` (`services/http.ts`) vérifie `response.ok`, transforme
 les échecs en `HttpError` (code + message en français) et accepte un `AbortController`. Les requêtes
@@ -198,10 +202,13 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
   de 600 ms simule un serveur. E-mail prérempli si l'on est connecté ; case « M'abonner aussi » à
   l'inscription du compte ; statut affiché dans le profil. Bloc « La lettre d'Annabelle » sur l'accueil.
 
-**Bonus réalisés** : TypeScript, recherche automatique 300 ms après la dernière frappe (debounce),
-déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
+**Bonus réalisés** : TypeScript ; recherche automatique 300 ms après la dernière frappe (debounce) ;
+CRUD complet ; **thème sombre** partagé par un contexte (`ThemeContext`), sauvegardé dans
+`localStorage` (`annabelle:theme`) et restauré à l'ouverture, qui suit le réglage du système tant
+qu'on n'a rien choisi (un petit script dans `index.html` l'applique avant React pour éviter un flash
+blanc) ; déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
 
-**Prévus ensuite (extras)** : thème sombre.
+Tous les extras prévus sont réalisés.
 
 ## Limites et problèmes connus
 
