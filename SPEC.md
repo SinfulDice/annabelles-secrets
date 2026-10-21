@@ -110,7 +110,7 @@ Références : `docs/projet-react.md` (cahier des charges), `docs/PROMPT_CLAUDE_
 - R104 [EX] Mot de passe stocké en clair (faille volontaire, signalée dans le README) ; bandeau « N'utilisez jamais un vrai mot de passe ici ».
 - R105 [EX] Onglets accessibles « Se connecter » / « Créer un compte » (flèches clavier).
 - R106 [EX] `RequireAdmin` protège création et modification ; non-admin → écran « Réservé à l'administratrice » + connexion puis retour à la page demandée. « Ajouter un produit », Modifier et Supprimer ne sont visibles que pour l'admin.
-- Note : tant que ce bloc n'est pas fait, la création (R70–R77) reste accessible à tous.
+- Note : depuis ce bloc (2026-10-21), la création (R70–R79) est réservée à l'admin.
 
 ### Modification et suppression
 

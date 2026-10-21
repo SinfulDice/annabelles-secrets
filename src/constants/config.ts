@@ -27,6 +27,9 @@ export const LOW_STOCK_MAX = 5
 export const STORAGE_KEYS = {
   favorites: 'annabelle:favorites',
   ageConfirmed: 'annabelle:age-confirmed',
+  accounts: 'annabelle:accounts',
+  /** E-mail of the signed-in account, or null. */
+  session: 'annabelle:session',
 } as const
 
 export const CATEGORY_LABELS: Record<Category, string> = {

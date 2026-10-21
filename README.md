@@ -4,6 +4,16 @@ Boutique en ligne **fictive** de bien-être intime (projet de cours React, B3 fr
 Trois univers : **Femme**, **Homme** et **Goodies** (produits dérivés de la marque).
 Aucun paiement, aucune vraie commande : c'est une démonstration.
 
+> **Tester l'accès admin**
+>
+> Page **Mon compte** (icône en haut à droite) → onglet « Se connecter » :
+>
+> - e-mail : `admin@annabelles-secrets.fr`
+> - mot de passe : `P4ssw0rd`
+>
+> Ce compte existe dès le premier lancement. Il débloque l'**ajout** de produits (bouton
+> « Ajouter un produit » dans l'en-tête), puis la modification et la suppression.
+
 - **Site en ligne** : <https://annabelles-secrets.vercel.app>
 - **Dépôt** : <https://github.com/SinfulDice/annabelles-secrets>
 
@@ -80,6 +90,7 @@ résultats sont calculés pendant le rendu (pas stockés dans un état), donc to
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `ProductsContext`  | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et les produits créés pendant la session.                                                                                      |
 | `FiltersContext`   | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
+| `AccountContext`   | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
 | `FavoritesContext` | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
 | `ToastContext`     | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
 
@@ -148,10 +159,19 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
   visible, lien « Aller au contenu », contrastes vérifiés (≥ 4,5:1 pour le texte).
 - Vérification d'âge (18+) au premier passage.
 
+**Extras réalisés**
+
+- **Compte (factice)** : inscription (18 ans minimum, mot de passe de 8 caractères avec un chiffre,
+  un seul compte client par navigateur), connexion, profil (mot de passe affichable, modification,
+  déconnexion, suppression avec confirmation), onglets accessibles au clavier.
+- **Compte admin pré-créé** et route protégée `RequireAdmin` : `/produits/nouveau` affiche
+  « Réservé à l'administratrice » aux autres, avec un bouton qui ramène à la page demandée après
+  connexion. Le bouton « Ajouter un produit » n'apparaît que pour l'admin.
+
 **Bonus réalisés** : TypeScript, recherche automatique 300 ms après la dernière frappe (debounce),
 déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
 
-**Prévus ensuite (extras)** : compte et accès admin, modification / suppression (CRUD complet),
+**Prévus ensuite (extras)** : modification / suppression (CRUD complet),
 fausses publicités parodiques, mode SFW / NSFW, newsletter, thème sombre.
 
 ## Limites et problèmes connus
@@ -168,6 +188,12 @@ fausses publicités parodiques, mode SFW / NSFW, newsletter, thème sombre.
   affiche l'id renvoyé par l'API et signale l'écart.
 - **La réponse de création ne contient pas** le type, le matériau ni l'étanchéité : ils sont repris du
   formulaire. Un produit créé n'a ni note ni avis.
+- **Mot de passe stocké en clair dans le navigateur** : c'est une **faille volontaire de
+  démonstration**, à ne jamais reproduire en production. N'importe quel script de la page ou personne
+  ayant accès à l'ordinateur peut le lire (la page Mon compte l'affiche d'ailleurs). Un vrai site
+  enverrait le mot de passe à un serveur, qui le stockerait haché (bcrypt, Argon2).
+- **La protection admin n'est qu'une protection d'interface** : tout se passe dans le navigateur, on
+  peut la contourner en modifiant le `localStorage`. Une vraie protection se ferait côté serveur.
 - Les critères de recherche ne survivent pas à un rechargement (non demandé).
 - Pas de paiement ni de vraie commande.
 

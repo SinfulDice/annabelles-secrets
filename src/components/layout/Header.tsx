@@ -1,7 +1,9 @@
 import { useCallback, useState } from 'react'
 import { Link, useLocation } from 'react-router'
+import { useAccount } from '../../contexts/AccountContext'
 import { buttonClasses } from '../ui/buttonClasses'
 import { CloseIcon, MenuIcon, PlusIcon } from '../ui/icons'
+import { AccountLink } from './AccountLink'
 import { FavoritesLink } from './FavoritesLink'
 import { Logo } from './Logo'
 import { MainNav } from './MainNav'
@@ -12,6 +14,7 @@ const MOBILE_MENU_ID = 'menu-mobile'
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { pathname } = useLocation()
+  const { isAdmin } = useAccount()
   // useCallback: MobileMenu's effect depends on onClose, so it must not change on every render.
   const closeMenu = useCallback(() => setIsMenuOpen(false), [])
   const isCreatePage = pathname === '/produits/nouveau'
@@ -42,15 +45,19 @@ export function Header() {
         </div>
 
         <div className="mt-3 hidden items-center gap-2 md:flex">
-          <Link
-            to="/produits/nouveau"
-            aria-current={isCreatePage ? 'page' : undefined}
-            className={buttonClasses(isCreatePage ? 'dark' : 'secondary')}
-          >
-            <PlusIcon />
-            Ajouter un produit
-          </Link>
+          {/* R106: only the admin sees the button (the page itself is guarded too). */}
+          {isAdmin && (
+            <Link
+              to="/produits/nouveau"
+              aria-current={isCreatePage ? 'page' : undefined}
+              className={buttonClasses(isCreatePage ? 'dark' : 'secondary')}
+            >
+              <PlusIcon />
+              Ajouter un produit
+            </Link>
+          )}
           <FavoritesLink />
+          <AccountLink />
         </div>
       </div>
 

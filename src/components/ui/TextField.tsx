@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes } from 'react'
+import type { InputHTMLAttributes, ReactNode } from 'react'
 import { RequiredMark } from './SegmentedControl'
 
 type TextFieldProps = {
@@ -15,6 +15,11 @@ type TextFieldProps = {
   /** Right-aligned counter under the field, e.g. "16 / 20". */
   counter?: string
   inputMode?: InputHTMLAttributes<HTMLInputElement>['inputMode']
+  type?: 'text' | 'email' | 'password' | 'date'
+  /** Lets the browser offer saved values: "email", "current-password", "given-name"… */
+  autoComplete?: string
+  /** A small button shown inside the field, on the right (e.g. « Afficher »). */
+  trailing?: ReactNode
 }
 
 const fieldClasses =
@@ -48,12 +53,19 @@ export function TextField(props: TextFieldProps) {
       {multiline ? (
         <textarea {...sharedProps} rows={4} onChange={(event) => onChange(event.target.value)} />
       ) : (
-        <input
-          {...sharedProps}
-          type="text"
-          inputMode={props.inputMode}
-          onChange={(event) => onChange(event.target.value)}
-        />
+        <div className="relative">
+          <input
+            {...sharedProps}
+            className={`${sharedProps.className} ${props.trailing ? 'pr-24' : ''}`}
+            type={props.type ?? 'text'}
+            inputMode={props.inputMode}
+            autoComplete={props.autoComplete}
+            onChange={(event) => onChange(event.target.value)}
+          />
+          {props.trailing && (
+            <div className="absolute inset-y-0 right-2 flex items-center">{props.trailing}</div>
+          )}
+        </div>
       )}
       <div className="flex justify-between gap-4 text-sm">
         <div>
