@@ -1,4 +1,4 @@
-import { useToast } from '../../contexts/ToastContext'
+import { useAds } from '../../contexts/AdsContext'
 import { CloseIcon } from '../ui/icons'
 
 /** The pieces shared by the three ad formats. */
@@ -11,13 +11,16 @@ export function AdTag() {
   )
 }
 
-/** The call to action is a button, never a link: there is nowhere to go (R120, R124). */
-export function AdCtaButton({ label }: { label: string }) {
-  const { showToast } = useToast()
+/** The call to action is a button, never a link: it only starts the joke (R120, R126). */
+export function AdCtaButton({ label, onClick }: { label: string; onClick?: () => void }) {
+  const { startGag } = useAds()
   return (
     <button
       type="button"
-      onClick={() => showToast("C'était une fausse pub 😉", 'info')}
+      onClick={() => {
+        onClick?.()
+        startGag()
+      }}
       className="min-h-12 shrink-0 rounded-full bg-ad-border px-7 text-base font-bold text-white shadow-md hover:bg-ad-title sm:min-h-14 sm:text-lg"
     >
       {label}

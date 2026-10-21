@@ -130,3 +130,12 @@ export function EyeOffIcon(props: IconProps) {
     </Icon>
   )
 }
+
+export function CameraIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <rect x="3" y="7" width="13" height="10" rx="2" />
+      <path d="m16 11 5-3v8l-5-3" />
+    </Icon>
+  )
+}

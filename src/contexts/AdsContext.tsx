@@ -1,9 +1,23 @@
-import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react'
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useReducer,
+  useState,
+  type ReactNode,
+} from 'react'
 import type { AdFormat } from '../types'
+import { nextGagStage, type GagStage } from '../utils/adGag'
 
 type AdsContextValue = {
   isDismissed: (format: AdFormat) => boolean
   dismiss: (format: AdFormat) => void
+  /** Where the joke played after a click on an ad button is (R126). */
+  gagStage: GagStage
+  startGag: () => void
+  answerPermission: () => void
+  closeGag: () => void
 }
 
 const AdsContext = createContext<AdsContextValue | null>(null)
@@ -21,7 +35,16 @@ export function AdsProvider({ children }: { children: ReactNode }) {
     [],
   )
 
-  const value = useMemo(() => ({ isDismissed, dismiss }), [isDismissed, dismiss])
+  // A reducer here too: the pure function nextGagStage (tested) decides each next step.
+  const [gagStage, sendGagEvent] = useReducer(nextGagStage, 'idle')
+  const startGag = useCallback(() => sendGagEvent('adClicked'), [])
+  const answerPermission = useCallback(() => sendGagEvent('permissionAnswered'), [])
+  const closeGag = useCallback(() => sendGagEvent('gifClosed'), [])
+
+  const value = useMemo(
+    () => ({ isDismissed, dismiss, gagStage, startGag, answerPermission, closeGag }),
+    [isDismissed, dismiss, gagStage, startGag, answerPermission, closeGag],
+  )
   return <AdsContext value={value}>{children}</AdsContext>
 }
 

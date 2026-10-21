@@ -42,7 +42,8 @@ function PopupDialog({ onClose }: { onClose: () => void }) {
           {ad.title}
         </p>
         <p className="text-lg">{ad.subtitle}</p>
-        <AdCtaButton label={ad.cta} />
+        {/* The pop-up closes first: its focus trap would make the joke unreachable by keyboard. */}
+        <AdCtaButton label={ad.cta} onClick={onClose} />
         <button
           type="button"
           onClick={onClose}

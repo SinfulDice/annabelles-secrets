@@ -61,3 +61,10 @@ export const AD_INTERVAL_MS = 8000
 export const AD_POPUP_DELAY_MS = 20_000
 /** Seconds before the pop-up can be closed. */
 export const AD_POPUP_CLOSE_DELAY_S = 3
+
+/**
+ * GIF shown after a click on an ad (R126). null until its direct address is known:
+ * the window then shows the text only.
+ */
+export const AD_GAG_GIF_URL: string | null = null
+export const AD_GAG_GIF_ALT = 'GIF des Muppets qui rient'

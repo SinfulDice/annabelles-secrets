@@ -1,5 +1,6 @@
 import { Outlet, ScrollRestoration } from 'react-router'
 import { useAgeGate } from '../../contexts/AgeGateContext'
+import { AdGag } from '../ads/AdGag'
 import { AdPopup } from '../ads/AdPopup'
 import { NsfwNotice } from '../content-mode/NsfwNotice'
 import { AgeGate } from './AgeGate'
@@ -29,6 +30,7 @@ export function Layout() {
       </div>
       {!isAgeConfirmed && <AgeGate onConfirm={confirmAge} />}
       <AdPopup />
+      <AdGag />
       {/* Scrolls back to the top on each new page, like a classic website. */}
       <ScrollRestoration />
     </>

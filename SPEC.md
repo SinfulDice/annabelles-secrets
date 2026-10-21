@@ -121,11 +121,12 @@ Références : `docs/projet-react.md` (cahier des charges), `docs/PROMPT_CLAUDE_
 
 ### Fausses publicités
 
-- R120 [EX] Texte uniquement, aucun lien réel ni image ; étiquette « Pub » et mention « Publicité parodique ».
+- R120 [EX] Les encarts sont en texte seulement, sans lien réel ; étiquette « Pub » et mention « Publicité parodique ». (Seule la blague R126 montre une image.)
 - R121 [EX] `fillAdTemplate` remplace `{ville}` (liste de villes) et `{n}` (entier entre 3 et 27).
 - R122 [EX] `useRandomAd` change de message toutes les 8 s, jamais deux fois le même d'affilée ; intervalle nettoyé au démontage.
 - R123 [EX] Formats `AdBanner`, `AdSquare`, `AdPopup` (une fois par session, après 20 s, fermable après 3 s).
-- R124 [EX] « × » masque l'encart jusqu'au rechargement ; le bouton d'action affiche le toast « C'était une fausse pub ».
+- R124 [EX] « × » masque l'encart jusqu'au rechargement ; le bouton d'action lance la blague R126.
+- R126 [EX] (Décision du 2026-10-21, à la demande de Pierre-Antoine.) Un clic sur le bouton d'une pub affiche d'abord une **fausse** demande d'accès à la caméra, imitant celle des navigateurs (« <site> souhaite : Utiliser vos caméras », Autoriser / Bloquer, Échap = Bloquer). L'application n'appelle **jamais** la vraie caméra. Quelle que soit la réponse, une fenêtre montre ensuite un GIF des Muppets et « C'était une fausse pub », puis se ferme.
 - R125 [EX] Jamais de pub avant la vérification d'âge ; pas d'`aria-live` sur la rotation.
 
 ### Mode SFW / NSFW
