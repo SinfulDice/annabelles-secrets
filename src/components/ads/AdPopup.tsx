@@ -35,10 +35,13 @@ function PopupDialog({ onClose }: { onClose: () => void }) {
         className="-m-6 flex flex-col items-center gap-4 rounded-panel border-3 border-ad-border bg-ad p-8 text-center text-ink outline-none sm:-m-10"
       >
         <AdTag />
-        <p id="ad-popup-title" className="font-display text-2xl font-bold text-ad-title">
+        <p
+          id="ad-popup-title"
+          className="font-display text-3xl leading-tight font-bold text-ad-title sm:text-4xl"
+        >
           {ad.title}
         </p>
-        <p>{ad.subtitle}</p>
+        <p className="text-lg">{ad.subtitle}</p>
         <AdCtaButton label={ad.cta} />
         <button
           type="button"

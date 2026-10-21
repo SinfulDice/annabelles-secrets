@@ -9,17 +9,23 @@ function BannerContent({ onClose }: { onClose: () => void }) {
   return (
     // No aria-live: screen readers must not announce a new ad every 8 seconds (R125).
     <aside aria-label="Publicité parodique">
-      <div className={`${adBoxClasses} flex flex-wrap items-center gap-4 sm:flex-nowrap`}>
-        <AdTag />
-        <span
-          aria-hidden="true"
-          className="grid size-14 shrink-0 place-items-center rounded-full bg-ad-border text-center text-sm font-bold text-white"
-        >
-          {ad.badge}
-        </span>
-        <div className="min-w-0 flex-1 basis-48">
-          <p className="font-display text-xl font-bold text-ad-title">{ad.title}</p>
-          <p className="text-sm">{ad.subtitle}</p>
+      <div
+        className={`${adBoxClasses} flex min-h-44 flex-wrap items-center gap-5 sm:flex-nowrap sm:gap-7`}
+      >
+        <div className="flex items-center gap-4 sm:flex-col">
+          <AdTag />
+          <span
+            aria-hidden="true"
+            className="grid size-20 shrink-0 place-items-center rounded-full bg-ad-border text-center text-lg font-bold text-white sm:size-24 sm:text-xl"
+          >
+            {ad.badge}
+          </span>
+        </div>
+        <div className="min-w-0 flex-1 basis-56">
+          <p className="font-display text-2xl leading-tight font-bold text-ad-title sm:text-4xl">
+            {ad.title}
+          </p>
+          <p className="mt-2 text-base sm:text-lg">{ad.subtitle}</p>
         </div>
         <AdCtaButton label={ad.cta} />
         <AdCloseButton onClose={onClose} />

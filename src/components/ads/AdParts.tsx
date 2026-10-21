@@ -5,7 +5,7 @@ import { CloseIcon } from '../ui/icons'
 
 export function AdTag() {
   return (
-    <span className="rounded-md bg-ink px-2 py-0.5 text-xs font-bold tracking-wider text-ad">
+    <span className="rounded-md bg-ink px-2.5 py-1 text-sm font-bold tracking-wider text-ad">
       PUB
     </span>
   )
@@ -18,7 +18,7 @@ export function AdCtaButton({ label }: { label: string }) {
     <button
       type="button"
       onClick={() => showToast("C'était une fausse pub 😉", 'info')}
-      className="min-h-11 shrink-0 rounded-full bg-ad-border px-5 text-sm font-bold text-white hover:bg-ad-title"
+      className="min-h-12 shrink-0 rounded-full bg-ad-border px-7 text-base font-bold text-white shadow-md hover:bg-ad-title sm:min-h-14 sm:text-lg"
     >
       {label}
     </button>
@@ -48,4 +48,4 @@ export function AdCaption() {
 
 /** Yellow box with the dotted red border of the mockup. */
 export const adBoxClasses =
-  'rounded-card border-3 border-dashed border-ad-border bg-ad p-4 text-ink sm:p-5'
+  'rounded-panel border-4 border-dashed border-ad-border bg-ad p-5 text-ink sm:p-8'
