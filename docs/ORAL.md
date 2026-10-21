@@ -40,6 +40,8 @@ rien de nouveau. L'écran ne suivrait pas les actions de l'utilisateur.
 | `hooks/useFocusTrap.ts` | Piège le focus dans une fenêtre modale. | Rend le focus à l'élément d'avant. |
 | `ProductForm.tsx` | Donne le focus au résumé d'erreurs après un envoi raté. | — |
 | `useCreateProduct.ts` | Rien au montage ; seulement un nettoyage. | Annule l'envoi si on quitte la page. |
+| `useRandomAd.ts` | Lance un `setInterval` qui change la pub toutes les 8 s. | `clearInterval` : voir l'encadré ci-dessous. |
+| `AdPopup.tsx` | Ouvre la pop-up 20 s après l'arrivée, puis le compte à rebours de 3 s. | `clearTimeout` si on quitte avant. |
 
 **Le tableau de dépendances** `[a, b]` : l'effet se relance quand `a` ou `b` change. `[]` = une seule
 fois, au montage. Le linter (`react-hooks/exhaustive-deps`) vérifie qu'on n'oublie rien : il m'a
@@ -58,6 +60,7 @@ une seule fois.
 
 | Où | Pourquoi |
 | --- | --- |
+| `hooks/useRandomAd.ts` : `previousIndexRef` | Index de la pub affichée, lu par le `setInterval` pour ne jamais tirer deux fois la même (voir l'encadré). |
 | `contexts/ToastContext.tsx` : `nextId` | Compteur pour donner un id unique à chaque notification. Le modifier n'a pas besoin de réafficher quoi que ce soit. |
 | `hooks/useCreateProduct.ts` : `controllerRef` | Garde l'`AbortController` de l'envoi en cours d'un rendu à l'autre, pour pouvoir l'annuler au démontage. |
 | `AgeGate`, `Modal`, `ProductForm`, `FavoritesPage`, `CreatedProductSummary` | Accès direct à un élément du DOM pour appeler `.focus()` (le bouton « Entrer », le résumé d'erreurs, un titre…). |
@@ -68,6 +71,37 @@ l'écran doit être un état, pas une ref : l'écran ne se mettrait pas à jour.
 
 **Sans `useRef` pour le focus** : React ne fournit pas d'autre moyen propre d'appeler `.focus()` sur un
 élément précis ; `document.querySelector` marcherait mais contourne React.
+
+### Encadré : `useRandomAd`, le `useRef` et le nettoyage du `setInterval`
+
+```ts
+const [ad, setAd] = useState(() => drawAd(null))
+const previousIndexRef = useRef(ad.index)
+
+useEffect(() => {
+  const timer = window.setInterval(() => {
+    const next = drawAd(previousIndexRef.current) // jamais le même que le précédent
+    previousIndexRef.current = next.index
+    setAd(next)
+  }, intervalMs)
+  return () => window.clearInterval(timer)
+}, [intervalMs])
+```
+
+- **Pourquoi l'effet ne dépend que de `intervalMs`** : on veut **un seul** minuteur pendant toute la
+  vie du composant. Si `ad` était dans les dépendances, l'intervalle serait détruit et recréé à
+  chaque nouvelle pub.
+- **Pourquoi un `useRef` et pas `ad`** : la fonction passée à `setInterval` est créée une seule fois.
+  Elle « capture » les variables du premier rendu : si elle lisait `ad`, elle verrait **toujours la
+  première pub** (on appelle ça une *closure périmée*, « stale closure ») et pourrait répéter la pub
+  affichée. Le ref est une boîte partagée par tous les rendus : la fonction lit toujours la dernière
+  valeur. Et modifier `ref.current` ne provoque pas de rendu en plus (`setAd` s'en charge).
+- **Sans le nettoyage `clearInterval`** : chaque visite d'une page avec une pub ajouterait un
+  intervalle de plus, qui continuerait à tourner après avoir quitté la page (fuite de mémoire, et
+  React avertirait d'une mise à jour sur un composant démonté). En développement, `StrictMode`
+  monte deux fois le composant : sans nettoyage, on aurait déjà deux pubs qui changent en même temps.
+- **« Jamais deux fois la même »** est garanti par `pickNextAdIndex` (fonction pure, testée R122) : on
+  tire parmi les **autres** messages seulement, avec un décalage de 1 à 7.
 
 ### `useContext` : lire une valeur partagée sans la passer de parent en enfant
 
@@ -123,6 +157,8 @@ la logique des composants pour la réutiliser et la nommer.
 | `usePageTitle` | Titre de l'onglet. |
 | `useSelectCategory` | Règle la catégorie des filtres avant d'ouvrir la boutique. |
 | `useCreateProduct` | Envoi du formulaire de création, états envoi / succès / erreur. |
+| `useEditProduct` / `useDeleteProduct` | `PUT` / `DELETE`, mise à jour de la boutique et des favoris. |
+| `useRandomAd` | Pub parodique qui change toutes les 8 s, jamais deux fois la même. |
 
 ---
 

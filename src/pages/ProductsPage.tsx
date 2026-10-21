@@ -1,3 +1,4 @@
+import { AdBanner } from '../components/ads/AdBanner'
 import { ProductsError } from '../components/products/ProductsError'
 import { ProductsLoading } from '../components/products/ProductsLoading'
 import { SearchForm } from '../components/products/SearchForm'
@@ -67,6 +68,7 @@ export function ProductsPage() {
         onRemoveFilter={removeFilter}
         onReset={resetFilters}
       />
+      <AdBanner />
 
       {state.status === 'error' && <ProductsError message={state.error} onRetry={retry} />}
       {(state.status === 'idle' || state.status === 'loading') && (

@@ -1,4 +1,5 @@
 import { CATEGORY_LABELS } from '../../constants/config'
+import { AdSquare } from '../ads/AdSquare'
 import type { AvailabilityStatus, Product } from '../../types'
 import { formatPrice } from '../../utils/formatPrice'
 import { formatCount, formatRating } from '../../utils/formatRating'
@@ -83,6 +84,7 @@ export function ProductSummary({ product, reviewCount }: ProductSummaryProps) {
           {product.warrantyInformation} · {product.returnPolicy}
         </p>
       </div>
+      <AdSquare />
     </div>
   )
 }

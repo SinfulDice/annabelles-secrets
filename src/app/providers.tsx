@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
 import { AccountProvider } from '../contexts/AccountContext'
+import { AdsProvider } from '../contexts/AdsContext'
+import { AgeGateProvider } from '../contexts/AgeGateContext'
 import { FavoritesProvider } from '../contexts/FavoritesContext'
 import { FiltersProvider } from '../contexts/FiltersContext'
 import { ProductsProvider } from '../contexts/ProductsContext'
@@ -12,7 +14,11 @@ export function AppProviders({ children }: { children: ReactNode }) {
       <ProductsProvider>
         <FiltersProvider>
           <FavoritesProvider>
-            <AccountProvider>{children}</AccountProvider>
+            <AccountProvider>
+              <AgeGateProvider>
+                <AdsProvider>{children}</AdsProvider>
+              </AgeGateProvider>
+            </AccountProvider>
           </FavoritesProvider>
         </FiltersProvider>
       </ProductsProvider>

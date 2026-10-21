@@ -1,15 +1,13 @@
 import { Outlet, ScrollRestoration } from 'react-router'
-import { STORAGE_KEYS } from '../../constants/config'
-import { useLocalStorage } from '../../hooks/useLocalStorage'
+import { useAgeGate } from '../../contexts/AgeGateContext'
+import { AdPopup } from '../ads/AdPopup'
 import { AgeGate } from './AgeGate'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
-const isTrue = (stored: unknown) => stored === true
-
 /** Frame shared by every page: <Outlet /> is where the router puts the current page. */
 export function Layout() {
-  const [isAgeConfirmed, setIsAgeConfirmed] = useLocalStorage(STORAGE_KEYS.ageConfirmed, isTrue)
+  const { isAgeConfirmed, confirmAge } = useAgeGate()
 
   return (
     <>
@@ -27,7 +25,8 @@ export function Layout() {
         </main>
         <Footer />
       </div>
-      {!isAgeConfirmed && <AgeGate onConfirm={() => setIsAgeConfirmed(true)} />}
+      {!isAgeConfirmed && <AgeGate onConfirm={confirmAge} />}
+      <AdPopup />
       {/* Scrolls back to the top on each new page, like a classic website. */}
       <ScrollRestoration />
     </>

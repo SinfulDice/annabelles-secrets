@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import { AdBanner } from '../components/ads/AdBanner'
 import { CommitmentsBand } from '../components/home/CommitmentsBand'
 import { HeroSection } from '../components/home/HeroSection'
 import { ProductShowcase } from '../components/home/ProductShowcase'
@@ -34,6 +35,7 @@ export function HomePage() {
       <HeroSection productCount={state.status === 'success' ? products.length : null} />
       <CommitmentsBand />
       <UniverseTiles products={products} />
+      <AdBanner />
       <ProductShowcase
         id="top-rated-title"
         title="Les mieux notés"

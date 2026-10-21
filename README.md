@@ -53,7 +53,7 @@ npm run dev                 # http://localhost:5173
 | `npm run lint`                    | ESLint (échoue au moindre avertissement)              |
 | `npm run format` / `format:check` | Prettier : corrige / vérifie la mise en forme         |
 | `npm run typecheck`               | Vérification TypeScript                               |
-| `npm test`                        | Tests Vitest (299 tests)                              |
+| `npm test`                        | Tests Vitest (306 tests)                              |
 
 ## Configuration
 
@@ -175,11 +175,17 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
   Échap ferme), `DELETE`, notification et retour à la boutique. Un produit supprimé disparaît aussi
   des favoris.
 
+- **Fausses publicités parodiques** : bannière (accueil, boutique), encart carré (fiche) et pop-up
+  (une fois par session, 20 s après l'arrivée, fermable après 3 s). Texte seulement, aucun lien ni
+  image ; le message change toutes les 8 s sans jamais répéter le précédent (`useRandomAd`), avec une
+  ville et un nombre tirés au hasard. « × » les masque jusqu'au rechargement ; un clic sur le bouton
+  affiche « C'était une fausse pub ». Jamais avant la vérification d'âge, et pas d'`aria-live` pour ne
+  pas les annoncer en boucle aux lecteurs d'écran.
+
 **Bonus réalisés** : TypeScript, recherche automatique 300 ms après la dernière frappe (debounce),
 déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
 
-**Prévus ensuite (extras)** :
-fausses publicités parodiques, mode SFW / NSFW, newsletter, thème sombre.
+**Prévus ensuite (extras)** : mode SFW / NSFW, newsletter, thème sombre.
 
 ## Limites et problèmes connus
 
