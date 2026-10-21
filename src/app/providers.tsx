@@ -5,6 +5,7 @@ import { AgeGateProvider } from '../contexts/AgeGateContext'
 import { ContentModeProvider } from '../contexts/ContentModeContext'
 import { FavoritesProvider } from '../contexts/FavoritesContext'
 import { FiltersProvider } from '../contexts/FiltersContext'
+import { NewsletterProvider } from '../contexts/NewsletterContext'
 import { ProductsProvider } from '../contexts/ProductsContext'
 import { ToastProvider } from '../contexts/ToastContext'
 
@@ -21,7 +22,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
             <AccountProvider>
               <AgeGateProvider>
                 <ContentModeProvider>
-                  <AdsProvider>{children}</AdsProvider>
+                  <AdsProvider>
+                    <NewsletterProvider>{children}</NewsletterProvider>
+                  </AdsProvider>
                 </ContentModeProvider>
               </AgeGateProvider>
             </AccountProvider>

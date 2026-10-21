@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import { useAccount } from '../../contexts/AccountContext'
 import { useFavorites } from '../../contexts/FavoritesContext'
+import { useNewsletter } from '../../contexts/NewsletterContext'
 import type { Account } from '../../types'
 import { formatLongDate, formatNumericDate } from '../../utils/formatDate'
 import { formatCount } from '../../utils/formatRating'
@@ -21,6 +22,7 @@ type CustomerProfileProps = {
 export function CustomerProfile({ account, onSignOut, onDeleted }: CustomerProfileProps) {
   const { updateAccount, deleteAccount } = useAccount()
   const { favorites } = useFavorites()
+  const { isSubscribed } = useNewsletter()
   const [isEditing, setIsEditing] = useState(false)
   const [isConfirmingDelete, setIsConfirmingDelete] = useState(false)
 
@@ -67,6 +69,17 @@ export function CustomerProfile({ account, onSignOut, onDeleted }: CustomerProfi
               {
                 label: 'Date de naissance',
                 value: account.birthDate ? formatNumericDate(account.birthDate) : '—',
+              },
+              {
+                label: 'Newsletter',
+                value: (
+                  <>
+                    {isSubscribed(account.email) ? 'Abonné·e' : 'Non abonné·e'} ·{' '}
+                    <Link to="/newsletter" className="text-femme underline underline-offset-4">
+                      {isSubscribed(account.email) ? 'gérer' : "s'abonner"}
+                    </Link>
+                  </>
+                ),
               },
               {
                 label: 'Favoris',

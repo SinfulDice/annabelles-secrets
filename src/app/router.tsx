@@ -3,6 +3,7 @@ import { Layout } from '../components/layout/Layout'
 import { AccountPage } from '../pages/AccountPage'
 import { FavoritesPage } from '../pages/FavoritesPage'
 import { HomePage } from '../pages/HomePage'
+import { NewsletterPage } from '../pages/NewsletterPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { ProductCreatePage } from '../pages/ProductCreatePage'
 import { ProductDetailRoute } from '../pages/ProductDetailRoute'
@@ -40,6 +41,7 @@ export const router = createBrowserRouter([
       },
       { path: 'favoris', element: <FavoritesPage /> },
       { path: 'compte', element: <AccountPage /> },
+      { path: 'newsletter', element: <NewsletterPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

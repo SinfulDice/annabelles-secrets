@@ -53,7 +53,7 @@ npm run dev                 # http://localhost:5173
 | `npm run lint`                    | ESLint (échoue au moindre avertissement)              |
 | `npm run format` / `format:check` | Prettier : corrige / vérifie la mise en forme         |
 | `npm run typecheck`               | Vérification TypeScript                               |
-| `npm test`                        | Tests Vitest (327 tests)                              |
+| `npm test`                        | Tests Vitest (336 tests)                              |
 
 ## Configuration
 
@@ -87,13 +87,14 @@ résultats sont calculés pendant le rendu (pas stockés dans un état), donc to
 
 **Contextes React** (dans `src/contexts/`, chacun avec son hook qui lève une erreur hors du Provider) :
 
-| Contexte           | Rôle                                                                                                                                                                                                                                 |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `ProductsContext`  | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et applique par-dessus les créations, modifications et suppressions de la session (un `useReducer` testé à part).              |
-| `FiltersContext`   | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
-| `AccountContext`   | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
-| `FavoritesContext` | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
-| `ToastContext`     | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
+| Contexte            | Rôle                                                                                                                                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `ProductsContext`   | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et applique par-dessus les créations, modifications et suppressions de la session (un `useReducer` testé à part).              |
+| `FiltersContext`    | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
+| `AccountContext`    | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
+| `NewsletterContext` | Abonnés de la newsletter factice dans `localStorage` (`annabelle:newsletter`), avec une attente simulée.                                                                                                                             |
+| `FavoritesContext`  | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
+| `ToastContext`      | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
 
 **Requêtes** : une seule fonction `httpRequest` (`services/http.ts`) vérifie `response.ok`, transforme
 les échecs en `HttpError` (code + message en français) et accepte un `AbortController`. Les requêtes
@@ -191,10 +192,16 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
   la remplace. Les goodies sont identiques dans les deux modes. Un seul composant (`ProductImage`)
   connaît le mode.
 
+- **Newsletter (factice)** sur `/newsletter` : inscription (prénom, e-mail, centres d'intérêt,
+  fréquence, accord 18+ obligatoire ; une adresse déjà inscrite voit ses préférences mises à jour),
+  désinscription (raison facultative, « Adresse introuvable », « Annuler et me réabonner »). Une attente
+  de 600 ms simule un serveur. E-mail prérempli si l'on est connecté ; case « M'abonner aussi » à
+  l'inscription du compte ; statut affiché dans le profil. Bloc « La lettre d'Annabelle » sur l'accueil.
+
 **Bonus réalisés** : TypeScript, recherche automatique 300 ms après la dernière frappe (debounce),
 déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
 
-**Prévus ensuite (extras)** : newsletter, thème sombre.
+**Prévus ensuite (extras)** : thème sombre.
 
 ## Limites et problèmes connus
 
@@ -219,6 +226,8 @@ déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`
   démonstration**, à ne jamais reproduire en production. N'importe quel script de la page ou personne
   ayant accès à l'ordinateur peut le lire (la page Mon compte l'affiche d'ailleurs). Un vrai site
   enverrait le mot de passe à un serveur, qui le stockerait haché (bcrypt, Argon2).
+- **Newsletter et comptes uniquement locaux** : aucun e-mail n'est jamais envoyé, et tout disparaît si
+  l'on vide les données du navigateur.
 - **La protection admin n'est qu'une protection d'interface** : tout se passe dans le navigateur, on
   peut la contourner en modifiant le `localStorage`. Une vraie protection se ferait côté serveur.
 - Les critères de recherche ne survivent pas à un rechargement (non demandé).

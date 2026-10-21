@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
 import type { AccountFormValues } from '../../types'
 import { validateAccountForm } from '../../utils/validateAccountForm'
 import { buttonClasses } from '../ui/buttonClasses'
@@ -11,12 +11,15 @@ type AccountFormProps = {
   /** Saves the values; returns an error message to show, or null on success. */
   onSubmit: (values: AccountFormValues) => string | null
   onCancel?: () => void
+  /** Extra field shown before the buttons (e.g. « M'abonner aussi à la newsletter »). */
+  extraField?: ReactNode
 }
 
 const fieldId = (field: keyof AccountFormValues) => `account-${field}`
 
 /** Sign-up form, also used to edit the profile (R101, R103). */
-export function AccountForm({ initialValues, submitLabel, onSubmit, onCancel }: AccountFormProps) {
+export function AccountForm(props: AccountFormProps) {
+  const { initialValues, submitLabel, onSubmit, onCancel, extraField } = props
   const [values, setValues] = useState(initialValues)
   const [failedAttempts, setFailedAttempts] = useState(0)
   const [saveError, setSaveError] = useState<string | null>(null)
@@ -88,6 +91,8 @@ export function AccountForm({ initialValues, submitLabel, onSubmit, onCancel }: 
         autoComplete="new-password"
       />
       <TextField {...field('birthDate')} label="Date de naissance" required type="date" />
+
+      {extraField}
 
       {saveError && (
         <p

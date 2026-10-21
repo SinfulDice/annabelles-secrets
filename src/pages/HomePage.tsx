@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import { AdBanner } from '../components/ads/AdBanner'
 import { CommitmentsBand } from '../components/home/CommitmentsBand'
 import { HeroSection } from '../components/home/HeroSection'
+import { NewsletterTeaser } from '../components/home/NewsletterTeaser'
 import { ProductShowcase } from '../components/home/ProductShowcase'
 import { UniverseTiles } from '../components/home/UniverseTiles'
 import { TOP_RATED_COUNT } from '../constants/home'
@@ -59,6 +60,7 @@ export function HomePage() {
           </Link>
         }
       />
+      <NewsletterTeaser />
     </div>
   )
 }

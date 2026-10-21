@@ -7,6 +7,8 @@ export const AGE_GATE_EXIT_URL = 'https://www.google.fr'
 export const PAGE_SIZE = 12
 export const DEBOUNCE_MS = 300
 export const TOAST_DURATION_MS = 4000
+/** Fake network wait of the newsletter, to show the sending state (R142). */
+export const NEWSLETTER_DELAY_MS = 600
 
 export const MIN_REVIEWS_PER_PRODUCT = 4
 export const MAX_REVIEWS_PER_PRODUCT = 12
@@ -33,6 +35,7 @@ export const STORAGE_KEYS = {
   /** E-mail of the signed-in account, or null. */
   session: 'annabelle:session',
   contentMode: 'annabelle:content-mode',
+  newsletter: 'annabelle:newsletter',
   /** In sessionStorage: the pop-up ad was already shown in this tab (R123). */
   adPopupShown: 'annabelle:ad-popup-shown',
 } as const
