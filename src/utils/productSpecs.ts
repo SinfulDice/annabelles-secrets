@@ -14,15 +14,18 @@ const formatNumber = (value: number) => decimalFormatter.format(value)
  */
 export function getProductSpecs(product: Product): ProductSpec[] {
   const { width, height, depth } = product.dimensions
-  const specs: ProductSpec[] = [
-    { label: 'Matériau', value: product.material },
-    {
+  const specs: ProductSpec[] = []
+
+  // A created product may not know its material, size or weight (R79): hide them.
+  if (product.material !== '') specs.push({ label: 'Matériau', value: product.material })
+  if (width > 0 && height > 0 && depth > 0) {
+    specs.push({
       label: 'Dimensions',
       value: `${formatNumber(height)} × ${formatNumber(width)} × ${formatNumber(depth)} cm`,
-    },
-    { label: 'Poids', value: `${formatNumber(product.weight)} g` },
-    { label: 'Étanchéité', value: product.waterproof ? 'Étanche' : 'Non étanche' },
-  ]
+    })
+  }
+  if (product.weight > 0) specs.push({ label: 'Poids', value: `${formatNumber(product.weight)} g` })
+  specs.push({ label: 'Étanchéité', value: product.waterproof ? 'Étanche' : 'Non étanche' })
 
   if (product.batteryLife !== null) {
     specs.push({ label: 'Autonomie', value: `${product.batteryLife} min` })

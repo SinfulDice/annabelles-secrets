@@ -18,6 +18,12 @@ export const API_URLS = {
   createProduct: 'https://dummyjson.com/products/add',
 } as const
 
+/** Product form rules (R71). */
+export const MIN_DESCRIPTION_LENGTH = 20
+export const MAX_DISCOUNT_PERCENTAGE = 90
+/** A created product with this stock or less is shown as « Stock faible ». */
+export const LOW_STOCK_MAX = 5
+
 export const STORAGE_KEYS = {
   favorites: 'annabelle:favorites',
   ageConfirmed: 'annabelle:age-confirmed',

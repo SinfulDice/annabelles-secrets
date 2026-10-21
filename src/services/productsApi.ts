@@ -1,5 +1,5 @@
 import { API_URLS } from '../constants/config'
-import type { Product, ProductsResponse } from '../types'
+import type { CreatedProductResponse, Product, ProductPayload, ProductsResponse } from '../types'
 import { httpRequest } from './http'
 
 export const MISSING_URL_MESSAGE =
@@ -23,4 +23,16 @@ function withOriginInUrl(url: string): string {
   const urlWithOrigin = new URL(url)
   urlWithOrigin.searchParams.set('origin', window.location.origin)
   return urlWithOrigin.toString()
+}
+
+/** POST /products/add: DummyJSON simulates the creation and answers with an id (R73). */
+export function createProduct(
+  payload: ProductPayload,
+  signal?: AbortSignal,
+): Promise<CreatedProductResponse> {
+  return httpRequest<CreatedProductResponse>(API_URLS.createProduct, {
+    method: 'POST',
+    body: payload,
+    signal,
+  })
 }

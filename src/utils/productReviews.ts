@@ -29,6 +29,8 @@ function closestRatingReviews(reviews: Review[], targetRating: number): Review[]
  * so a product always gets the same reviews, on every visit and every browser.
  */
 export function getProductReviews(product: Product, allReviews: Review[]): Review[] {
+  // A product created in this browser was never bought: no reviews yet (R79).
+  if (product.isLocal) return []
   const random = mulberry32(product.id)
   const kind = product.category === 'goodies' ? 'goodies' : 'toy'
   const available = allReviews.filter((review) => review.kind === kind)

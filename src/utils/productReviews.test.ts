@@ -67,6 +67,12 @@ describe('R57 review ratings follow the product rating', () => {
   })
 })
 
+describe('R79 a created product has no reviews', () => {
+  it('returns an empty list for a local product', () => {
+    expect(getProductReviews({ ...productById(1), isLocal: true }, allReviews)).toEqual([])
+  })
+})
+
 describe('R58 reviews are sorted by date, newest first', () => {
   it('dates never go up', () => {
     const dates = getProductReviews(productById(1), allReviews).map((review) => review.date)

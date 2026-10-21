@@ -22,6 +22,20 @@ export function ProductReviews({ reviews, productRating }: ProductReviewsProps) 
   const shownReviews = filterReviewsByStars(reviews, starFilter)
   const average = averageRating(reviews)
 
+  // A product created in this browser has no reviews yet (R79).
+  if (reviews.length === 0) {
+    return (
+      <section id="avis" aria-labelledby="reviews-title" className="flex flex-col gap-4">
+        <h2 id="reviews-title" className="text-2xl font-bold">
+          Avis clients
+        </h2>
+        <p className="rounded-card border border-line bg-surface p-5 text-ink-muted">
+          Aucun avis pour le moment.
+        </p>
+      </section>
+    )
+  }
+
   return (
     <section id="avis" aria-labelledby="reviews-title" className="flex scroll-mt-6 flex-col gap-4">
       <div className="flex flex-wrap items-end justify-between gap-3">
@@ -31,8 +45,8 @@ export function ProductReviews({ reviews, productRating }: ProductReviewsProps) 
           </h2>
           <p className="text-sm text-ink-muted">
             {formatCount(reviews.length, 'avis', 'avis')}
-            {average !== null && ` · moyenne des avis ${formatRating(average)}/5`} · note produit{' '}
-            {formatRating(productRating)}/5
+            {average !== null && ` · moyenne des avis ${formatRating(average)}`} · note produit{' '}
+            {formatRating(productRating)}
           </p>
         </div>
         <fieldset>

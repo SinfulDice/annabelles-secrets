@@ -52,7 +52,7 @@ export function ProductCard({ product, priority }: ProductCardProps) {
           <p className="text-xs text-ink-muted">
             <span aria-hidden="true">★ </span>
             <span className="sr-only">Note : </span>
-            {formatRating(product.rating)}/5
+            {formatRating(product.rating)}
           </p>
         </div>
       </div>

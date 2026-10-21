@@ -46,6 +46,18 @@ describe('R52 fields that do not apply are hidden', () => {
     expect(labels(product)).not.toContain('Niveau sonore')
   })
 
+  it('R79 hides unknown material, dimensions and weight of a created product', () => {
+    const created = makeProduct({
+      material: '',
+      weight: 0,
+      dimensions: { width: 0, height: 0, depth: 0 },
+    })
+    expect(labels(created)).not.toContain('Matériau')
+    expect(labels(created)).not.toContain('Dimensions')
+    expect(labels(created)).not.toContain('Poids')
+    expect(labels(created)).toContain('Étanchéité')
+  })
+
   it('shows the sizes only when the product has some', () => {
     expect(labels(makeProduct())).not.toContain('Tailles disponibles')
     expect(labels(makeProduct({ sizes: null }))).not.toContain('Tailles disponibles')

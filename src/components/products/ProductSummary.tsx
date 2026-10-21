@@ -40,7 +40,7 @@ export function ProductSummary({ product, reviewCount }: ProductSummaryProps) {
         <p className="mt-2 text-sm">
           <span aria-hidden="true">★ </span>
           <span className="sr-only">Note : </span>
-          <strong>{formatRating(product.rating)}/5</strong> ·{' '}
+          <strong>{formatRating(product.rating)}</strong> ·{' '}
           <a href="#avis" className="text-femme underline underline-offset-4">
             {formatCount(reviewCount, 'avis', 'avis')}
           </a>

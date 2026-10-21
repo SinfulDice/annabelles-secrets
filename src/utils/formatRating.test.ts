@@ -3,8 +3,12 @@ import { formatCount, formatRating } from './formatRating'
 
 describe('R40 card rating and R33 result count wording', () => {
   it('writes ratings with one decimal and a comma', () => {
-    expect(formatRating(4.8)).toBe('4,8')
-    expect(formatRating(4)).toBe('4,0')
+    expect(formatRating(4.8)).toBe('4,8/5')
+    expect(formatRating(4)).toBe('4,0/5')
+  })
+
+  it('R79 says « Pas encore noté » for a product without rating', () => {
+    expect(formatRating(0)).toBe('Pas encore noté')
   })
 
   it('uses the singular for 0 and 1, the plural above', () => {

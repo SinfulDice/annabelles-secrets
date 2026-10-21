@@ -40,7 +40,7 @@ export function FavoriteRow({ favorite, onRemove }: FavoriteRowProps) {
         <p className="text-sm text-ink-muted">
           {favorite.type} · <span aria-hidden="true">★ </span>
           <span className="sr-only">note </span>
-          {formatRating(favorite.rating)}/5
+          {formatRating(favorite.rating)}
         </p>
       </div>
 

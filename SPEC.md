@@ -80,6 +80,8 @@ Références : `docs/projet-react.md` (cahier des charges), `docs/PROMPT_CLAUDE_
 - R75 [V1] Échec : message avec le code HTTP, valeurs conservées, « Réessayer l'envoi ».
 - R76 [V1] Succès : confirmation + récapitulatif construit à partir de la **réponse de l'API** (id inclus), « Voir la fiche », « Créer un autre produit ».
 - R77 [V1] Le produit créé (flag `isLocal: true`) apparaît dans la boutique et sa fiche jusqu'au rechargement.
+- R78 [V1] DummyJSON renvoie toujours l'id 195 : le produit créé garde l'id de la réponse s'il est libre, sinon il prend le premier id libre au-dessus (deux produits créés n'ont jamais la même adresse). Les champs absents de la réponse (type, matériau, étanche) sont repris du formulaire. (Décision du 2026-10-21.)
+- R79 [V1] Un produit créé n'a ni note ni avis : « Pas encore noté », « Aucun avis pour le moment » ; ses caractéristiques inconnues (dimensions, poids, garantie…) ne sont pas affichées ou valent « Non renseignée ». (Décision du 2026-10-21.)
 
 ## 7. Mise en page, responsive, accessibilité
 
