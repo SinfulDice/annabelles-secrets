@@ -1,0 +1,2474 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Onde Rosée",
+      "description": "Stimulateur à ondes Onde Rosée signé Annabelle's Secrets. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Stimulateur à ondes",
+      "price": 89.0,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "stock": 3,
+      "availabilityStatus": "Low Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-F001",
+      "weight": 38,
+      "dimensions": {
+        "width": 3.1,
+        "height": 9.1,
+        "depth": 5.0
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": false,
+      "batteryLife": 60,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "stimulateur à ondes"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Onde%20Ros%C3%A9e%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Onde%20Ros%C3%A9e%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Onde%20Ros%C3%A9e%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Onde%20Ros%C3%A9e%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1654512206148-8700d46e688f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1707587683483-65eb5595b5af?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1593527236797-2ac903c159dc?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ZJX8EGDYDd4"
+        },
+        {
+          "photographer": "Andrey Matveev",
+          "page": "https://unsplash.com/photos/WydWcF2EPjc"
+        },
+        {
+          "photographer": "Womanizer Toys",
+          "page": "https://unsplash.com/photos/gmFZ0qxd_cg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sillage",
+      "description": "Vibromasseur wand Sillage signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur wand",
+      "price": 119.0,
+      "discountPercentage": 20,
+      "rating": 4.7,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-F002",
+      "weight": 95,
+      "dimensions": {
+        "width": 3.5,
+        "height": 11.3,
+        "depth": 4.4
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": false,
+      "batteryLife": 90,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur wand"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Sillage%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Sillage%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Sillage%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Sillage%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1707587683483-65eb5595b5af?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1593527236797-2ac903c159dc?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1755642754869-2c69a62dc306?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Andrey Matveev",
+          "page": "https://unsplash.com/photos/WydWcF2EPjc"
+        },
+        {
+          "photographer": "Womanizer Toys",
+          "page": "https://unsplash.com/photos/gmFZ0qxd_cg"
+        },
+        {
+          "photographer": "Myvelvettouch Official",
+          "page": "https://unsplash.com/photos/hbI9UUaNabU"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pétale Mini",
+      "description": "Vibromasseur bullet Pétale Mini signé Satine. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur bullet",
+      "price": 39.9,
+      "discountPercentage": 0,
+      "rating": 4.6,
+      "stock": 80,
+      "availabilityStatus": "In Stock",
+      "brand": "Satine",
+      "sku": "ANB-F003",
+      "weight": 240,
+      "dimensions": {
+        "width": 4.1,
+        "height": 10.1,
+        "depth": 3.3
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur bullet"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=P%C3%A9tale%20Mini%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=P%C3%A9tale%20Mini%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=P%C3%A9tale%20Mini%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=P%C3%A9tale%20Mini%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1593527236797-2ac903c159dc?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1755642754869-2c69a62dc306?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1722504932952-4d275fbf1fcf?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Womanizer Toys",
+          "page": "https://unsplash.com/photos/gmFZ0qxd_cg"
+        },
+        {
+          "photographer": "Myvelvettouch Official",
+          "page": "https://unsplash.com/photos/hbI9UUaNabU"
+        },
+        {
+          "photographer": "My Rose Toy",
+          "page": "https://unsplash.com/photos/OzI2rMrywUk"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Lune Duo",
+      "description": "Vibromasseur rabbit Lune Duo signé Annabelle's Secrets. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur rabbit",
+      "price": 99.0,
+      "discountPercentage": 18,
+      "rating": 4.6,
+      "stock": 80,
+      "availabilityStatus": "In Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-F004",
+      "weight": 60,
+      "dimensions": {
+        "width": 3.8,
+        "height": 11.3,
+        "depth": 7.0
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": false,
+      "batteryLife": 90,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur rabbit"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Lune%20Duo%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Lune%20Duo%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Lune%20Duo%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Lune%20Duo%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1755642754869-2c69a62dc306?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1722504932952-4d275fbf1fcf?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1638416606166-793c9d691c04?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Myvelvettouch Official",
+          "page": "https://unsplash.com/photos/hbI9UUaNabU"
+        },
+        {
+          "photographer": "My Rose Toy",
+          "page": "https://unsplash.com/photos/OzI2rMrywUk"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/uXt2OFSPA2s"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Perle de Soie",
+      "description": "Boules de geisha Perle de Soie signé Satine. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Boules de geisha",
+      "price": 29.9,
+      "discountPercentage": 18,
+      "rating": 4.5,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Satine",
+      "sku": "ANB-F005",
+      "weight": 120,
+      "dimensions": {
+        "width": 5.0,
+        "height": 18.8,
+        "depth": 4.8
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "boules de geisha"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Perle%20de%20Soie%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Perle%20de%20Soie%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Perle%20de%20Soie%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Perle%20de%20Soie%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1722504932952-4d275fbf1fcf?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1638416606166-793c9d691c04?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443000-91d7e6562545?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "My Rose Toy",
+          "page": "https://unsplash.com/photos/OzI2rMrywUk"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/uXt2OFSPA2s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/CSTQ08NXKOE"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Brise",
+      "description": "Stimulateur clitoridien Brise signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Stimulateur clitoridien",
+      "price": 59.0,
+      "discountPercentage": 20,
+      "rating": 4.5,
+      "stock": 52,
+      "availabilityStatus": "In Stock",
+      "brand": "Brume",
+      "sku": "ANB-F006",
+      "weight": 38,
+      "dimensions": {
+        "width": 3.8,
+        "height": 8.2,
+        "depth": 5.7
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "stimulateur clitoridien"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Brise%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Brise%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Brise%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Brise%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1638416606166-793c9d691c04?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443000-91d7e6562545?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644477547572-18f86f531192?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/uXt2OFSPA2s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/CSTQ08NXKOE"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/Tvc9z5AepWg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Satine Flex",
+      "description": "Vibromasseur point G Satine Flex signé Satine. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur point G",
+      "price": 74.9,
+      "discountPercentage": 0,
+      "rating": 4.4,
+      "stock": 24,
+      "availabilityStatus": "In Stock",
+      "brand": "Satine",
+      "sku": "ANB-F007",
+      "weight": 120,
+      "dimensions": {
+        "width": 3.0,
+        "height": 16.1,
+        "depth": 5.9
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": false,
+      "batteryLife": 45,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur point g"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Satine%20Flex%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Satine%20Flex%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Satine%20Flex%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Satine%20Flex%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443000-91d7e6562545?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644477547572-18f86f531192?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512041772-446bd165a3b3?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/CSTQ08NXKOE"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/Tvc9z5AepWg"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ck1ZlJbXrlg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Halo",
+      "description": "Vibromasseur connecté Halo signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur connecté",
+      "price": 109.0,
+      "discountPercentage": 5,
+      "rating": 4.4,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-F008",
+      "weight": 95,
+      "dimensions": {
+        "width": 4.2,
+        "height": 9.4,
+        "depth": 5.3
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur connecté"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Halo%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Halo%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Halo%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Halo%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1644477547572-18f86f531192?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512041772-446bd165a3b3?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644478056323-54e769f4556f?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/Tvc9z5AepWg"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ck1ZlJbXrlg"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/dNfRmv93ztw"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Velouté",
+      "description": "Œuf vibrant Velouté signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Œuf vibrant",
+      "price": 44.0,
+      "discountPercentage": 15,
+      "rating": 4.3,
+      "stock": 8,
+      "availabilityStatus": "Low Stock",
+      "brand": "Brume",
+      "sku": "ANB-F009",
+      "weight": 240,
+      "dimensions": {
+        "width": 6.4,
+        "height": 16.0,
+        "depth": 4.6
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "œuf vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Velout%C3%A9%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Velout%C3%A9%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Velout%C3%A9%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Velout%C3%A9%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1654512041772-446bd165a3b3?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644478056323-54e769f4556f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512206148-8700d46e688f?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ck1ZlJbXrlg"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/dNfRmv93ztw"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ZJX8EGDYDd4"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Aube",
+      "description": "Stimulateur à ondes Aube signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Stimulateur à ondes",
+      "price": 64.9,
+      "discountPercentage": 18,
+      "rating": 4.3,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-F010",
+      "weight": 240,
+      "dimensions": {
+        "width": 3.3,
+        "height": 6.9,
+        "depth": 3.1
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "stimulateur à ondes"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Aube%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Aube%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Aube%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Aube%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1644478056323-54e769f4556f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512206148-8700d46e688f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1707587683483-65eb5595b5af?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/dNfRmv93ztw"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ZJX8EGDYDd4"
+        },
+        {
+          "photographer": "Andrey Matveev",
+          "page": "https://unsplash.com/photos/WydWcF2EPjc"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Plume",
+      "description": "Vibromasseur bullet Plume signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur bullet",
+      "price": 24.9,
+      "discountPercentage": 0,
+      "rating": 4.2,
+      "stock": 80,
+      "availabilityStatus": "In Stock",
+      "brand": "Brume",
+      "sku": "ANB-F011",
+      "weight": 38,
+      "dimensions": {
+        "width": 6.3,
+        "height": 11.0,
+        "depth": 4.6
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": false,
+      "batteryLife": 45,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur bullet"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Plume%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Plume%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Plume%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Plume%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1654512206148-8700d46e688f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1707587683483-65eb5595b5af?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1593527236797-2ac903c159dc?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ZJX8EGDYDd4"
+        },
+        {
+          "photographer": "Andrey Matveev",
+          "page": "https://unsplash.com/photos/WydWcF2EPjc"
+        },
+        {
+          "photographer": "Womanizer Toys",
+          "page": "https://unsplash.com/photos/gmFZ0qxd_cg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Iris",
+      "description": "Vibromasseur rabbit Iris signé Satine. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur rabbit",
+      "price": 84.0,
+      "discountPercentage": 0,
+      "rating": 4.1,
+      "stock": 52,
+      "availabilityStatus": "In Stock",
+      "brand": "Satine",
+      "sku": "ANB-F012",
+      "weight": 95,
+      "dimensions": {
+        "width": 5.3,
+        "height": 18.2,
+        "depth": 3.3
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 45,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur rabbit"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Iris%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Iris%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Iris%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Iris%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1707587683483-65eb5595b5af?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1593527236797-2ac903c159dc?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1755642754869-2c69a62dc306?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Andrey Matveev",
+          "page": "https://unsplash.com/photos/WydWcF2EPjc"
+        },
+        {
+          "photographer": "Womanizer Toys",
+          "page": "https://unsplash.com/photos/gmFZ0qxd_cg"
+        },
+        {
+          "photographer": "Myvelvettouch Official",
+          "page": "https://unsplash.com/photos/hbI9UUaNabU"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Corail",
+      "description": "Stimulateur clitoridien Corail signé Annabelle's Secrets. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Stimulateur clitoridien",
+      "price": 54.0,
+      "discountPercentage": 0,
+      "rating": 4.1,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-F013",
+      "weight": 120,
+      "dimensions": {
+        "width": 4.3,
+        "height": 17.0,
+        "depth": 4.8
+      },
+      "material": "Silicone liquide",
+      "waterproof": false,
+      "batteryLife": 120,
+      "noiseLevel": 38,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "stimulateur clitoridien"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Corail%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Corail%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Corail%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Corail%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1593527236797-2ac903c159dc?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1755642754869-2c69a62dc306?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1722504932952-4d275fbf1fcf?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Womanizer Toys",
+          "page": "https://unsplash.com/photos/gmFZ0qxd_cg"
+        },
+        {
+          "photographer": "Myvelvettouch Official",
+          "page": "https://unsplash.com/photos/hbI9UUaNabU"
+        },
+        {
+          "photographer": "My Rose Toy",
+          "page": "https://unsplash.com/photos/OzI2rMrywUk"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Opaline",
+      "description": "Boules de geisha Opaline signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Boules de geisha",
+      "price": 34.9,
+      "discountPercentage": 10,
+      "rating": 4.0,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-F014",
+      "weight": 180,
+      "dimensions": {
+        "width": 7.6,
+        "height": 13.4,
+        "depth": 3.2
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 45,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "boules de geisha"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Opaline%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Opaline%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Opaline%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Opaline%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1755642754869-2c69a62dc306?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1722504932952-4d275fbf1fcf?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1638416606166-793c9d691c04?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Myvelvettouch Official",
+          "page": "https://unsplash.com/photos/hbI9UUaNabU"
+        },
+        {
+          "photographer": "My Rose Toy",
+          "page": "https://unsplash.com/photos/OzI2rMrywUk"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/uXt2OFSPA2s"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Rosée du Matin",
+      "description": "Vibromasseur point G Rosée du Matin signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur point G",
+      "price": 69.0,
+      "discountPercentage": 0,
+      "rating": 4.0,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Brume",
+      "sku": "ANB-F015",
+      "weight": 240,
+      "dimensions": {
+        "width": 6.6,
+        "height": 9.3,
+        "depth": 4.6
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": true,
+      "batteryLife": 90,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur point g"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ros%C3%A9e%20du%20Matin%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ros%C3%A9e%20du%20Matin%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ros%C3%A9e%20du%20Matin%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ros%C3%A9e%20du%20Matin%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1722504932952-4d275fbf1fcf?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1638416606166-793c9d691c04?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443000-91d7e6562545?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "My Rose Toy",
+          "page": "https://unsplash.com/photos/OzI2rMrywUk"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/uXt2OFSPA2s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/CSTQ08NXKOE"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Nacre",
+      "description": "Vibromasseur wand Nacre signé Satine. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Vibromasseur wand",
+      "price": 94.0,
+      "discountPercentage": 0,
+      "rating": 3.9,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Satine",
+      "sku": "ANB-F016",
+      "weight": 60,
+      "dimensions": {
+        "width": 4.8,
+        "height": 8.2,
+        "depth": 6.3
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": false,
+      "batteryLife": 45,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "vibromasseur wand"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Nacre%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Nacre%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Nacre%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Nacre%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1638416606166-793c9d691c04?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443000-91d7e6562545?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644477547572-18f86f531192?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/uXt2OFSPA2s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/CSTQ08NXKOE"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/Tvc9z5AepWg"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Ondine",
+      "description": "Œuf vibrant Ondine signé Annabelle's Secrets. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Œuf vibrant",
+      "price": 49.9,
+      "discountPercentage": 0,
+      "rating": 3.9,
+      "stock": 3,
+      "availabilityStatus": "Low Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-F017",
+      "weight": 240,
+      "dimensions": {
+        "width": 6.2,
+        "height": 9.7,
+        "depth": 5.0
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "œuf vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ondine%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ondine%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ondine%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Ondine%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443000-91d7e6562545?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644477547572-18f86f531192?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512041772-446bd165a3b3?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/CSTQ08NXKOE"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/Tvc9z5AepWg"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ck1ZlJbXrlg"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Camélia",
+      "description": "Stimulateur à ondes Camélia signé Satine. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Stimulateur à ondes",
+      "price": 79.0,
+      "discountPercentage": 0,
+      "rating": 3.8,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Satine",
+      "sku": "ANB-F018",
+      "weight": 38,
+      "dimensions": {
+        "width": 3.4,
+        "height": 18.4,
+        "depth": 6.6
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "stimulateur à ondes"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Cam%C3%A9lia%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Cam%C3%A9lia%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Cam%C3%A9lia%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Cam%C3%A9lia%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1644477547572-18f86f531192?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512041772-446bd165a3b3?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644478056323-54e769f4556f?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/Tvc9z5AepWg"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ck1ZlJbXrlg"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/dNfRmv93ztw"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Écrin Femme",
+      "description": "Coffret découverte Écrin Femme signé Annabelle's Secrets. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Coffret découverte",
+      "price": 129.0,
+      "discountPercentage": 20,
+      "rating": 4.7,
+      "stock": 8,
+      "availabilityStatus": "Low Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-F019",
+      "weight": 180,
+      "dimensions": {
+        "width": 7.4,
+        "height": 11.7,
+        "depth": 5.5
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": false,
+      "batteryLife": 60,
+      "noiseLevel": 38,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "coffret découverte"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=%C3%89crin%20Femme%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=%C3%89crin%20Femme%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=%C3%89crin%20Femme%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=%C3%89crin%20Femme%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1654512041772-446bd165a3b3?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644478056323-54e769f4556f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512206148-8700d46e688f?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ck1ZlJbXrlg"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/dNfRmv93ztw"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ZJX8EGDYDd4"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Soie Liquide",
+      "description": "Lubrifiant Soie Liquide signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "femme",
+      "type": "Lubrifiant",
+      "price": 14.9,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 8,
+      "availabilityStatus": "Low Stock",
+      "brand": "Brume",
+      "sku": "ANB-F020",
+      "weight": 250,
+      "dimensions": {
+        "width": 7.4,
+        "height": 18.0,
+        "depth": 3.9
+      },
+      "material": "Base aqueuse, sans parabènes",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "femme",
+        "lubrifiant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Soie%20Liquide%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Soie%20Liquide%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Soie%20Liquide%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/F3E3E8/8A2846?text=Soie%20Liquide%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1644478056323-54e769f4556f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512206148-8700d46e688f?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1707587683483-65eb5595b5af?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/dNfRmv93ztw"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/ZJX8EGDYDd4"
+        },
+        {
+          "photographer": "Andrey Matveev",
+          "page": "https://unsplash.com/photos/WydWcF2EPjc"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Nocturne Pro",
+      "description": "Masturbateur Nocturne Pro signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur",
+      "price": 69.0,
+      "discountPercentage": 20,
+      "rating": 4.5,
+      "stock": 80,
+      "availabilityStatus": "In Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H021",
+      "weight": 38,
+      "dimensions": {
+        "width": 7.8,
+        "height": 9.9,
+        "depth": 5.6
+      },
+      "material": "Silicone liquide",
+      "waterproof": false,
+      "batteryLife": 90,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Nocturne%20Pro%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Nocturne%20Pro%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Nocturne%20Pro%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Nocturne%20Pro%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Orbite",
+      "description": "Anneau vibrant Orbite signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Anneau vibrant",
+      "price": 34.9,
+      "discountPercentage": 18,
+      "rating": 4.6,
+      "stock": 3,
+      "availabilityStatus": "Low Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H022",
+      "weight": 95,
+      "dimensions": {
+        "width": 5.2,
+        "height": 19.8,
+        "depth": 3.5
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": true,
+      "batteryLife": 45,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "anneau vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Orbite%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Orbite%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Orbite%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Orbite%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Axe",
+      "description": "Stimulateur prostatique Axe signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Stimulateur prostatique",
+      "price": 89.0,
+      "discountPercentage": 18,
+      "rating": 4.4,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H023",
+      "weight": 95,
+      "dimensions": {
+        "width": 5.5,
+        "height": 15.3,
+        "depth": 4.3
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": false,
+      "batteryLife": 60,
+      "noiseLevel": 38,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "stimulateur prostatique"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Axe%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Axe%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Axe%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Axe%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Ressac",
+      "description": "Masturbateur chauffant Ressac signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur chauffant",
+      "price": 79.9,
+      "discountPercentage": 0,
+      "rating": 4.3,
+      "stock": 52,
+      "availabilityStatus": "In Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H024",
+      "weight": 120,
+      "dimensions": {
+        "width": 6.9,
+        "height": 14.5,
+        "depth": 4.3
+      },
+      "material": "Silicone liquide",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur chauffant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ressac%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ressac%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ressac%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ressac%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Duo Orbite",
+      "description": "Anneau double Duo Orbite signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Anneau double",
+      "price": 29.9,
+      "discountPercentage": 20,
+      "rating": 4.2,
+      "stock": 8,
+      "availabilityStatus": "Low Stock",
+      "brand": "Brume",
+      "sku": "ANB-H025",
+      "weight": 60,
+      "dimensions": {
+        "width": 3.7,
+        "height": 6.6,
+        "depth": 6.9
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 38,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "anneau double"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Duo%20Orbite%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Duo%20Orbite%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Duo%20Orbite%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Duo%20Orbite%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644479976401-7ab81bc06f5b?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/K5I89cBdcvM"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Pilier",
+      "description": "Plug vibrant Pilier signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Plug vibrant",
+      "price": 49.0,
+      "discountPercentage": 20,
+      "rating": 4.1,
+      "stock": 52,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H026",
+      "weight": 240,
+      "dimensions": {
+        "width": 5.6,
+        "height": 6.7,
+        "depth": 4.0
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "plug vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Pilier%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Pilier%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Pilier%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Pilier%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644479976401-7ab81bc06f5b?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443002-c84f673d62d9?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/K5I89cBdcvM"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Ii43JmypSLY"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Brume Compact",
+      "description": "Masturbateur Brume Compact signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur",
+      "price": 24.9,
+      "discountPercentage": 20,
+      "rating": 4.0,
+      "stock": 40,
+      "availabilityStatus": "In Stock",
+      "brand": "Brume",
+      "sku": "ANB-H027",
+      "weight": 240,
+      "dimensions": {
+        "width": 4.4,
+        "height": 16.9,
+        "depth": 4.9
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Brume%20Compact%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Brume%20Compact%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Brume%20Compact%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Brume%20Compact%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1644479976401-7ab81bc06f5b?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443002-c84f673d62d9?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/K5I89cBdcvM"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Ii43JmypSLY"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Atelier Nox Coffret",
+      "description": "Coffret découverte Atelier Nox Coffret signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Coffret découverte",
+      "price": 119.0,
+      "discountPercentage": 18,
+      "rating": 4.0,
+      "stock": 24,
+      "availabilityStatus": "In Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H028",
+      "weight": 60,
+      "dimensions": {
+        "width": 6.5,
+        "height": 6.9,
+        "depth": 4.6
+      },
+      "material": "Silicone liquide",
+      "waterproof": false,
+      "batteryLife": 120,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "coffret découverte"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Atelier%20Nox%20Coffret%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Atelier%20Nox%20Coffret%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Atelier%20Nox%20Coffret%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Atelier%20Nox%20Coffret%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443002-c84f673d62d9?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Ii43JmypSLY"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Météore",
+      "description": "Anneau vibrant Météore signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Anneau vibrant",
+      "price": 39.9,
+      "discountPercentage": 20,
+      "rating": 4.4,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H029",
+      "weight": 120,
+      "dimensions": {
+        "width": 7.3,
+        "height": 19.3,
+        "depth": 4.7
+      },
+      "material": "Silicone médical et ABS",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "anneau vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=M%C3%A9t%C3%A9ore%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=M%C3%A9t%C3%A9ore%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=M%C3%A9t%C3%A9ore%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=M%C3%A9t%C3%A9ore%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Abysse",
+      "description": "Masturbateur Abysse signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur",
+      "price": 99.0,
+      "discountPercentage": 0,
+      "rating": 4.6,
+      "stock": 52,
+      "availabilityStatus": "In Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H030",
+      "weight": 120,
+      "dimensions": {
+        "width": 6.0,
+        "height": 15.3,
+        "depth": 3.3
+      },
+      "material": "Silicone liquide",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 38,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Abysse%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Abysse%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Abysse%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Abysse%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Vortex",
+      "description": "Masturbateur rotatif Vortex signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur rotatif",
+      "price": 129.0,
+      "discountPercentage": 20,
+      "rating": 4.5,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H031",
+      "weight": 120,
+      "dimensions": {
+        "width": 4.3,
+        "height": 7.1,
+        "depth": 3.1
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur rotatif"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Vortex%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Vortex%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Vortex%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Vortex%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Ancre",
+      "description": "Stimulateur prostatique Ancre signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Stimulateur prostatique",
+      "price": 74.0,
+      "discountPercentage": 15,
+      "rating": 4.2,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H032",
+      "weight": 60,
+      "dimensions": {
+        "width": 5.3,
+        "height": 9.6,
+        "depth": 4.5
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 90,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "stimulateur prostatique"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ancre%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ancre%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ancre%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Ancre%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Éclipse",
+      "description": "Plug vibrant Éclipse signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Plug vibrant",
+      "price": 44.9,
+      "discountPercentage": 20,
+      "rating": 4.0,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Brume",
+      "sku": "ANB-H033",
+      "weight": 240,
+      "dimensions": {
+        "width": 6.0,
+        "height": 7.7,
+        "depth": 6.9
+      },
+      "material": "Silicone de grade médical",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "plug vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=%C3%89clipse%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=%C3%89clipse%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=%C3%89clipse%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=%C3%89clipse%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644479976401-7ab81bc06f5b?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/K5I89cBdcvM"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Cap Nord",
+      "description": "Anneau non vibrant Cap Nord signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Anneau non vibrant",
+      "price": 12.9,
+      "discountPercentage": 18,
+      "rating": 3.9,
+      "stock": 3,
+      "availabilityStatus": "Low Stock",
+      "brand": "Brume",
+      "sku": "ANB-H034",
+      "weight": 60,
+      "dimensions": {
+        "width": 5.2,
+        "height": 16.3,
+        "depth": 6.9
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": false,
+      "batteryLife": 120,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "anneau non vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Cap%20Nord%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Cap%20Nord%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Cap%20Nord%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Cap%20Nord%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1644479976401-7ab81bc06f5b?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443002-c84f673d62d9?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        },
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/K5I89cBdcvM"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Ii43JmypSLY"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Tempête",
+      "description": "Masturbateur chauffant Tempête signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur chauffant",
+      "price": 89.9,
+      "discountPercentage": 15,
+      "rating": 4.3,
+      "stock": 52,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H035",
+      "weight": 180,
+      "dimensions": {
+        "width": 6.3,
+        "height": 10.7,
+        "depth": 5.0
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": true,
+      "batteryLife": 120,
+      "noiseLevel": 38,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur chauffant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Temp%C3%AAte%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Temp%C3%AAte%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Temp%C3%AAte%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Temp%C3%AAte%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1644479976401-7ab81bc06f5b?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443002-c84f673d62d9?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Lovense Toys",
+          "page": "https://unsplash.com/photos/K5I89cBdcvM"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Ii43JmypSLY"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Graphite",
+      "description": "Stimulateur prostatique Graphite signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Stimulateur prostatique",
+      "price": 109.0,
+      "discountPercentage": 0,
+      "rating": 4.7,
+      "stock": 40,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H036",
+      "weight": 240,
+      "dimensions": {
+        "width": 5.0,
+        "height": 13.8,
+        "depth": 4.0
+      },
+      "material": "Silicone liquide",
+      "waterproof": false,
+      "batteryLife": 120,
+      "noiseLevel": 45,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "stimulateur prostatique"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Graphite%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Graphite%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Graphite%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Graphite%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443002-c84f673d62d9?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Ii43JmypSLY"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Récif",
+      "description": "Masturbateur Récif signé Brume. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Masturbateur",
+      "price": 34.9,
+      "discountPercentage": 15,
+      "rating": 3.8,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Brume",
+      "sku": "ANB-H037",
+      "weight": 180,
+      "dimensions": {
+        "width": 4.7,
+        "height": 20.0,
+        "depth": 5.2
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": false,
+      "batteryLife": 120,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "masturbateur"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=R%C3%A9cif%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=R%C3%A9cif%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=R%C3%A9cif%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=R%C3%A9cif%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550443007-c6fd5cdac990?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/Id_jzYP7h6s"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Satellite",
+      "description": "Anneau vibrant Satellite signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Anneau vibrant",
+      "price": 27.9,
+      "discountPercentage": 0,
+      "rating": 4.1,
+      "stock": 24,
+      "availabilityStatus": "In Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H038",
+      "weight": 240,
+      "dimensions": {
+        "width": 5.4,
+        "height": 16.1,
+        "depth": 6.9
+      },
+      "material": "TPE doux sans phtalates",
+      "waterproof": true,
+      "batteryLife": 60,
+      "noiseLevel": 40,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "anneau vibrant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Satellite%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Satellite%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Satellite%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Satellite%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1648550442942-75da54262ccb?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/pi3HvaHRJo4"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Gel Nox",
+      "description": "Lubrifiant Gel Nox signé Atelier Nox. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Lubrifiant",
+      "price": 13.9,
+      "discountPercentage": 5,
+      "rating": 4.5,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Atelier Nox",
+      "sku": "ANB-H039",
+      "weight": 250,
+      "dimensions": {
+        "width": 6.5,
+        "height": 7.8,
+        "depth": 6.5
+      },
+      "material": "Base aqueuse, sans parabènes",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "lubrifiant"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Gel%20Nox%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Gel%20Nox%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Gel%20Nox%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Gel%20Nox%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1651027135960-4af255a2e7c2?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/TfCFzMaYaok"
+        },
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Expédition",
+      "description": "Coffret découverte Expédition signé Lumen. Pensé pour le confort et la discrétion, avec des matériaux sûrs pour le corps et un design soigné.",
+      "category": "homme",
+      "type": "Coffret découverte",
+      "price": 99.0,
+      "discountPercentage": 0,
+      "rating": 4.2,
+      "stock": 80,
+      "availabilityStatus": "In Stock",
+      "brand": "Lumen",
+      "sku": "ANB-H040",
+      "weight": 95,
+      "dimensions": {
+        "width": 7.7,
+        "height": 12.7,
+        "depth": 6.3
+      },
+      "material": "Silicone liquide",
+      "waterproof": false,
+      "batteryLife": 120,
+      "noiseLevel": 35,
+      "warrantyInformation": "Garantie 2 ans",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour impossible si l'emballage hygiénique est ouvert",
+      "tags": [
+        "homme",
+        "coffret découverte"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Exp%C3%A9dition%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Exp%C3%A9dition%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Exp%C3%A9dition%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/E1E9F2/24476B?text=Exp%C3%A9dition%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://images.unsplash.com/photo-1639466665016-6e3d904809d8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1654512374092-693a871005e8?w=800&h=800&fit=crop&auto=format&q=70",
+        "https://images.unsplash.com/photo-1648782360078-52084f329945?w=800&h=800&fit=crop&auto=format&q=70"
+      ],
+      "nsfwImageCredits": [
+        {
+          "photographer": "Tracy's Dog",
+          "page": "https://unsplash.com/photos/_43ENzvNBYs"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/bW7y5PhWcuQ"
+        },
+        {
+          "photographer": "IFONNX Toys",
+          "page": "https://unsplash.com/photos/BBe9HSHIEiw"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "T-shirt Logo",
+      "description": "T-shirt coton bio aux couleurs d'Annabelle's Secrets. Produit dérivé officiel de la maison.",
+      "category": "goodies",
+      "type": "T-shirt coton bio",
+      "price": 24.9,
+      "discountPercentage": 20,
+      "rating": 4.7,
+      "stock": 0,
+      "availabilityStatus": "Out of Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-G041",
+      "weight": 180,
+      "dimensions": {
+        "width": 4.9,
+        "height": 18.7,
+        "depth": 4.2
+      },
+      "material": "Coton biologique 180 g/m²",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour sous 30 jours",
+      "tags": [
+        "goodies",
+        "t-shirt coton bio"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=T-shirt%20Logo%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImageCredits": [],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Lot de 6 stickers",
+      "description": "Stickers vinyle aux couleurs d'Annabelle's Secrets. Produit dérivé officiel de la maison.",
+      "category": "goodies",
+      "type": "Stickers vinyle",
+      "price": 6.9,
+      "discountPercentage": 0,
+      "rating": 4.8,
+      "stock": 15,
+      "availabilityStatus": "In Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-G042",
+      "weight": 120,
+      "dimensions": {
+        "width": 5.3,
+        "height": 14.3,
+        "depth": 4.2
+      },
+      "material": "Vinyle mat résistant à l'eau",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour sous 30 jours",
+      "tags": [
+        "goodies",
+        "stickers vinyle"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Lot%20de%206%20stickers%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImageCredits": [],
+      "sizes": null
+    },
+    {
+      "id": 43,
+      "title": "Mug Secret bien gardé",
+      "description": "Mug céramique aux couleurs d'Annabelle's Secrets. Produit dérivé officiel de la maison.",
+      "category": "goodies",
+      "type": "Mug céramique",
+      "price": 14.9,
+      "discountPercentage": 5,
+      "rating": 4.6,
+      "stock": 3,
+      "availabilityStatus": "Low Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-G043",
+      "weight": 60,
+      "dimensions": {
+        "width": 3.4,
+        "height": 8.3,
+        "depth": 4.2
+      },
+      "material": "Céramique, 330 ml, lave-vaisselle",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour sous 30 jours",
+      "tags": [
+        "goodies",
+        "mug céramique"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Mug%20Secret%20bien%20gard%C3%A9%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImageCredits": [],
+      "sizes": null
+    },
+    {
+      "id": 44,
+      "title": "Tote bag",
+      "description": "Sac en toile aux couleurs d'Annabelle's Secrets. Produit dérivé officiel de la maison.",
+      "category": "goodies",
+      "type": "Sac en toile",
+      "price": 19.9,
+      "discountPercentage": 18,
+      "rating": 4.5,
+      "stock": 24,
+      "availabilityStatus": "In Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-G044",
+      "weight": 95,
+      "dimensions": {
+        "width": 6.0,
+        "height": 6.4,
+        "depth": 3.9
+      },
+      "material": "Toile de coton épaisse",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour sous 30 jours",
+      "tags": [
+        "goodies",
+        "sac en toile"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Tote%20bag%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImageCredits": [],
+      "sizes": null
+    },
+    {
+      "id": 45,
+      "title": "Casquette brodée",
+      "description": "Casquette aux couleurs d'Annabelle's Secrets. Produit dérivé officiel de la maison.",
+      "category": "goodies",
+      "type": "Casquette",
+      "price": 22.9,
+      "discountPercentage": 10,
+      "rating": 4.4,
+      "stock": 8,
+      "availabilityStatus": "Low Stock",
+      "brand": "Annabelle's Secrets",
+      "sku": "ANB-G045",
+      "weight": 95,
+      "dimensions": {
+        "width": 4.6,
+        "height": 7.5,
+        "depth": 3.6
+      },
+      "material": "Sergé de coton, logo brodé",
+      "waterproof": false,
+      "batteryLife": null,
+      "noiseLevel": null,
+      "warrantyInformation": "Pas de garantie",
+      "shippingInformation": "Expédié sous 48 h en colis neutre",
+      "returnPolicy": "Retour sous 30 jours",
+      "tags": [
+        "goodies",
+        "casquette"
+      ],
+      "thumbnail": "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%201&fontSize=36",
+      "images": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImages": [
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%201&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%202&fontSize=36",
+        "https://dummyjson.com/image/600x600/EDE6DC/5C4A38?text=Casquette%20brod%C3%A9e%20%E2%80%93%20vue%203&fontSize=36"
+      ],
+      "nsfwImageCredits": [],
+      "sizes": [
+        "Taille unique"
+      ]
+    }
+  ],
+  "total": 45,
+  "skip": 0,
+  "limit": 45
+}

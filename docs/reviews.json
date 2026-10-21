@@ -1,0 +1,5005 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. Il est vraiment silencieux, même à pleine puissance. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Nadia V.",
+      "date": "2026-08-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 2,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Ça fait le travail, et bien. La notice est un peu courte. Un peu bruyant au niveau maximum, mais rien de grave. Je recommande quand même.",
+      "reviewerName": "Camille S.",
+      "date": "2026-06-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 3,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le colis était totalement neutre, ma coloc n'a rien vu. Je rachèterai sans hésiter.",
+      "reviewerName": "Lucie L.",
+      "date": "2026-02-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 4,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Franchement, je ne m'attendais pas à ça. Étanche pour de vrai, testé dans le bain. La prise en main est intuitive, les boutons tombent sous les doigts. Mon nouveau meilleur ami.",
+      "reviewerName": "Noah R.",
+      "date": "2026-07-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 5,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La notice est un peu courte. Livraison rapide et discrète en plus.",
+      "reviewerName": "Karim N.",
+      "date": "2026-09-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 6,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bonne qualité pour le prix. La couleur est un peu différente de la photo. Livraison rapide et discrète en plus.",
+      "reviewerName": "Nadia H.",
+      "date": "2026-03-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 7,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Déception pour ce prix-là. Beaucoup trop bruyant. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Sofia E.",
+      "date": "2026-08-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 8,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Reçu en deux jours, testé le soir même. Il se nettoie en deux secondes à l'eau tiède. Je rachèterai sans hésiter.",
+      "reviewerName": "Bastien N.",
+      "date": "2026-05-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 9,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. L'autonomie est correcte, sans plus. Une étoile de moins pour le détail.",
+      "reviewerName": "Arthur A.",
+      "date": "2026-01-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 10,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis mitigé après quelques essais. Le moteur manque de puissance. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Lina S.",
+      "date": "2026-08-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 11,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Ça fait le travail, et bien. Un peu bruyant au niveau maximum, mais rien de grave. Bon rapport qualité-prix.",
+      "reviewerName": "Nathan R.",
+      "date": "2026-09-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 12,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Franchement, je ne m'attendais pas à ça. Il se nettoie en deux secondes à l'eau tiède. Mon nouveau meilleur ami.",
+      "reviewerName": "Karim M.",
+      "date": "2026-02-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 13,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. Un peu bruyant au niveau maximum, mais rien de grave. La couleur est un peu différente de la photo. Aucun regret de l'avoir pris.",
+      "reviewerName": "Océane C.",
+      "date": "2026-10-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 14,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. La taille est idéale, ni trop ni pas assez. Mon nouveau meilleur ami.",
+      "reviewerName": "Lucas A.",
+      "date": "2026-06-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 15,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Il ne tient pas la charge. Passez votre chemin.",
+      "reviewerName": "Océane H.",
+      "date": "2026-08-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 16,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. Le moteur manque de puissance. À essayer en promo.",
+      "reviewerName": "Romane F.",
+      "date": "2026-03-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 17,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Produit correct, sans plus. Les boutons sont peu pratiques. La matière est un peu rigide à mon goût. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Camille D.",
+      "date": "2026-07-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 18,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le silicone est d'une douceur incroyable. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Clara K.",
+      "date": "2026-08-11",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 19,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit, quelques petits détails à revoir. J'aurais aimé une pochette de rangement fournie. Livraison rapide et discrète en plus.",
+      "reviewerName": "Louis P.",
+      "date": "2026-10-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 20,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Emma F.",
+      "date": "2026-01-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 21,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Reçu en deux jours, testé le soir même. La recharge magnétique est hyper pratique. Il se nettoie en deux secondes à l'eau tiède. Mon nouveau meilleur ami.",
+      "reviewerName": "Manon T.",
+      "date": "2026-04-26",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 22,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. L'autonomie tient largement plusieurs séances. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Sarah N.",
+      "date": "2026-05-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 23,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Les différents modes sont bien pensés, on trouve vite son bonheur. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Maxime S.",
+      "date": "2026-08-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 24,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bon produit, quelques petits détails à revoir. La notice est un peu courte. Une étoile de moins pour le détail.",
+      "reviewerName": "Sarah R.",
+      "date": "2026-06-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 25,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Ni bien ni mal",
+      "comment": "Produit correct, sans plus. Le bruit est vraiment présent. La forme ne me convient pas parfaitement. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Kevin V.",
+      "date": "2026-04-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 26,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Reçu en deux jours, testé le soir même. Étanche pour de vrai, testé dans le bain. Je vais en offrir à mes amies.",
+      "reviewerName": "Nadia J.",
+      "date": "2026-09-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 27,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Franchement, je ne m'attendais pas à ça. Les différents modes sont bien pensés, on trouve vite son bonheur. L'autonomie tient largement plusieurs séances. Mon nouveau meilleur ami.",
+      "reviewerName": "Amandine M.",
+      "date": "2026-03-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 28,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Ça fait le travail, et bien. La notice est un peu courte. J'aurais aimé une pochette de rangement fournie. Une étoile de moins pour le détail.",
+      "reviewerName": "Lina C.",
+      "date": "2026-01-14",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 29,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Vraiment pas satisfaisant. Il ne s'allume plus après trois utilisations. Il ne tient pas la charge. Je demande un échange.",
+      "reviewerName": "Raphaël D.",
+      "date": "2026-02-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 30,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Il se nettoie en deux secondes à l'eau tiède. Le silicone est d'une douceur incroyable. Cinq étoiles méritées.",
+      "reviewerName": "Elsa R.",
+      "date": "2026-07-22",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 31,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. Le moteur manque de puissance. La forme ne me convient pas parfaitement. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Thomas P.",
+      "date": "2026-01-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 32,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Antoine A.",
+      "date": "2026-09-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 33,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Acheté sur un coup de tête, aucun regret. Il est vraiment silencieux, même à pleine puissance. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Julie B.",
+      "date": "2026-03-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 34,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Ni bien ni mal",
+      "comment": "Avis partagé. La forme ne me convient pas parfaitement. Le service client a été sympa au moins.",
+      "reviewerName": "Manon M.",
+      "date": "2026-07-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 35,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Vraiment pas satisfaisant. Le bouton s'est cassé tout de suite. Il ne s'allume plus après trois utilisations. Passez votre chemin.",
+      "reviewerName": "Romane V.",
+      "date": "2026-09-13",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 36,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Le silicone est d'une douceur incroyable. La prise en main est intuitive, les boutons tombent sous les doigts. Je rachèterai sans hésiter.",
+      "reviewerName": "Lina L.",
+      "date": "2026-03-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 37,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La taille est idéale, ni trop ni pas assez. Cinq étoiles méritées.",
+      "reviewerName": "Agathe T.",
+      "date": "2026-06-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 38,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La recharge magnétique est hyper pratique. Merci Annabelle !",
+      "reviewerName": "Kevin T.",
+      "date": "2026-03-24",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 39,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bon produit, quelques petits détails à revoir. Le silicone attire un peu la poussière. Livraison rapide et discrète en plus.",
+      "reviewerName": "Adam G.",
+      "date": "2026-06-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 40,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bonne qualité pour le prix. La couleur est un peu différente de la photo. Bon rapport qualité-prix.",
+      "reviewerName": "Chloé P.",
+      "date": "2026-03-16",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 41,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Globalement un très bon achat. L'autonomie est correcte, sans plus. Une étoile de moins pour le détail.",
+      "reviewerName": "Raphaël M.",
+      "date": "2026-09-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 42,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Bof",
+      "comment": "Déception pour ce prix-là. Beaucoup trop bruyant. Dommage.",
+      "reviewerName": "Antoine K.",
+      "date": "2026-10-02",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 43,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bonne qualité pour le prix. J'aurais aimé une pochette de rangement fournie. Je recommande quand même.",
+      "reviewerName": "Lucas N.",
+      "date": "2026-06-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 44,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Acheté sur un coup de tête, aucun regret. La recharge magnétique est hyper pratique. Cinq étoiles méritées.",
+      "reviewerName": "Océane K.",
+      "date": "2026-06-05",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 45,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le silicone est d'une douceur incroyable. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Théo M.",
+      "date": "2026-09-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 46,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. L'autonomie tient largement plusieurs séances. Merci Annabelle !",
+      "reviewerName": "Laura A.",
+      "date": "2026-06-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 47,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Étanche pour de vrai, testé dans le bain. Je vais en offrir à mes amies.",
+      "reviewerName": "Nathan L.",
+      "date": "2026-08-04",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 48,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Déception pour ce prix-là. Les vibrations sont trop faibles. La taille ne correspond pas à la description. Dommage.",
+      "reviewerName": "Sofia S.",
+      "date": "2026-02-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 49,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il est vraiment silencieux, même à pleine puissance. Il se nettoie en deux secondes à l'eau tiède. Cinq étoiles méritées.",
+      "reviewerName": "Amandine H.",
+      "date": "2026-03-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 50,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. La couleur est un peu différente de la photo. Le câble de recharge est un peu court. Une étoile de moins pour le détail.",
+      "reviewerName": "Enzo H.",
+      "date": "2026-06-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 51,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bon produit, quelques petits détails à revoir. L'autonomie est correcte, sans plus. Une étoile de moins pour le détail.",
+      "reviewerName": "Victor E.",
+      "date": "2026-07-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 52,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Acheté sur un coup de tête, aucun regret. Il se nettoie en deux secondes à l'eau tiède. La prise en main est intuitive, les boutons tombent sous les doigts. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Jade L.",
+      "date": "2026-03-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 53,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Il se nettoie en deux secondes à l'eau tiède. Les différents modes sont bien pensés, on trouve vite son bonheur. Merci Annabelle !",
+      "reviewerName": "Kevin P.",
+      "date": "2026-06-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 54,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le câble de recharge est un peu court. Bon rapport qualité-prix.",
+      "reviewerName": "Thomas N.",
+      "date": "2026-03-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 55,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Je n'ai pas accroché. Les vibrations sont trop faibles. Le chargeur a lâché au bout d'une semaine. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Camille B.",
+      "date": "2026-04-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 56,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. La recharge magnétique est hyper pratique. Il se nettoie en deux secondes à l'eau tiède. Cinq étoiles méritées.",
+      "reviewerName": "Sarah V.",
+      "date": "2026-04-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 57,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Acheté sur un coup de tête, aucun regret. La recharge magnétique est hyper pratique. Il se nettoie en deux secondes à l'eau tiède. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Samir K.",
+      "date": "2026-02-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 58,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Globalement un très bon achat. J'aurais aimé une pochette de rangement fournie. Je recommande quand même.",
+      "reviewerName": "Pauline B.",
+      "date": "2026-03-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 59,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Reçu en deux jours, testé le soir même. Il se nettoie en deux secondes à l'eau tiède. Mon nouveau meilleur ami.",
+      "reviewerName": "Adam M.",
+      "date": "2026-06-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 60,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Globalement un très bon achat. Les premiers modes sont doux, les derniers vraiment puissants. Aucun regret de l'avoir pris.",
+      "reviewerName": "Inès S.",
+      "date": "2026-06-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 61,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Les premiers modes sont doux, les derniers vraiment puissants. La couleur est un peu différente de la photo. Bon rapport qualité-prix.",
+      "reviewerName": "Antoine B.",
+      "date": "2026-07-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 62,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Déception pour ce prix-là. La taille ne correspond pas à la description. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Sofia C.",
+      "date": "2026-09-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 63,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit, quelques petits détails à revoir. Le silicone attire un peu la poussière. J'aurais aimé une pochette de rangement fournie. Je recommande quand même.",
+      "reviewerName": "Mathis J.",
+      "date": "2026-09-17",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 64,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis partagé. Le moteur manque de puissance. L'autonomie est un peu juste. Le service client a été sympa au moins.",
+      "reviewerName": "Louis P.",
+      "date": "2026-09-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 65,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Les premiers modes sont doux, les derniers vraiment puissants. L'autonomie est correcte, sans plus. Une étoile de moins pour le détail.",
+      "reviewerName": "Kevin L.",
+      "date": "2026-06-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 66,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Produit correct, sans plus. L'autonomie est un peu juste. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Manon B.",
+      "date": "2026-01-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 67,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. Le colis était totalement neutre, ma coloc n'a rien vu. Je rachèterai sans hésiter.",
+      "reviewerName": "Mathis B.",
+      "date": "2026-03-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 68,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis partagé. Le moteur manque de puissance. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Laura M.",
+      "date": "2026-09-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 69,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Déception",
+      "comment": "Déception pour ce prix-là. Les vibrations sont trop faibles. La batterie se vide trop vite. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Sofia A.",
+      "date": "2026-01-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 70,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Déception",
+      "comment": "Je n'ai pas accroché. Les vibrations sont trop faibles. Dommage.",
+      "reviewerName": "Laura G.",
+      "date": "2026-02-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 71,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Acheté sur un coup de tête, aucun regret. L'autonomie tient largement plusieurs séances. Je vais en offrir à mes amies.",
+      "reviewerName": "Louis M.",
+      "date": "2026-03-18",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 72,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Ça fait le travail, et bien. La couleur est un peu différente de la photo. Une étoile de moins pour le détail.",
+      "reviewerName": "Agathe R.",
+      "date": "2026-09-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 73,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il est vraiment silencieux, même à pleine puissance. Merci Annabelle !",
+      "reviewerName": "Samir F.",
+      "date": "2026-02-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 74,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bonne qualité pour le prix. L'autonomie est correcte, sans plus. Un peu bruyant au niveau maximum, mais rien de grave. Une étoile de moins pour le détail.",
+      "reviewerName": "Zoé M.",
+      "date": "2026-07-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 75,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le silicone attire un peu la poussière. Une étoile de moins pour le détail.",
+      "reviewerName": "Lucas V.",
+      "date": "2026-04-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 76,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. Le bruit est vraiment présent. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Enzo R.",
+      "date": "2026-06-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 77,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Ça fait le travail, et bien. La notice est un peu courte. Bon rapport qualité-prix.",
+      "reviewerName": "Sarah B.",
+      "date": "2026-02-17",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 78,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La couleur est un peu différente de la photo. Les premiers modes sont doux, les derniers vraiment puissants. Livraison rapide et discrète en plus.",
+      "reviewerName": "Lucas L.",
+      "date": "2026-03-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 79,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Franchement, je ne m'attendais pas à ça. La prise en main est intuitive, les boutons tombent sous les doigts. Le silicone est d'une douceur incroyable. Mon nouveau meilleur ami.",
+      "reviewerName": "Amandine T.",
+      "date": "2026-02-24",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 80,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Samir R.",
+      "date": "2026-04-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 81,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Il se nettoie en deux secondes à l'eau tiède. La recharge magnétique est hyper pratique. Je vais en offrir à mes amies.",
+      "reviewerName": "Emma D.",
+      "date": "2026-10-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 82,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bon produit, quelques petits détails à revoir. La couleur est un peu différente de la photo. Aucun regret de l'avoir pris.",
+      "reviewerName": "Maxime R.",
+      "date": "2026-03-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 83,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bonne qualité pour le prix. L'autonomie est correcte, sans plus. La couleur est un peu différente de la photo. Je recommande quand même.",
+      "reviewerName": "Elsa T.",
+      "date": "2026-03-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 84,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bonne qualité pour le prix. La notice est un peu courte. Une étoile de moins pour le détail.",
+      "reviewerName": "Yanis D.",
+      "date": "2026-02-26",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 85,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bon produit, quelques petits détails à revoir. Le câble de recharge est un peu court. Je recommande quand même.",
+      "reviewerName": "Amandine F.",
+      "date": "2026-09-09",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 86,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Reçu en deux jours, testé le soir même. Le silicone est d'une douceur incroyable. La recharge magnétique est hyper pratique. Mon nouveau meilleur ami.",
+      "reviewerName": "Margaux V.",
+      "date": "2026-01-12",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 87,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Produit correct, sans plus. Le moteur manque de puissance. Le bruit est vraiment présent. Le service client a été sympa au moins.",
+      "reviewerName": "Zoé C.",
+      "date": "2026-03-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 88,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Étanche pour de vrai, testé dans le bain. Le silicone est d'une douceur incroyable. Cinq étoiles méritées.",
+      "reviewerName": "Alice V.",
+      "date": "2026-03-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 89,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Globalement un très bon achat. La couleur est un peu différente de la photo. Livraison rapide et discrète en plus.",
+      "reviewerName": "Jade V.",
+      "date": "2026-07-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 90,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Franchement, je ne m'attendais pas à ça. Les différents modes sont bien pensés, on trouve vite son bonheur. La taille est idéale, ni trop ni pas assez. Je rachèterai sans hésiter.",
+      "reviewerName": "Chloé H.",
+      "date": "2026-03-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 91,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Très décevant",
+      "comment": "Je ne comprends pas les bonnes notes. Le bruit réveillerait tout l'immeuble. Il ne tient pas la charge. Je demande un échange.",
+      "reviewerName": "Sarah A.",
+      "date": "2026-06-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 92,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Étanche pour de vrai, testé dans le bain. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Sofia E.",
+      "date": "2026-06-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 93,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Reçu en deux jours, testé le soir même. Les différents modes sont bien pensés, on trouve vite son bonheur. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Romane L.",
+      "date": "2026-09-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 94,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. La matière est un peu rigide à mon goût. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Mélanie H.",
+      "date": "2026-05-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 95,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. L'autonomie est un peu juste. À essayer en promo.",
+      "reviewerName": "Adam F.",
+      "date": "2026-08-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 96,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis mitigé après quelques essais. L'autonomie est un peu juste. Le moteur manque de puissance. À essayer en promo.",
+      "reviewerName": "Manon A.",
+      "date": "2026-10-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 97,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Un peu bruyant au niveau maximum, mais rien de grave. Livraison rapide et discrète en plus.",
+      "reviewerName": "Lucas N.",
+      "date": "2026-01-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 98,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le colis était totalement neutre, ma coloc n'a rien vu. Il se nettoie en deux secondes à l'eau tiède. Merci Annabelle !",
+      "reviewerName": "Arthur R.",
+      "date": "2026-08-24",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 99,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Étanche pour de vrai, testé dans le bain. Les différents modes sont bien pensés, on trouve vite son bonheur. Cinq étoiles méritées.",
+      "reviewerName": "Chloé D.",
+      "date": "2026-10-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 100,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Reçu en deux jours, testé le soir même. La prise en main est intuitive, les boutons tombent sous les doigts. Je rachèterai sans hésiter.",
+      "reviewerName": "Alice L.",
+      "date": "2026-03-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 101,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bonne qualité pour le prix. Le silicone attire un peu la poussière. La couleur est un peu différente de la photo. Aucun regret de l'avoir pris.",
+      "reviewerName": "Mehdi V.",
+      "date": "2026-05-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 102,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Reçu en deux jours, testé le soir même. Le silicone est d'une douceur incroyable. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Raphaël F.",
+      "date": "2026-07-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 103,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Étanche pour de vrai, testé dans le bain. Cinq étoiles méritées.",
+      "reviewerName": "Pauline H.",
+      "date": "2026-09-27",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 104,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Ça fait le travail, et bien. Le silicone attire un peu la poussière. L'autonomie est correcte, sans plus. Aucun regret de l'avoir pris.",
+      "reviewerName": "Jade A.",
+      "date": "2026-07-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 105,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Produit correct, sans plus. La forme ne me convient pas parfaitement. Le service client a été sympa au moins.",
+      "reviewerName": "Victor A.",
+      "date": "2026-02-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 106,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Globalement un très bon achat. Un peu bruyant au niveau maximum, mais rien de grave. Les premiers modes sont doux, les derniers vraiment puissants. Je recommande quand même.",
+      "reviewerName": "Louis N.",
+      "date": "2026-02-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 107,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis partagé. La matière est un peu rigide à mon goût. Le service client a été sympa au moins.",
+      "reviewerName": "Clara K.",
+      "date": "2026-01-04",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 108,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Le bouton s'est cassé tout de suite. Il ne tient pas la charge. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Julien D.",
+      "date": "2026-04-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 109,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Globalement un très bon achat. J'aurais aimé une pochette de rangement fournie. Un peu bruyant au niveau maximum, mais rien de grave. Bon rapport qualité-prix.",
+      "reviewerName": "Lucas R.",
+      "date": "2026-08-28",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 110,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bon produit, quelques petits détails à revoir. L'autonomie est correcte, sans plus. Je recommande quand même.",
+      "reviewerName": "Kevin R.",
+      "date": "2026-07-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 111,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le colis était totalement neutre, ma coloc n'a rien vu. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Théo C.",
+      "date": "2026-05-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 112,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le colis était totalement neutre, ma coloc n'a rien vu. L'autonomie tient largement plusieurs séances. Je vais en offrir à mes amies.",
+      "reviewerName": "Lina P.",
+      "date": "2026-02-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 113,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Très décevant",
+      "comment": "Je ne comprends pas les bonnes notes. Il ne s'allume plus après trois utilisations. Le bruit réveillerait tout l'immeuble. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Théo K.",
+      "date": "2026-04-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 114,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. L'autonomie est correcte, sans plus. J'aurais aimé une pochette de rangement fournie. Livraison rapide et discrète en plus.",
+      "reviewerName": "Lina T.",
+      "date": "2026-08-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 115,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Acheté sur un coup de tête, aucun regret. Étanche pour de vrai, testé dans le bain. Il se nettoie en deux secondes à l'eau tiède. Cinq étoiles méritées.",
+      "reviewerName": "Lina K.",
+      "date": "2026-02-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 116,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Je n'ai pas accroché. Beaucoup trop bruyant. Les vibrations sont trop faibles. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Mehdi R.",
+      "date": "2026-10-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 117,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. L'autonomie est correcte, sans plus. Livraison rapide et discrète en plus.",
+      "reviewerName": "Nadia N.",
+      "date": "2026-06-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 118,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Les premiers modes sont doux, les derniers vraiment puissants. Je recommande quand même.",
+      "reviewerName": "Pauline R.",
+      "date": "2026-01-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 119,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Pas convaincant. La taille ne correspond pas à la description. Beaucoup trop bruyant. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Lina N.",
+      "date": "2026-05-28",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 120,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Franchement, je ne m'attendais pas à ça. La recharge magnétique est hyper pratique. Le silicone est d'une douceur incroyable. Je vais en offrir à mes amies.",
+      "reviewerName": "Thomas M.",
+      "date": "2026-10-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 121,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Franchement, je ne m'attendais pas à ça. Les différents modes sont bien pensés, on trouve vite son bonheur. La recharge magnétique est hyper pratique. Mon nouveau meilleur ami.",
+      "reviewerName": "Nathan C.",
+      "date": "2026-10-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 122,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bonne qualité pour le prix. La couleur est un peu différente de la photo. L'autonomie est correcte, sans plus. Je recommande quand même.",
+      "reviewerName": "Pauline M.",
+      "date": "2026-09-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 123,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Ça fait le travail, et bien. Un peu bruyant au niveau maximum, mais rien de grave. Le câble de recharge est un peu court. Une étoile de moins pour le détail.",
+      "reviewerName": "Agathe V.",
+      "date": "2026-03-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 124,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Étanche pour de vrai, testé dans le bain. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Agathe E.",
+      "date": "2026-01-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 125,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Acheté sur un coup de tête, aucun regret. Les différents modes sont bien pensés, on trouve vite son bonheur. Cinq étoiles méritées.",
+      "reviewerName": "Maxime E.",
+      "date": "2026-04-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 126,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis mitigé après quelques essais. Le bruit est vraiment présent. L'autonomie est un peu juste. Le service client a été sympa au moins.",
+      "reviewerName": "Noah N.",
+      "date": "2026-02-28",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 127,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. La notice est un peu courte. Livraison rapide et discrète en plus.",
+      "reviewerName": "Emma L.",
+      "date": "2026-05-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 128,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit, quelques petits détails à revoir. La notice est un peu courte. Le silicone attire un peu la poussière. Aucun regret de l'avoir pris.",
+      "reviewerName": "Anaïs E.",
+      "date": "2026-03-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 129,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Les différents modes sont bien pensés, on trouve vite son bonheur. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Noah G.",
+      "date": "2026-04-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 130,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Ça fait le travail, et bien. J'aurais aimé une pochette de rangement fournie. Les premiers modes sont doux, les derniers vraiment puissants. Livraison rapide et discrète en plus.",
+      "reviewerName": "Bastien M.",
+      "date": "2026-04-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 131,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Produit correct, sans plus. La forme ne me convient pas parfaitement. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Yanis D.",
+      "date": "2026-04-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 132,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. Le bruit est vraiment présent. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Raphaël E.",
+      "date": "2026-01-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 133,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bon produit, quelques petits détails à revoir. Le câble de recharge est un peu court. Le silicone attire un peu la poussière. Livraison rapide et discrète en plus.",
+      "reviewerName": "Inès L.",
+      "date": "2026-04-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 134,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il se nettoie en deux secondes à l'eau tiède. La taille est idéale, ni trop ni pas assez. Je rachèterai sans hésiter.",
+      "reviewerName": "Océane H.",
+      "date": "2026-01-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 135,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La couleur est un peu différente de la photo. Je recommande quand même.",
+      "reviewerName": "Noah G.",
+      "date": "2026-09-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 136,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Globalement un très bon achat. L'autonomie est correcte, sans plus. Les premiers modes sont doux, les derniers vraiment puissants. Je recommande quand même.",
+      "reviewerName": "Enzo B.",
+      "date": "2026-10-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 137,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis partagé. Le bruit est vraiment présent. La forme ne me convient pas parfaitement. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Gabriel P.",
+      "date": "2026-04-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 138,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le silicone est d'une douceur incroyable. Il est vraiment silencieux, même à pleine puissance. Mon nouveau meilleur ami.",
+      "reviewerName": "Anaïs F.",
+      "date": "2026-07-26",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 139,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Étanche pour de vrai, testé dans le bain. Je vais en offrir à mes amies.",
+      "reviewerName": "Amandine P.",
+      "date": "2026-05-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 140,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La notice est un peu courte. Le câble de recharge est un peu court. Bon rapport qualité-prix.",
+      "reviewerName": "Elsa V.",
+      "date": "2026-10-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 141,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit, quelques petits détails à revoir. Le silicone attire un peu la poussière. La couleur est un peu différente de la photo. Bon rapport qualité-prix.",
+      "reviewerName": "Sarah G.",
+      "date": "2026-05-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 142,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. La recharge magnétique est hyper pratique. La prise en main est intuitive, les boutons tombent sous les doigts. Je rachèterai sans hésiter.",
+      "reviewerName": "Enzo B.",
+      "date": "2026-05-28",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 143,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Le silicone est d'une douceur incroyable. Je rachèterai sans hésiter.",
+      "reviewerName": "Alice C.",
+      "date": "2026-07-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 144,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Déception pour ce prix-là. Beaucoup trop bruyant. La taille ne correspond pas à la description. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Julie B.",
+      "date": "2026-09-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 145,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Acheté sur un coup de tête, aucun regret. Le colis était totalement neutre, ma coloc n'a rien vu. Cinq étoiles méritées.",
+      "reviewerName": "Camille K.",
+      "date": "2026-03-19",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 146,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Il ne tient pas la charge. Le bruit réveillerait tout l'immeuble. Passez votre chemin.",
+      "reviewerName": "Paul V.",
+      "date": "2026-03-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 147,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bonne qualité pour le prix. L'autonomie est correcte, sans plus. Un peu bruyant au niveau maximum, mais rien de grave. Bon rapport qualité-prix.",
+      "reviewerName": "Amandine V.",
+      "date": "2026-01-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 148,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Reçu en deux jours, testé le soir même. Le silicone est d'une douceur incroyable. Étanche pour de vrai, testé dans le bain. Cinq étoiles méritées.",
+      "reviewerName": "Inès A.",
+      "date": "2026-08-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 149,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Ni bien ni mal",
+      "comment": "Avis partagé. Les boutons sont peu pratiques. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Lucas S.",
+      "date": "2026-04-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 150,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bonne qualité pour le prix. Un peu bruyant au niveau maximum, mais rien de grave. J'aurais aimé une pochette de rangement fournie. Livraison rapide et discrète en plus.",
+      "reviewerName": "Margaux T.",
+      "date": "2026-02-14",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 151,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. La notice est un peu courte. Aucun regret de l'avoir pris.",
+      "reviewerName": "Anaïs C.",
+      "date": "2026-02-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 152,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le silicone est d'une douceur incroyable. Cinq étoiles méritées.",
+      "reviewerName": "Agathe G.",
+      "date": "2026-01-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 153,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La couleur est un peu différente de la photo. Un peu bruyant au niveau maximum, mais rien de grave. Aucun regret de l'avoir pris.",
+      "reviewerName": "Adam M.",
+      "date": "2026-03-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 154,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Troisième produit de la marque, toujours aussi bien. L'autonomie tient largement plusieurs séances. Les différents modes sont bien pensés, on trouve vite son bonheur. Merci Annabelle !",
+      "reviewerName": "Lucas R.",
+      "date": "2026-08-01",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 155,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bonne qualité pour le prix. J'aurais aimé une pochette de rangement fournie. Livraison rapide et discrète en plus.",
+      "reviewerName": "Louis T.",
+      "date": "2026-02-24",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 156,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Le silicone est d'une douceur incroyable. L'autonomie tient largement plusieurs séances. Mon nouveau meilleur ami.",
+      "reviewerName": "Laura P.",
+      "date": "2026-02-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 157,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Étanche pour de vrai, testé dans le bain. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Romane N.",
+      "date": "2026-08-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 158,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le colis était totalement neutre, ma coloc n'a rien vu. Je rachèterai sans hésiter.",
+      "reviewerName": "Jade L.",
+      "date": "2026-02-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 159,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le silicone attire un peu la poussière. Les premiers modes sont doux, les derniers vraiment puissants. Une étoile de moins pour le détail.",
+      "reviewerName": "Bastien C.",
+      "date": "2026-03-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 160,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Produit correct, sans plus. La matière est un peu rigide à mon goût. Le service client a été sympa au moins.",
+      "reviewerName": "Jade P.",
+      "date": "2026-07-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 161,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Étanche pour de vrai, testé dans le bain. Je vais en offrir à mes amies.",
+      "reviewerName": "Maxime E.",
+      "date": "2026-05-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 162,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Troisième produit de la marque, toujours aussi bien. L'autonomie tient largement plusieurs séances. Je vais en offrir à mes amies.",
+      "reviewerName": "Enzo A.",
+      "date": "2026-10-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 163,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Il est vraiment silencieux, même à pleine puissance. La taille est idéale, ni trop ni pas assez. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Camille K.",
+      "date": "2026-02-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 164,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bon produit, quelques petits détails à revoir. La notice est un peu courte. La couleur est un peu différente de la photo. Une étoile de moins pour le détail.",
+      "reviewerName": "Mathis N.",
+      "date": "2026-10-12",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 165,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le câble de recharge est un peu court. Livraison rapide et discrète en plus.",
+      "reviewerName": "Enzo N.",
+      "date": "2026-01-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 166,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Étanche pour de vrai, testé dans le bain. Mon nouveau meilleur ami.",
+      "reviewerName": "Mathis D.",
+      "date": "2026-04-17",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 167,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bon produit, quelques petits détails à revoir. Un peu bruyant au niveau maximum, mais rien de grave. La couleur est un peu différente de la photo. Une étoile de moins pour le détail.",
+      "reviewerName": "Océane N.",
+      "date": "2026-10-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 168,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La recharge magnétique est hyper pratique. L'autonomie tient largement plusieurs séances. Cinq étoiles méritées.",
+      "reviewerName": "Clara L.",
+      "date": "2026-01-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 169,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Bof",
+      "comment": "Je n'ai pas accroché. Beaucoup trop bruyant. La taille ne correspond pas à la description. Dommage.",
+      "reviewerName": "Karim C.",
+      "date": "2026-08-03",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 170,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Acheté sur un coup de tête, aucun regret. La prise en main est intuitive, les boutons tombent sous les doigts. La recharge magnétique est hyper pratique. Mon nouveau meilleur ami.",
+      "reviewerName": "Hugo P.",
+      "date": "2026-06-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 171,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis mitigé après quelques essais. La matière est un peu rigide à mon goût. À essayer en promo.",
+      "reviewerName": "Clara J.",
+      "date": "2026-04-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 172,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. Le silicone est d'une douceur incroyable. L'autonomie tient largement plusieurs séances. Cinq étoiles méritées.",
+      "reviewerName": "Chloé D.",
+      "date": "2026-06-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 173,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. La notice est un peu courte. Bon rapport qualité-prix.",
+      "reviewerName": "Manon J.",
+      "date": "2026-02-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 174,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Étanche pour de vrai, testé dans le bain. Le silicone est d'une douceur incroyable. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Louis T.",
+      "date": "2026-07-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 175,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Reçu en deux jours, testé le soir même. L'autonomie tient largement plusieurs séances. Il est vraiment silencieux, même à pleine puissance. Je vais en offrir à mes amies.",
+      "reviewerName": "Mathis G.",
+      "date": "2026-09-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 176,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La taille est idéale, ni trop ni pas assez. Il se nettoie en deux secondes à l'eau tiède. Je rachèterai sans hésiter.",
+      "reviewerName": "Zoé A.",
+      "date": "2026-06-10",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 177,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Reçu en deux jours, testé le soir même. La taille est idéale, ni trop ni pas assez. Cinq étoiles méritées.",
+      "reviewerName": "Kevin E.",
+      "date": "2026-05-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 178,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bon produit, quelques petits détails à revoir. La notice est un peu courte. Le silicone attire un peu la poussière. Livraison rapide et discrète en plus.",
+      "reviewerName": "Raphaël J.",
+      "date": "2026-08-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 179,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Franchement, je ne m'attendais pas à ça. Il se nettoie en deux secondes à l'eau tiède. Je vais en offrir à mes amies.",
+      "reviewerName": "Yanis B.",
+      "date": "2026-06-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 180,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bonne qualité pour le prix. La couleur est un peu différente de la photo. Un peu bruyant au niveau maximum, mais rien de grave. Aucun regret de l'avoir pris.",
+      "reviewerName": "Adam P.",
+      "date": "2026-05-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 181,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Acheté sur un coup de tête, aucun regret. Étanche pour de vrai, testé dans le bain. Je rachèterai sans hésiter.",
+      "reviewerName": "Enzo D.",
+      "date": "2026-01-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 182,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis mitigé après quelques essais. La forme ne me convient pas parfaitement. La matière est un peu rigide à mon goût. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Gabriel R.",
+      "date": "2026-03-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 183,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Après deux semaines d'utilisation, bilan positif. J'aurais aimé une pochette de rangement fournie. L'autonomie est correcte, sans plus. Aucun regret de l'avoir pris.",
+      "reviewerName": "Sofia L.",
+      "date": "2026-07-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 184,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Ça fait le travail, et bien. L'autonomie est correcte, sans plus. Le silicone attire un peu la poussière. Livraison rapide et discrète en plus.",
+      "reviewerName": "Karim V.",
+      "date": "2026-09-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 185,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. L'autonomie tient largement plusieurs séances. Je vais en offrir à mes amies.",
+      "reviewerName": "Antoine V.",
+      "date": "2026-08-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 186,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Étanche pour de vrai, testé dans le bain. Merci Annabelle !",
+      "reviewerName": "Camille A.",
+      "date": "2026-10-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 187,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bon produit, quelques petits détails à revoir. Un peu bruyant au niveau maximum, mais rien de grave. La couleur est un peu différente de la photo. Livraison rapide et discrète en plus.",
+      "reviewerName": "Chloé A.",
+      "date": "2026-08-01",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 188,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Produit correct, sans plus. Les boutons sont peu pratiques. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Mathis S.",
+      "date": "2026-09-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 189,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. J'aurais aimé une pochette de rangement fournie. Bon rapport qualité-prix.",
+      "reviewerName": "Hugo R.",
+      "date": "2026-08-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 190,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bon produit, quelques petits détails à revoir. J'aurais aimé une pochette de rangement fournie. Le silicone attire un peu la poussière. Je recommande quand même.",
+      "reviewerName": "Alice S.",
+      "date": "2026-08-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 191,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le colis était totalement neutre, ma coloc n'a rien vu. La recharge magnétique est hyper pratique. Cinq étoiles méritées.",
+      "reviewerName": "Margaux N.",
+      "date": "2026-08-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 192,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Étanche pour de vrai, testé dans le bain. Le silicone est d'une douceur incroyable. Je vais en offrir à mes amies.",
+      "reviewerName": "Chloé C.",
+      "date": "2026-03-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 193,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bon produit, quelques petits détails à revoir. J'aurais aimé une pochette de rangement fournie. Aucun regret de l'avoir pris.",
+      "reviewerName": "Jade T.",
+      "date": "2026-04-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 194,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. La couleur est un peu différente de la photo. Un peu bruyant au niveau maximum, mais rien de grave. Je recommande quand même.",
+      "reviewerName": "Agathe M.",
+      "date": "2026-03-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 195,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Ça fait le travail, et bien. Le silicone attire un peu la poussière. Le câble de recharge est un peu court. Aucun regret de l'avoir pris.",
+      "reviewerName": "Laura G.",
+      "date": "2026-08-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 196,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le silicone attire un peu la poussière. La notice est un peu courte. Je recommande quand même.",
+      "reviewerName": "Lucie J.",
+      "date": "2026-06-01",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 197,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Le colis était totalement neutre, ma coloc n'a rien vu. La prise en main est intuitive, les boutons tombent sous les doigts. Merci Annabelle !",
+      "reviewerName": "Noah V.",
+      "date": "2026-05-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 198,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. La prise en main est intuitive, les boutons tombent sous les doigts. La taille est idéale, ni trop ni pas assez. Merci Annabelle !",
+      "reviewerName": "Océane D.",
+      "date": "2026-01-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 199,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le colis était totalement neutre, ma coloc n'a rien vu. Les différents modes sont bien pensés, on trouve vite son bonheur. Cinq étoiles méritées.",
+      "reviewerName": "Bastien G.",
+      "date": "2026-08-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 200,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Reçu en deux jours, testé le soir même. Il est vraiment silencieux, même à pleine puissance. Le colis était totalement neutre, ma coloc n'a rien vu. Cinq étoiles méritées.",
+      "reviewerName": "Raphaël N.",
+      "date": "2026-02-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 201,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis partagé. Le bruit est vraiment présent. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Zoé B.",
+      "date": "2026-10-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 202,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Globalement un très bon achat. Le câble de recharge est un peu court. Bon rapport qualité-prix.",
+      "reviewerName": "Jade S.",
+      "date": "2026-04-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 203,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. Les boutons sont peu pratiques. À essayer en promo.",
+      "reviewerName": "Maxime L.",
+      "date": "2026-05-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 204,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. La taille est idéale, ni trop ni pas assez. Le silicone est d'une douceur incroyable. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Elsa T.",
+      "date": "2026-01-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 205,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Non merci",
+      "comment": "Grosse déception. Le bruit réveillerait tout l'immeuble. Le bouton s'est cassé tout de suite. Je demande un échange.",
+      "reviewerName": "Pauline G.",
+      "date": "2026-05-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 206,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Ça fait le travail, et bien. Le silicone attire un peu la poussière. Le câble de recharge est un peu court. Je recommande quand même.",
+      "reviewerName": "Antoine K.",
+      "date": "2026-03-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 207,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis partagé. La matière est un peu rigide à mon goût. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Gabriel C.",
+      "date": "2026-08-20",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 208,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Reçu en deux jours, testé le soir même. La recharge magnétique est hyper pratique. Merci Annabelle !",
+      "reviewerName": "Arthur R.",
+      "date": "2026-08-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 209,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Ni bien ni mal",
+      "comment": "Avis mitigé après quelques essais. Le moteur manque de puissance. À essayer en promo.",
+      "reviewerName": "Camille K.",
+      "date": "2026-05-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 210,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Reçu en deux jours, testé le soir même. La recharge magnétique est hyper pratique. Mon nouveau meilleur ami.",
+      "reviewerName": "Léa P.",
+      "date": "2026-10-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 211,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La prise en main est intuitive, les boutons tombent sous les doigts. La recharge magnétique est hyper pratique. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Arthur N.",
+      "date": "2026-02-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 212,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le silicone attire un peu la poussière. Aucun regret de l'avoir pris.",
+      "reviewerName": "Julie S.",
+      "date": "2026-03-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 213,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bon produit, quelques petits détails à revoir. La notice est un peu courte. La couleur est un peu différente de la photo. Je recommande quand même.",
+      "reviewerName": "Laura J.",
+      "date": "2026-09-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 214,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le silicone est d'une douceur incroyable. Je vais en offrir à mes amies.",
+      "reviewerName": "Agathe R.",
+      "date": "2026-10-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 215,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bonne qualité pour le prix. La couleur est un peu différente de la photo. Le câble de recharge est un peu court. Livraison rapide et discrète en plus.",
+      "reviewerName": "Laura J.",
+      "date": "2026-10-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 216,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Ça fait le travail, et bien. Le silicone attire un peu la poussière. Aucun regret de l'avoir pris.",
+      "reviewerName": "Pauline P.",
+      "date": "2026-01-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 217,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Non merci",
+      "comment": "Je ne comprends pas les bonnes notes. Le bouton s'est cassé tout de suite. Le bruit réveillerait tout l'immeuble. Passez votre chemin.",
+      "reviewerName": "Samir P.",
+      "date": "2026-08-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 218,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Déception",
+      "comment": "Pas convaincant. Les vibrations sont trop faibles. La batterie se vide trop vite. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Lina K.",
+      "date": "2026-09-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 219,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. Le câble de recharge est un peu court. La couleur est un peu différente de la photo. Je recommande quand même.",
+      "reviewerName": "Manon A.",
+      "date": "2026-02-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 220,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Franchement, je ne m'attendais pas à ça. Étanche pour de vrai, testé dans le bain. Je vais en offrir à mes amies.",
+      "reviewerName": "Enzo L.",
+      "date": "2026-01-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 221,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis partagé. Les boutons sont peu pratiques. Le moteur manque de puissance. À essayer en promo.",
+      "reviewerName": "Mélanie F.",
+      "date": "2026-10-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 222,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La couleur est un peu différente de la photo. Un peu bruyant au niveau maximum, mais rien de grave. Bon rapport qualité-prix.",
+      "reviewerName": "Paul D.",
+      "date": "2026-05-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 223,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Étanche pour de vrai, testé dans le bain. La recharge magnétique est hyper pratique. Mon nouveau meilleur ami.",
+      "reviewerName": "Emma N.",
+      "date": "2026-07-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 224,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Pas convaincant. Le chargeur a lâché au bout d'une semaine. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Emma E.",
+      "date": "2026-04-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 225,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Grosse déception. Le bouton s'est cassé tout de suite. Le bruit réveillerait tout l'immeuble. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Jade F.",
+      "date": "2026-08-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 226,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Le silicone est d'une douceur incroyable. Les différents modes sont bien pensés, on trouve vite son bonheur. Je vais en offrir à mes amies.",
+      "reviewerName": "Raphaël G.",
+      "date": "2026-02-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 227,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il est vraiment silencieux, même à pleine puissance. La taille est idéale, ni trop ni pas assez. Je vais en offrir à mes amies.",
+      "reviewerName": "Agathe K.",
+      "date": "2026-10-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 228,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Franchement, je ne m'attendais pas à ça. La prise en main est intuitive, les boutons tombent sous les doigts. Cinq étoiles méritées.",
+      "reviewerName": "Yanis F.",
+      "date": "2026-08-03",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 229,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Globalement un très bon achat. J'aurais aimé une pochette de rangement fournie. Bon rapport qualité-prix.",
+      "reviewerName": "Yanis M.",
+      "date": "2026-02-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 230,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Avis mitigé après quelques essais. La matière est un peu rigide à mon goût. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Mehdi L.",
+      "date": "2026-09-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 231,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Déception",
+      "comment": "Pas convaincant. Beaucoup trop bruyant. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Thomas M.",
+      "date": "2026-03-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 232,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Globalement un très bon achat. Les premiers modes sont doux, les derniers vraiment puissants. Le câble de recharge est un peu court. Bon rapport qualité-prix.",
+      "reviewerName": "Sarah T.",
+      "date": "2026-04-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 233,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. Le bruit est vraiment présent. La forme ne me convient pas parfaitement. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Adam R.",
+      "date": "2026-03-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 234,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. Merci Annabelle !",
+      "reviewerName": "Lucas N.",
+      "date": "2026-06-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 235,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. Je vais en offrir à mes amies.",
+      "reviewerName": "Laura J.",
+      "date": "2026-04-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 236,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Reçu en deux jours, testé le soir même. Étanche pour de vrai, testé dans le bain. Merci Annabelle !",
+      "reviewerName": "Julie E.",
+      "date": "2026-03-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 237,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Le colis était totalement neutre, ma coloc n'a rien vu. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Zoé S.",
+      "date": "2026-05-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 238,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Étanche pour de vrai, testé dans le bain. Mon nouveau meilleur ami.",
+      "reviewerName": "Mehdi G.",
+      "date": "2026-10-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 239,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Bon produit, quelques petits détails à revoir. Un peu bruyant au niveau maximum, mais rien de grave. L'autonomie est correcte, sans plus. Aucun regret de l'avoir pris.",
+      "reviewerName": "Agathe G.",
+      "date": "2026-09-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 240,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. La forme ne me convient pas parfaitement. L'autonomie est un peu juste. À essayer en promo.",
+      "reviewerName": "Karim T.",
+      "date": "2026-07-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 241,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Très décevant",
+      "comment": "Je ne comprends pas les bonnes notes. Le bouton s'est cassé tout de suite. Le bruit réveillerait tout l'immeuble. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Julie E.",
+      "date": "2026-06-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 242,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Ça fait le travail, et bien. J'aurais aimé une pochette de rangement fournie. Aucun regret de l'avoir pris.",
+      "reviewerName": "Alice H.",
+      "date": "2026-08-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 243,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Globalement un très bon achat. Un peu bruyant au niveau maximum, mais rien de grave. Les premiers modes sont doux, les derniers vraiment puissants. Livraison rapide et discrète en plus.",
+      "reviewerName": "Chloé R.",
+      "date": "2026-08-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 244,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Acheté sur un coup de tête, aucun regret. Le colis était totalement neutre, ma coloc n'a rien vu. Je rachèterai sans hésiter.",
+      "reviewerName": "Jade P.",
+      "date": "2026-09-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 245,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La prise en main est intuitive, les boutons tombent sous les doigts. Il est vraiment silencieux, même à pleine puissance. Je vais en offrir à mes amies.",
+      "reviewerName": "Sarah J.",
+      "date": "2026-03-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 246,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Franchement, je ne m'attendais pas à ça. L'autonomie tient largement plusieurs séances. Je rachèterai sans hésiter.",
+      "reviewerName": "Sofia N.",
+      "date": "2026-08-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 247,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. L'autonomie est un peu juste. À essayer en promo.",
+      "reviewerName": "Bastien C.",
+      "date": "2026-09-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 248,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bonne qualité pour le prix. Le câble de recharge est un peu court. Une étoile de moins pour le détail.",
+      "reviewerName": "Antoine A.",
+      "date": "2026-08-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 249,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Il est vraiment silencieux, même à pleine puissance. Il se nettoie en deux secondes à l'eau tiède. Je rachèterai sans hésiter.",
+      "reviewerName": "Mélanie B.",
+      "date": "2026-02-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 250,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Ça fait le travail, et bien. Les premiers modes sont doux, les derniers vraiment puissants. Aucun regret de l'avoir pris.",
+      "reviewerName": "Margaux T.",
+      "date": "2026-04-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 251,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La notice est un peu courte. Aucun regret de l'avoir pris.",
+      "reviewerName": "Samir B.",
+      "date": "2026-04-10",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 252,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Reçu en deux jours, testé le soir même. Étanche pour de vrai, testé dans le bain. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Mathis P.",
+      "date": "2026-09-08",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 253,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Franchement, je ne m'attendais pas à ça. Il se nettoie en deux secondes à l'eau tiède. La prise en main est intuitive, les boutons tombent sous les doigts. Cinq étoiles méritées.",
+      "reviewerName": "Karim S.",
+      "date": "2026-04-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 254,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Après deux semaines d'utilisation, bilan positif. Le câble de recharge est un peu court. La couleur est un peu différente de la photo. Une étoile de moins pour le détail.",
+      "reviewerName": "Raphaël J.",
+      "date": "2026-07-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 255,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. La recharge magnétique est hyper pratique. Merci Annabelle !",
+      "reviewerName": "Océane F.",
+      "date": "2026-01-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 256,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. La matière est un peu rigide à mon goût. À essayer en promo.",
+      "reviewerName": "Louis F.",
+      "date": "2026-02-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 257,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bon produit, quelques petits détails à revoir. Les premiers modes sont doux, les derniers vraiment puissants. J'aurais aimé une pochette de rangement fournie. Je recommande quand même.",
+      "reviewerName": "Jade P.",
+      "date": "2026-08-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 258,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Reçu en deux jours, testé le soir même. Il se nettoie en deux secondes à l'eau tiède. Je vais en offrir à mes amies.",
+      "reviewerName": "Anaïs L.",
+      "date": "2026-07-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 259,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Reçu en deux jours, testé le soir même. L'autonomie tient largement plusieurs séances. Je rachèterai sans hésiter.",
+      "reviewerName": "Thomas C.",
+      "date": "2026-03-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 260,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. L'autonomie tient largement plusieurs séances. Il se nettoie en deux secondes à l'eau tiède. Je rachèterai sans hésiter.",
+      "reviewerName": "Pauline R.",
+      "date": "2026-07-13",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 261,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis mitigé après quelques essais. Les boutons sont peu pratiques. Le moteur manque de puissance. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Théo J.",
+      "date": "2026-09-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 262,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. Les premiers modes sont doux, les derniers vraiment puissants. Livraison rapide et discrète en plus.",
+      "reviewerName": "Louis S.",
+      "date": "2026-10-23",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 263,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bon produit, quelques petits détails à revoir. L'autonomie est correcte, sans plus. La notice est un peu courte. Bon rapport qualité-prix.",
+      "reviewerName": "Victor A.",
+      "date": "2026-01-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 264,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Grosse déception. Il ne s'allume plus après trois utilisations. Passez votre chemin.",
+      "reviewerName": "Pauline M.",
+      "date": "2026-06-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 265,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. Les boutons sont peu pratiques. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Lucas M.",
+      "date": "2026-03-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 266,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La recharge magnétique est hyper pratique. La taille est idéale, ni trop ni pas assez. Cinq étoiles méritées.",
+      "reviewerName": "Anaïs D.",
+      "date": "2026-10-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 267,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Il se nettoie en deux secondes à l'eau tiède. Merci Annabelle !",
+      "reviewerName": "Sofia L.",
+      "date": "2026-01-09",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 268,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis partagé. Les boutons sont peu pratiques. Le service client a été sympa au moins.",
+      "reviewerName": "Romane E.",
+      "date": "2026-07-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 269,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. La couleur est un peu différente de la photo. L'autonomie est correcte, sans plus. Aucun regret de l'avoir pris.",
+      "reviewerName": "Laura S.",
+      "date": "2026-05-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 270,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bonne qualité pour le prix. J'aurais aimé une pochette de rangement fournie. Bon rapport qualité-prix.",
+      "reviewerName": "Manon E.",
+      "date": "2026-03-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 271,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La recharge magnétique est hyper pratique. Cinq étoiles méritées.",
+      "reviewerName": "Nadia R.",
+      "date": "2026-07-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 272,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La taille est idéale, ni trop ni pas assez. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Sarah N.",
+      "date": "2026-09-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 273,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. Il est vraiment silencieux, même à pleine puissance. Les différents modes sont bien pensés, on trouve vite son bonheur. Merci Annabelle !",
+      "reviewerName": "Lina T.",
+      "date": "2026-02-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 274,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La prise en main est intuitive, les boutons tombent sous les doigts. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Noah G.",
+      "date": "2026-01-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 275,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Bof",
+      "comment": "Je n'ai pas accroché. Les vibrations sont trop faibles. Le chargeur a lâché au bout d'une semaine. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Sofia V.",
+      "date": "2026-02-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 276,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Acheté sur un coup de tête, aucun regret. Le silicone est d'une douceur incroyable. Je vais en offrir à mes amies.",
+      "reviewerName": "Léa G.",
+      "date": "2026-01-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 277,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il se nettoie en deux secondes à l'eau tiède. Je rachèterai sans hésiter.",
+      "reviewerName": "Manon H.",
+      "date": "2026-08-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 278,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Acheté sur un coup de tête, aucun regret. La recharge magnétique est hyper pratique. Merci Annabelle !",
+      "reviewerName": "Julie T.",
+      "date": "2026-09-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 279,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Grosse déception. Le bouton s'est cassé tout de suite. Il ne s'allume plus après trois utilisations. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Léa C.",
+      "date": "2026-03-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 280,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis mitigé après quelques essais. Les boutons sont peu pratiques. La matière est un peu rigide à mon goût. À essayer en promo.",
+      "reviewerName": "Camille L.",
+      "date": "2026-06-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 281,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. Cinq étoiles méritées.",
+      "reviewerName": "Karim B.",
+      "date": "2026-02-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 282,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Ça fait le travail, et bien. J'aurais aimé une pochette de rangement fournie. Le câble de recharge est un peu court. Une étoile de moins pour le détail.",
+      "reviewerName": "Nadia C.",
+      "date": "2026-04-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 283,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Franchement, je ne m'attendais pas à ça. Les différents modes sont bien pensés, on trouve vite son bonheur. L'autonomie tient largement plusieurs séances. Je vais en offrir à mes amies.",
+      "reviewerName": "Adam T.",
+      "date": "2026-09-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 284,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne qualité pour le prix. Le câble de recharge est un peu court. La notice est un peu courte. Une étoile de moins pour le détail.",
+      "reviewerName": "Adam D.",
+      "date": "2026-01-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 285,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. L'autonomie tient largement plusieurs séances. Cinq étoiles méritées.",
+      "reviewerName": "Julie J.",
+      "date": "2026-04-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 286,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. Il se nettoie en deux secondes à l'eau tiède. Merci Annabelle !",
+      "reviewerName": "Bastien H.",
+      "date": "2026-06-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 287,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Globalement un très bon achat. L'autonomie est correcte, sans plus. Livraison rapide et discrète en plus.",
+      "reviewerName": "Emma B.",
+      "date": "2026-10-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 288,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Non merci",
+      "comment": "Vraiment pas satisfaisant. Il ne tient pas la charge. Le bruit réveillerait tout l'immeuble. Passez votre chemin.",
+      "reviewerName": "Clara J.",
+      "date": "2026-01-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 289,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Après deux semaines d'utilisation, bilan positif. La notice est un peu courte. L'autonomie est correcte, sans plus. Je recommande quand même.",
+      "reviewerName": "Mathis D.",
+      "date": "2026-02-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 290,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Reçu en deux jours, testé le soir même. La taille est idéale, ni trop ni pas assez. La prise en main est intuitive, les boutons tombent sous les doigts. Merci Annabelle !",
+      "reviewerName": "Karim B.",
+      "date": "2026-09-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 291,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Reçu en deux jours, testé le soir même. La recharge magnétique est hyper pratique. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Jade K.",
+      "date": "2026-10-03",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 292,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Franchement, je ne m'attendais pas à ça. Il se nettoie en deux secondes à l'eau tiède. Merci Annabelle !",
+      "reviewerName": "Sofia V.",
+      "date": "2026-05-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 293,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Ni bien ni mal",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. La forme ne me convient pas parfaitement. Le bruit est vraiment présent. À essayer en promo.",
+      "reviewerName": "Inès M.",
+      "date": "2026-04-11",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 294,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Il est vraiment silencieux, même à pleine puissance. Les différents modes sont bien pensés, on trouve vite son bonheur. Je vais en offrir à mes amies.",
+      "reviewerName": "Léa H.",
+      "date": "2026-05-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 295,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Franchement, je ne m'attendais pas à ça. La recharge magnétique est hyper pratique. La prise en main est intuitive, les boutons tombent sous les doigts. Je rachèterai sans hésiter.",
+      "reviewerName": "Zoé D.",
+      "date": "2026-06-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 296,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. Un peu bruyant au niveau maximum, mais rien de grave. Une étoile de moins pour le détail.",
+      "reviewerName": "Mélanie L.",
+      "date": "2026-07-05",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 297,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Vraiment pas satisfaisant. Il ne s'allume plus après trois utilisations. Je demande un échange.",
+      "reviewerName": "Bastien R.",
+      "date": "2026-06-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 298,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Reçu en deux jours, testé le soir même. Le silicone est d'une douceur incroyable. Mon nouveau meilleur ami.",
+      "reviewerName": "Anaïs G.",
+      "date": "2026-08-20",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 299,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Il se nettoie en deux secondes à l'eau tiède. L'autonomie tient largement plusieurs séances. Merci Annabelle !",
+      "reviewerName": "Chloé E.",
+      "date": "2026-05-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 300,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bonne qualité pour le prix. Les premiers modes sont doux, les derniers vraiment puissants. Je recommande quand même.",
+      "reviewerName": "Noah E.",
+      "date": "2026-10-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 301,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. L'autonomie tient largement plusieurs séances. Les différents modes sont bien pensés, on trouve vite son bonheur. Mon nouveau meilleur ami.",
+      "reviewerName": "Léa V.",
+      "date": "2026-02-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 302,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Franchement, je ne m'attendais pas à ça. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Paul D.",
+      "date": "2026-04-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 303,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. Les boutons sont peu pratiques. Le service client a été sympa au moins.",
+      "reviewerName": "Nadia M.",
+      "date": "2026-02-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 304,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Globalement un très bon achat. J'aurais aimé une pochette de rangement fournie. Un peu bruyant au niveau maximum, mais rien de grave. Aucun regret de l'avoir pris.",
+      "reviewerName": "Manon L.",
+      "date": "2026-08-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 305,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Produit correct, sans plus. Le bruit est vraiment présent. La matière est un peu rigide à mon goût. À essayer en promo.",
+      "reviewerName": "Zoé M.",
+      "date": "2026-05-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 306,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Il se nettoie en deux secondes à l'eau tiède. Merci Annabelle !",
+      "reviewerName": "Enzo R.",
+      "date": "2026-04-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 307,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. La prise en main est intuitive, les boutons tombent sous les doigts. La recharge magnétique est hyper pratique. Merci Annabelle !",
+      "reviewerName": "Nadia N.",
+      "date": "2026-05-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 308,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La prise en main est intuitive, les boutons tombent sous les doigts. Le silicone est d'une douceur incroyable. Cinq étoiles méritées.",
+      "reviewerName": "Chloé E.",
+      "date": "2026-09-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 309,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Déception",
+      "comment": "Pas convaincant. Le chargeur a lâché au bout d'une semaine. Beaucoup trop bruyant. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Zoé M.",
+      "date": "2026-05-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 310,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Produit correct, sans plus. La forme ne me convient pas parfaitement. Les boutons sont peu pratiques. À essayer en promo.",
+      "reviewerName": "Thomas M.",
+      "date": "2026-02-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 311,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. Les boutons sont peu pratiques. Le service client a été sympa au moins.",
+      "reviewerName": "Camille L.",
+      "date": "2026-03-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 312,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Sofia P.",
+      "date": "2026-09-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 313,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Pas pour moi",
+      "comment": "Pas convaincant. Les vibrations sont trop faibles. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Noah N.",
+      "date": "2026-01-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 314,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Il ne tient pas la charge. Je demande un échange.",
+      "reviewerName": "Louis S.",
+      "date": "2026-03-24",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 315,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Produit correct, sans plus. La matière est un peu rigide à mon goût. Le bruit est vraiment présent. À essayer en promo.",
+      "reviewerName": "Océane L.",
+      "date": "2026-08-03",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 316,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Étanche pour de vrai, testé dans le bain. Il est vraiment silencieux, même à pleine puissance. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Karim T.",
+      "date": "2026-06-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 317,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Le bouton s'est cassé tout de suite. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Elsa L.",
+      "date": "2026-10-17",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 318,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Acheté sur un coup de tête, aucun regret. L'autonomie tient largement plusieurs séances. Je rachèterai sans hésiter.",
+      "reviewerName": "Nathan B.",
+      "date": "2026-10-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 319,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Troisième produit de la marque, toujours aussi bien. Le silicone est d'une douceur incroyable. L'autonomie tient largement plusieurs séances. Je rachèterai sans hésiter.",
+      "reviewerName": "Lucas C.",
+      "date": "2026-07-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 320,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Acheté sur un coup de tête, aucun regret. Il est vraiment silencieux, même à pleine puissance. Cinq étoiles méritées.",
+      "reviewerName": "Alice L.",
+      "date": "2026-10-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 321,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Acheté sur un coup de tête, aucun regret. Les différents modes sont bien pensés, on trouve vite son bonheur. Merci Annabelle !",
+      "reviewerName": "Clara J.",
+      "date": "2026-09-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 322,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Le bruit réveillerait tout l'immeuble. Je demande un échange.",
+      "reviewerName": "Jade V.",
+      "date": "2026-07-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 323,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le colis était totalement neutre, ma coloc n'a rien vu. Merci Annabelle !",
+      "reviewerName": "Paul C.",
+      "date": "2026-04-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 324,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La recharge magnétique est hyper pratique. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Jade N.",
+      "date": "2026-08-23",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 325,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis partagé. La matière est un peu rigide à mon goût. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Théo J.",
+      "date": "2026-02-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 326,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Non merci",
+      "comment": "Vraiment pas satisfaisant. Il ne s'allume plus après trois utilisations. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Lucas J.",
+      "date": "2026-10-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 327,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Reçu en deux jours, testé le soir même. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Inès F.",
+      "date": "2026-05-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 328,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le colis était totalement neutre, ma coloc n'a rien vu. Il se nettoie en deux secondes à l'eau tiède. Cinq étoiles méritées.",
+      "reviewerName": "Zoé T.",
+      "date": "2026-07-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 329,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Paul T.",
+      "date": "2026-04-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 330,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Il est vraiment silencieux, même à pleine puissance. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Lucas L.",
+      "date": "2026-05-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 331,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Reçu en deux jours, testé le soir même. Il est vraiment silencieux, même à pleine puissance. Il se nettoie en deux secondes à l'eau tiède. Cinq étoiles méritées.",
+      "reviewerName": "Noah L.",
+      "date": "2026-05-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 332,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. La prise en main est intuitive, les boutons tombent sous les doigts. Mon nouveau meilleur ami.",
+      "reviewerName": "Arthur P.",
+      "date": "2026-09-16",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 333,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Produit correct, sans plus. La matière est un peu rigide à mon goût. Le bruit est vraiment présent. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Kevin L.",
+      "date": "2026-08-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 334,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Bonne qualité pour le prix. Les premiers modes sont doux, les derniers vraiment puissants. Aucun regret de l'avoir pris.",
+      "reviewerName": "Thomas F.",
+      "date": "2026-07-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 335,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Je ne comprends pas les bonnes notes. Il ne tient pas la charge. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Agathe P.",
+      "date": "2026-09-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 336,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bon produit, quelques petits détails à revoir. Un peu bruyant au niveau maximum, mais rien de grave. Je recommande quand même.",
+      "reviewerName": "Arthur T.",
+      "date": "2026-10-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 337,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Globalement un très bon achat. La notice est un peu courte. Je recommande quand même.",
+      "reviewerName": "Arthur P.",
+      "date": "2026-06-20",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 338,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Ça fait le travail, et bien. Le câble de recharge est un peu court. L'autonomie est correcte, sans plus. Livraison rapide et discrète en plus.",
+      "reviewerName": "Emma E.",
+      "date": "2026-08-17",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 339,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. L'autonomie tient largement plusieurs séances. Je rachèterai sans hésiter.",
+      "reviewerName": "Arthur R.",
+      "date": "2026-07-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 340,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. Un peu bruyant au niveau maximum, mais rien de grave. Le silicone attire un peu la poussière. Bon rapport qualité-prix.",
+      "reviewerName": "Pauline C.",
+      "date": "2026-03-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 341,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Non merci",
+      "comment": "Vraiment pas satisfaisant. Il ne tient pas la charge. Le bouton s'est cassé tout de suite. Passez votre chemin.",
+      "reviewerName": "Kevin B.",
+      "date": "2026-04-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 342,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Globalement un très bon achat. Le câble de recharge est un peu court. J'aurais aimé une pochette de rangement fournie. Livraison rapide et discrète en plus.",
+      "reviewerName": "Gabriel F.",
+      "date": "2026-08-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 343,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit, quelques petits détails à revoir. Les premiers modes sont doux, les derniers vraiment puissants. L'autonomie est correcte, sans plus. Une étoile de moins pour le détail.",
+      "reviewerName": "Maxime N.",
+      "date": "2026-09-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 344,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Les différents modes sont bien pensés, on trouve vite son bonheur. Je vais en offrir à mes amies.",
+      "reviewerName": "Léa M.",
+      "date": "2026-08-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 345,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Franchement, je ne m'attendais pas à ça. Il est vraiment silencieux, même à pleine puissance. Le colis était totalement neutre, ma coloc n'a rien vu. Je rachèterai sans hésiter.",
+      "reviewerName": "Mehdi F.",
+      "date": "2026-10-27",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 346,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Acheté sur un coup de tête, aucun regret. Il est vraiment silencieux, même à pleine puissance. Merci Annabelle !",
+      "reviewerName": "Léa B.",
+      "date": "2026-06-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 347,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il se nettoie en deux secondes à l'eau tiède. Merci Annabelle !",
+      "reviewerName": "Romane P.",
+      "date": "2026-09-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 348,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. L'autonomie est un peu juste. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Inès K.",
+      "date": "2026-01-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 349,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne qualité pour le prix. Le câble de recharge est un peu court. J'aurais aimé une pochette de rangement fournie. Une étoile de moins pour le détail.",
+      "reviewerName": "Lucie K.",
+      "date": "2026-07-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 350,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Avis partagé. L'autonomie est un peu juste. Les boutons sont peu pratiques. À essayer en promo.",
+      "reviewerName": "Karim S.",
+      "date": "2026-05-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 351,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Bon produit, quelques petits détails à revoir. J'aurais aimé une pochette de rangement fournie. Les premiers modes sont doux, les derniers vraiment puissants. Bon rapport qualité-prix.",
+      "reviewerName": "Mehdi B.",
+      "date": "2026-09-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 352,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Satisfaction",
+      "comment": "Globalement un très bon achat. Les premiers modes sont doux, les derniers vraiment puissants. L'autonomie est correcte, sans plus. Bon rapport qualité-prix.",
+      "reviewerName": "Lina T.",
+      "date": "2026-07-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 353,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Reçu en deux jours, testé le soir même. L'autonomie tient largement plusieurs séances. Je vais en offrir à mes amies.",
+      "reviewerName": "Emma F.",
+      "date": "2026-05-11",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 354,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Le colis était totalement neutre, ma coloc n'a rien vu. Je vais en offrir à mes amies.",
+      "reviewerName": "Raphaël E.",
+      "date": "2026-06-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 355,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Acheté sur un coup de tête, aucun regret. La prise en main est intuitive, les boutons tombent sous les doigts. Il est vraiment silencieux, même à pleine puissance. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Louis F.",
+      "date": "2026-02-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 356,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Acheté sur un coup de tête, aucun regret. Le colis était totalement neutre, ma coloc n'a rien vu. Mon nouveau meilleur ami.",
+      "reviewerName": "Samir T.",
+      "date": "2026-03-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 357,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Bof",
+      "comment": "Je n'ai pas accroché. La batterie se vide trop vite. Le chargeur a lâché au bout d'une semaine. Je vais tester un autre modèle de la boutique.",
+      "reviewerName": "Noah B.",
+      "date": "2026-02-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 358,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. La taille est idéale, ni trop ni pas assez. La prise en main est intuitive, les boutons tombent sous les doigts. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Enzo G.",
+      "date": "2026-01-09",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 359,
+      "kind": "toy",
+      "rating": 1,
+      "title": "À éviter",
+      "comment": "Vraiment pas satisfaisant. Le bouton s'est cassé tout de suite. Passez votre chemin.",
+      "reviewerName": "Amandine G.",
+      "date": "2026-06-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 360,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne qualité pour le prix. Les premiers modes sont doux, les derniers vraiment puissants. Le câble de recharge est un peu court. Je recommande quand même.",
+      "reviewerName": "Raphaël M.",
+      "date": "2026-05-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 361,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Pas mauvais, mais je m'attendais à mieux. Le moteur manque de puissance. Le bruit est vraiment présent. À essayer en promo.",
+      "reviewerName": "Raphaël K.",
+      "date": "2026-02-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 362,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Reçu en deux jours, testé le soir même. Les différents modes sont bien pensés, on trouve vite son bonheur. Le colis était totalement neutre, ma coloc n'a rien vu. Je vais en offrir à mes amies.",
+      "reviewerName": "Lina N.",
+      "date": "2026-01-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 363,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. La prise en main est intuitive, les boutons tombent sous les doigts. Il est vraiment silencieux, même à pleine puissance. Cinq étoiles méritées.",
+      "reviewerName": "Thomas P.",
+      "date": "2026-06-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 364,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Très bon produit",
+      "comment": "Ça fait le travail, et bien. La couleur est un peu différente de la photo. La notice est un peu courte. Une étoile de moins pour le détail.",
+      "reviewerName": "Mélanie D.",
+      "date": "2026-08-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 365,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le colis était totalement neutre, ma coloc n'a rien vu. Mon nouveau meilleur ami.",
+      "reviewerName": "Inès F.",
+      "date": "2026-02-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 366,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. La prise en main est intuitive, les boutons tombent sous les doigts. Le colis était totalement neutre, ma coloc n'a rien vu. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Amandine L.",
+      "date": "2026-10-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 367,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. La notice est un peu courte. Le câble de recharge est un peu court. Aucun regret de l'avoir pris.",
+      "reviewerName": "Jade A.",
+      "date": "2026-09-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 368,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Étanche pour de vrai, testé dans le bain. La taille est idéale, ni trop ni pas assez. Cinq étoiles méritées.",
+      "reviewerName": "Mélanie L.",
+      "date": "2026-04-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 369,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Les différents modes sont bien pensés, on trouve vite son bonheur. L'autonomie tient largement plusieurs séances. Merci Annabelle !",
+      "reviewerName": "Louis D.",
+      "date": "2026-05-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 370,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Franchement, je ne m'attendais pas à ça. Le colis était totalement neutre, ma coloc n'a rien vu. Le silicone est d'une douceur incroyable. Mon nouveau meilleur ami.",
+      "reviewerName": "Maxime H.",
+      "date": "2026-03-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 371,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Une pépite",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Victor K.",
+      "date": "2026-09-25",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 372,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Acheté sur un coup de tête, aucun regret. Les différents modes sont bien pensés, on trouve vite son bonheur. Il est vraiment silencieux, même à pleine puissance. Cinq étoiles méritées.",
+      "reviewerName": "Inès S.",
+      "date": "2026-08-22",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 373,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. L'autonomie est correcte, sans plus. J'aurais aimé une pochette de rangement fournie. Aucun regret de l'avoir pris.",
+      "reviewerName": "Laura M.",
+      "date": "2026-05-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 374,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Peut mieux faire",
+      "comment": "Avis mitigé après quelques essais. Les boutons sont peu pratiques. La matière est un peu rigide à mon goût. Ça dépendra des goûts de chacun.",
+      "reviewerName": "Lina T.",
+      "date": "2026-09-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 375,
+      "kind": "toy",
+      "rating": 2,
+      "title": "Déception",
+      "comment": "Déception pour ce prix-là. La batterie se vide trop vite. Les vibrations sont trop faibles. Deux étoiles pour la livraison discrète.",
+      "reviewerName": "Julien V.",
+      "date": "2026-07-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 376,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La prise en main est intuitive, les boutons tombent sous les doigts. Étanche pour de vrai, testé dans le bain. Je vais en offrir à mes amies.",
+      "reviewerName": "Mathis K.",
+      "date": "2026-04-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 377,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La prise en main est intuitive, les boutons tombent sous les doigts. Il est vraiment silencieux, même à pleine puissance. Je rachèterai sans hésiter.",
+      "reviewerName": "Anaïs S.",
+      "date": "2026-03-01",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 378,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. La recharge magnétique est hyper pratique. Les différents modes sont bien pensés, on trouve vite son bonheur. Je rachèterai sans hésiter.",
+      "reviewerName": "Emma B.",
+      "date": "2026-05-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 379,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Troisième produit de la marque, toujours aussi bien. La taille est idéale, ni trop ni pas assez. Je rachèterai sans hésiter.",
+      "reviewerName": "Sarah L.",
+      "date": "2026-06-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 380,
+      "kind": "toy",
+      "rating": 1,
+      "title": "Très décevant",
+      "comment": "Vraiment pas satisfaisant. Il ne tient pas la charge. Le bruit réveillerait tout l'immeuble. Le service client m'a quand même répondu vite.",
+      "reviewerName": "Antoine F.",
+      "date": "2026-07-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 381,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il se nettoie en deux secondes à l'eau tiède. Il est vraiment silencieux, même à pleine puissance. Je vais en offrir à mes amies.",
+      "reviewerName": "Kevin K.",
+      "date": "2026-07-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 382,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Rien à redire",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. L'autonomie tient largement plusieurs séances. La taille est idéale, ni trop ni pas assez. Cinq étoiles méritées.",
+      "reviewerName": "Sarah A.",
+      "date": "2026-09-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 383,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Le colis était totalement neutre, ma coloc n'a rien vu. La prise en main est intuitive, les boutons tombent sous les doigts. Mon nouveau meilleur ami.",
+      "reviewerName": "Kevin L.",
+      "date": "2026-05-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 384,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Ça fait le travail, et bien. J'aurais aimé une pochette de rangement fournie. Livraison rapide et discrète en plus.",
+      "reviewerName": "Mathis J.",
+      "date": "2026-04-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 385,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La prise en main est intuitive, les boutons tombent sous les doigts. Mon nouveau meilleur ami.",
+      "reviewerName": "Mélanie V.",
+      "date": "2026-05-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 386,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Reçu en deux jours, testé le soir même. La taille est idéale, ni trop ni pas assez. Étanche pour de vrai, testé dans le bain. Merci Annabelle !",
+      "reviewerName": "Mehdi A.",
+      "date": "2026-07-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 387,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Produit correct, sans plus. Le bruit est vraiment présent. Les boutons sont peu pratiques. Je garde, mais je ne rachèterai pas.",
+      "reviewerName": "Noah N.",
+      "date": "2026-05-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 388,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Bluffant",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. Il se nettoie en deux secondes à l'eau tiède. La recharge magnétique est hyper pratique. Je vais en offrir à mes amies.",
+      "reviewerName": "Lina L.",
+      "date": "2026-10-05",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 389,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Je recommande à 100 %",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. La recharge magnétique est hyper pratique. L'autonomie tient largement plusieurs séances. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Océane L.",
+      "date": "2026-02-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 390,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Un mois d'utilisation et toujours aussi ravi·e. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Mathis V.",
+      "date": "2026-08-08",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 391,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Globalement un très bon achat. L'autonomie est correcte, sans plus. La notice est un peu courte. Une étoile de moins pour le détail.",
+      "reviewerName": "Mehdi F.",
+      "date": "2026-01-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 392,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "Reçu en deux jours, testé le soir même. Le colis était totalement neutre, ma coloc n'a rien vu. Le silicone est d'une douceur incroyable. Cinq étoiles méritées.",
+      "reviewerName": "Sarah A.",
+      "date": "2026-04-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 393,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Presque parfait",
+      "comment": "Bon produit, quelques petits détails à revoir. La couleur est un peu différente de la photo. Livraison rapide et discrète en plus.",
+      "reviewerName": "Victor R.",
+      "date": "2026-02-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 394,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Meilleur achat de l'année",
+      "comment": "Franchement, je ne m'attendais pas à ça. Il se nettoie en deux secondes à l'eau tiède. Cinq étoiles méritées.",
+      "reviewerName": "Kevin P.",
+      "date": "2026-09-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 395,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bonne surprise",
+      "comment": "Ça fait le travail, et bien. Un peu bruyant au niveau maximum, mais rien de grave. Je recommande quand même.",
+      "reviewerName": "Hugo T.",
+      "date": "2026-08-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 396,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Coup de cœur",
+      "comment": "Acheté sur un coup de tête, aucun regret. La taille est idéale, ni trop ni pas assez. Les différents modes sont bien pensés, on trouve vite son bonheur. Mon nouveau meilleur ami.",
+      "reviewerName": "Jade S.",
+      "date": "2026-05-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 397,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à mon/ma partenaire, on l'adore tous les deux. Il est vraiment silencieux, même à pleine puissance. Le silicone est d'une douceur incroyable. Le rapport qualité-prix est imbattable.",
+      "reviewerName": "Emma K.",
+      "date": "2026-02-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 398,
+      "kind": "toy",
+      "rating": 5,
+      "title": "Au-delà de mes attentes",
+      "comment": "J'ai hésité longtemps, j'aurais dû le prendre plus tôt. L'autonomie tient largement plusieurs séances. La prise en main est intuitive, les boutons tombent sous les doigts. Je vais en offrir à mes amies.",
+      "reviewerName": "Karim N.",
+      "date": "2026-01-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 399,
+      "kind": "toy",
+      "rating": 3,
+      "title": "Mitigé",
+      "comment": "Avis mitigé après quelques essais. La forme ne me convient pas parfaitement. Le service client a été sympa au moins.",
+      "reviewerName": "Emma R.",
+      "date": "2026-06-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 400,
+      "kind": "toy",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Globalement un très bon achat. La couleur est un peu différente de la photo. Une étoile de moins pour le détail.",
+      "reviewerName": "Clara E.",
+      "date": "2026-05-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 401,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Ça a résisté à plusieurs lavages. J'en reprendrai pour Noël.",
+      "reviewerName": "Agathe R.",
+      "date": "2026-09-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 402,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Tout le monde me demande d'où il vient. Ça a résisté à plusieurs lavages. Il fait toujours rire au bureau. Annabelle, tu as tout compris.",
+      "reviewerName": "Margaux T.",
+      "date": "2026-03-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 403,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Tout le monde me demande d'où il vient. Les couleurs sont fidèles aux photos. Les finitions sont impeccables. J'en reprendrai pour Noël.",
+      "reviewerName": "Romane A.",
+      "date": "2026-03-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 404,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bonne surprise à la réception. Un peu cher pour ce que c'est. Ça reste un bon cadeau.",
+      "reviewerName": "Samir S.",
+      "date": "2026-05-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 405,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Joli et bien fait. Un peu cher pour ce que c'est. La taille est un peu juste. Je recommande quand même.",
+      "reviewerName": "Clara A.",
+      "date": "2026-02-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 406,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "La qualité est vraiment au rendez-vous. Les couleurs sont fidèles aux photos. Il fait toujours rire au bureau. Annabelle, tu as tout compris.",
+      "reviewerName": "Sarah J.",
+      "date": "2026-05-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 407,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Les couleurs sont fidèles aux photos. Ça a résisté à plusieurs lavages. J'en reprendrai pour Noël.",
+      "reviewerName": "Victor R.",
+      "date": "2026-01-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 408,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "La qualité est vraiment au rendez-vous. Les couleurs sont fidèles aux photos. Annabelle, tu as tout compris.",
+      "reviewerName": "Océane L.",
+      "date": "2026-08-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 409,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bonne surprise à la réception. Un peu cher pour ce que c'est. Le délai de livraison était un peu long. Je recommande quand même.",
+      "reviewerName": "Théo L.",
+      "date": "2026-05-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 410,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "La qualité est vraiment au rendez-vous. Le logo est discret et élégant. Ça a résisté à plusieurs lavages. J'en reprendrai pour Noël.",
+      "reviewerName": "Thomas J.",
+      "date": "2026-10-13",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 411,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Tout le monde me demande d'où il vient. Les couleurs sont fidèles aux photos. Annabelle, tu as tout compris.",
+      "reviewerName": "Julie M.",
+      "date": "2026-02-19",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 412,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Bon produit dérivé. J'aurais aimé plus de coloris. Ça reste un bon cadeau.",
+      "reviewerName": "Maxime M.",
+      "date": "2026-10-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 413,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "C'est correct. Le tissu est plus fin que prévu. La couleur a un peu passé au lavage. Bien pour un clin d'œil.",
+      "reviewerName": "Maxime K.",
+      "date": "2026-08-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 414,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les finitions sont impeccables. Annabelle, tu as tout compris.",
+      "reviewerName": "Anaïs H.",
+      "date": "2026-05-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 415,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "C'est correct. Le tissu est plus fin que prévu. Pour le prix, ça passe.",
+      "reviewerName": "Manon S.",
+      "date": "2026-08-22",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 416,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Joli et bien fait. Un peu cher pour ce que c'est. Le délai de livraison était un peu long. Fun et efficace.",
+      "reviewerName": "Zoé R.",
+      "date": "2026-03-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 417,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Les couleurs sont fidèles aux photos. Les finitions sont impeccables. Annabelle, tu as tout compris.",
+      "reviewerName": "Maxime S.",
+      "date": "2026-01-03",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 418,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Rien d'exceptionnel. Le tissu est plus fin que prévu. La couleur a un peu passé au lavage. Bien pour un clin d'œil.",
+      "reviewerName": "Océane R.",
+      "date": "2026-05-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 419,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Le logo est discret et élégant. Il fait toujours rire au bureau. Annabelle, tu as tout compris.",
+      "reviewerName": "Emma S.",
+      "date": "2026-07-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 420,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bon produit dérivé. La taille est un peu juste. Un peu cher pour ce que c'est. Fun et efficace.",
+      "reviewerName": "Alice F.",
+      "date": "2026-08-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 421,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Les finitions sont impeccables. Je recommande.",
+      "reviewerName": "Léa M.",
+      "date": "2026-08-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 422,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Les couleurs sont fidèles aux photos. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Théo F.",
+      "date": "2026-04-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 423,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les finitions sont impeccables. Les couleurs sont fidèles aux photos. Je recommande.",
+      "reviewerName": "Inès E.",
+      "date": "2026-04-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 424,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Bon produit dérivé. J'aurais aimé plus de coloris. Le délai de livraison était un peu long. Ça reste un bon cadeau.",
+      "reviewerName": "Inès R.",
+      "date": "2026-09-23",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 425,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "La qualité est vraiment au rendez-vous. Il fait toujours rire au bureau. J'en reprendrai pour Noël.",
+      "reviewerName": "Louis S.",
+      "date": "2026-04-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 426,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Camille K.",
+      "date": "2026-06-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 427,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Joli et bien fait. Un peu cher pour ce que c'est. Fun et efficace.",
+      "reviewerName": "Thomas N.",
+      "date": "2026-08-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 428,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Ça a résisté à plusieurs lavages. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Raphaël R.",
+      "date": "2026-07-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 429,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Rien d'exceptionnel. L'impression est un peu pâle. La couleur a un peu passé au lavage. Pour le prix, ça passe.",
+      "reviewerName": "Clara A.",
+      "date": "2026-08-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 430,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les finitions sont impeccables. Ça a résisté à plusieurs lavages. Annabelle, tu as tout compris.",
+      "reviewerName": "Lucie N.",
+      "date": "2026-08-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 431,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bon produit dérivé. J'aurais aimé plus de coloris. Le délai de livraison était un peu long. Fun et efficace.",
+      "reviewerName": "Léa K.",
+      "date": "2026-08-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 432,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne surprise à la réception. La taille est un peu juste. J'aurais aimé plus de coloris. Fun et efficace.",
+      "reviewerName": "Karim E.",
+      "date": "2026-05-21",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 433,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les couleurs sont fidèles aux photos. Il fait toujours rire au bureau. J'en reprendrai pour Noël.",
+      "reviewerName": "Louis A.",
+      "date": "2026-05-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 434,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Tout le monde me demande d'où il vient. Les finitions sont impeccables. Il fait toujours rire au bureau. Annabelle, tu as tout compris.",
+      "reviewerName": "Nathan A.",
+      "date": "2026-04-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 435,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Bon produit dérivé. Un peu cher pour ce que c'est. Ça reste un bon cadeau.",
+      "reviewerName": "Mélanie T.",
+      "date": "2026-04-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 436,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Joli et bien fait. La taille est un peu juste. J'aurais aimé plus de coloris. Fun et efficace.",
+      "reviewerName": "Gabriel A.",
+      "date": "2026-09-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 437,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bon produit dérivé. Un peu cher pour ce que c'est. Je recommande quand même.",
+      "reviewerName": "Noah E.",
+      "date": "2026-07-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 438,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Sans plus",
+      "comment": "C'est correct. La couleur a un peu passé au lavage. Pour le prix, ça passe.",
+      "reviewerName": "Thomas N.",
+      "date": "2026-10-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 439,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les couleurs sont fidèles aux photos. Ça a résisté à plusieurs lavages. Je recommande.",
+      "reviewerName": "Nathan R.",
+      "date": "2026-07-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 440,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Tout le monde me demande d'où il vient. Ça a résisté à plusieurs lavages. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Romane N.",
+      "date": "2026-05-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 441,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "C'est correct. Le tissu est plus fin que prévu. L'impression est un peu pâle. Pour le prix, ça passe.",
+      "reviewerName": "Noah M.",
+      "date": "2026-02-05",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 442,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Tout le monde me demande d'où il vient. Il fait toujours rire au bureau. Ça a résisté à plusieurs lavages. J'en reprendrai pour Noël.",
+      "reviewerName": "Jade V.",
+      "date": "2026-08-20",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 443,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Tout le monde me demande d'où il vient. Le logo est discret et élégant. Les couleurs sont fidèles aux photos. J'en reprendrai pour Noël.",
+      "reviewerName": "Manon V.",
+      "date": "2026-09-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 444,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "La qualité est vraiment au rendez-vous. Ça a résisté à plusieurs lavages. Les finitions sont impeccables. J'en reprendrai pour Noël.",
+      "reviewerName": "Enzo D.",
+      "date": "2026-02-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 445,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Tout le monde me demande d'où il vient. Les couleurs sont fidèles aux photos. Les finitions sont impeccables. Je recommande.",
+      "reviewerName": "Alice G.",
+      "date": "2026-06-10",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 446,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Il fait toujours rire au bureau. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Manon H.",
+      "date": "2026-02-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 447,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "Rien d'exceptionnel. Le tissu est plus fin que prévu. L'impression est un peu pâle. Pour le prix, ça passe.",
+      "reviewerName": "Océane S.",
+      "date": "2026-09-11",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 448,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "La qualité est vraiment au rendez-vous. Il fait toujours rire au bureau. Je recommande.",
+      "reviewerName": "Julien K.",
+      "date": "2026-10-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 449,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Tout le monde me demande d'où il vient. Il fait toujours rire au bureau. J'en reprendrai pour Noël.",
+      "reviewerName": "Théo H.",
+      "date": "2026-05-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 450,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Sans plus",
+      "comment": "C'est correct. Le tissu est plus fin que prévu. L'impression est un peu pâle. Bien pour un clin d'œil.",
+      "reviewerName": "Inès B.",
+      "date": "2026-06-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 451,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "La qualité est vraiment au rendez-vous. Les couleurs sont fidèles aux photos. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Victor K.",
+      "date": "2026-02-23",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 452,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Les couleurs sont fidèles aux photos. Ça a résisté à plusieurs lavages. Annabelle, tu as tout compris.",
+      "reviewerName": "Sofia C.",
+      "date": "2026-01-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 453,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Bon produit dérivé. La taille est un peu juste. Le délai de livraison était un peu long. Je recommande quand même.",
+      "reviewerName": "Yanis J.",
+      "date": "2026-05-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 454,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Joli et bien fait. Le délai de livraison était un peu long. Un peu cher pour ce que c'est. Fun et efficace.",
+      "reviewerName": "Mélanie A.",
+      "date": "2026-09-01",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 455,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Joli et bien fait. Le délai de livraison était un peu long. La taille est un peu juste. Fun et efficace.",
+      "reviewerName": "Manon S.",
+      "date": "2026-06-25",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 456,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Correct",
+      "comment": "C'est correct. Le tissu est plus fin que prévu. Bien pour un clin d'œil.",
+      "reviewerName": "Paul M.",
+      "date": "2026-07-15",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 457,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Il fait toujours rire au bureau. Annabelle, tu as tout compris.",
+      "reviewerName": "Léa G.",
+      "date": "2026-06-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 458,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Le logo est discret et élégant. Annabelle, tu as tout compris.",
+      "reviewerName": "Kevin T.",
+      "date": "2026-08-17",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 459,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Ça a résisté à plusieurs lavages. Les couleurs sont fidèles aux photos. J'en reprendrai pour Noël.",
+      "reviewerName": "Lucas M.",
+      "date": "2026-03-15",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 460,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Le logo est discret et élégant. J'en reprendrai pour Noël.",
+      "reviewerName": "Lina L.",
+      "date": "2026-05-28",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 461,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Ça a résisté à plusieurs lavages. J'en reprendrai pour Noël.",
+      "reviewerName": "Antoine G.",
+      "date": "2026-01-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 462,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "La qualité est vraiment au rendez-vous. Les couleurs sont fidèles aux photos. Il fait toujours rire au bureau. J'en reprendrai pour Noël.",
+      "reviewerName": "Agathe H.",
+      "date": "2026-08-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 463,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Ça a résisté à plusieurs lavages. Les finitions sont impeccables. J'en reprendrai pour Noël.",
+      "reviewerName": "Théo M.",
+      "date": "2026-07-21",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 464,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Joli et bien fait. La taille est un peu juste. Fun et efficace.",
+      "reviewerName": "Yanis C.",
+      "date": "2026-06-18",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 465,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Tout le monde me demande d'où il vient. Ça a résisté à plusieurs lavages. Les couleurs sont fidèles aux photos. Annabelle, tu as tout compris.",
+      "reviewerName": "Samir E.",
+      "date": "2026-05-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 466,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Il fait toujours rire au bureau. Le logo est discret et élégant. Je recommande.",
+      "reviewerName": "Thomas V.",
+      "date": "2026-04-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 467,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "La qualité est vraiment au rendez-vous. Le logo est discret et élégant. Annabelle, tu as tout compris.",
+      "reviewerName": "Gabriel P.",
+      "date": "2026-02-21",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 468,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Tout le monde me demande d'où il vient. Ça a résisté à plusieurs lavages. Annabelle, tu as tout compris.",
+      "reviewerName": "Adam G.",
+      "date": "2026-03-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 469,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Joli et bien fait. J'aurais aimé plus de coloris. Ça reste un bon cadeau.",
+      "reviewerName": "Karim T.",
+      "date": "2026-07-23",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 470,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bonne surprise à la réception. Le délai de livraison était un peu long. Un peu cher pour ce que c'est. Ça reste un bon cadeau.",
+      "reviewerName": "Nathan T.",
+      "date": "2026-05-07",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 471,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Joli et bien fait. La taille est un peu juste. Je recommande quand même.",
+      "reviewerName": "Pauline D.",
+      "date": "2026-08-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 472,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Joli et bien fait. Un peu cher pour ce que c'est. Je recommande quand même.",
+      "reviewerName": "Julien F.",
+      "date": "2026-02-26",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 473,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Ça a résisté à plusieurs lavages. Annabelle, tu as tout compris.",
+      "reviewerName": "Bastien B.",
+      "date": "2026-01-03",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 474,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "La qualité est vraiment au rendez-vous. Les finitions sont impeccables. Annabelle, tu as tout compris.",
+      "reviewerName": "Hugo A.",
+      "date": "2026-09-27",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 475,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Tout le monde me demande d'où il vient. Il fait toujours rire au bureau. Ça a résisté à plusieurs lavages. Annabelle, tu as tout compris.",
+      "reviewerName": "Lucie F.",
+      "date": "2026-02-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 476,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Bonne surprise à la réception. Un peu cher pour ce que c'est. Fun et efficace.",
+      "reviewerName": "Julien H.",
+      "date": "2026-06-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 477,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "La qualité est vraiment au rendez-vous. Ça a résisté à plusieurs lavages. J'en reprendrai pour Noël.",
+      "reviewerName": "Nadia E.",
+      "date": "2026-06-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 478,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Joli et bien fait. La taille est un peu juste. Le délai de livraison était un peu long. Ça reste un bon cadeau.",
+      "reviewerName": "Anaïs H.",
+      "date": "2026-02-08",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 479,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bon produit dérivé. J'aurais aimé plus de coloris. Je recommande quand même.",
+      "reviewerName": "Sarah G.",
+      "date": "2026-02-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 480,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne surprise à la réception. La taille est un peu juste. J'aurais aimé plus de coloris. Ça reste un bon cadeau.",
+      "reviewerName": "Kevin J.",
+      "date": "2026-02-07",
+      "verifiedPurchase": false
+    },
+    {
+      "id": 481,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Je valide",
+      "comment": "La qualité est vraiment au rendez-vous. Les couleurs sont fidèles aux photos. Je recommande.",
+      "reviewerName": "Thomas C.",
+      "date": "2026-02-14",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 482,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Joli et bien fait. Le délai de livraison était un peu long. Ça reste un bon cadeau.",
+      "reviewerName": "Mehdi M.",
+      "date": "2026-01-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 483,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "La qualité est vraiment au rendez-vous. Il fait toujours rire au bureau. Les finitions sont impeccables. Je recommande.",
+      "reviewerName": "Anaïs L.",
+      "date": "2026-06-16",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 484,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Rien d'exceptionnel. La couleur a un peu passé au lavage. L'impression est un peu pâle. Bien pour un clin d'œil.",
+      "reviewerName": "Nathan B.",
+      "date": "2026-05-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 485,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit dérivé. Le délai de livraison était un peu long. J'aurais aimé plus de coloris. Ça reste un bon cadeau.",
+      "reviewerName": "Lina G.",
+      "date": "2026-09-09",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 486,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Sympa",
+      "comment": "Bonne surprise à la réception. La taille est un peu juste. Ça reste un bon cadeau.",
+      "reviewerName": "Romane B.",
+      "date": "2026-03-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 487,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Les couleurs sont fidèles aux photos. Il fait toujours rire au bureau. J'en reprendrai pour Noël.",
+      "reviewerName": "Bastien B.",
+      "date": "2026-01-05",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 488,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Ça a résisté à plusieurs lavages. Il fait toujours rire au bureau. Annabelle, tu as tout compris.",
+      "reviewerName": "Lina L.",
+      "date": "2026-05-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 489,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Rien d'exceptionnel. La couleur a un peu passé au lavage. L'impression est un peu pâle. Pour le prix, ça passe.",
+      "reviewerName": "Océane L.",
+      "date": "2026-02-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 490,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne surprise à la réception. J'aurais aimé plus de coloris. Fun et efficace.",
+      "reviewerName": "Antoine T.",
+      "date": "2026-01-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 491,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Tout le monde me demande d'où il vient. Ça a résisté à plusieurs lavages. Je recommande.",
+      "reviewerName": "Louis J.",
+      "date": "2026-08-22",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 492,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bon produit dérivé. Le délai de livraison était un peu long. J'aurais aimé plus de coloris. Je recommande quand même.",
+      "reviewerName": "Sarah C.",
+      "date": "2026-01-24",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 493,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les finitions sont impeccables. Je recommande.",
+      "reviewerName": "Amandine K.",
+      "date": "2026-05-06",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 494,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Super cadeau",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Il fait toujours rire au bureau. Les couleurs sont fidèles aux photos. Annabelle, tu as tout compris.",
+      "reviewerName": "Inès B.",
+      "date": "2026-05-20",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 495,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bonne qualité",
+      "comment": "Joli et bien fait. Un peu cher pour ce que c'est. J'aurais aimé plus de coloris. Je recommande quand même.",
+      "reviewerName": "Hugo B.",
+      "date": "2026-09-03",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 496,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les couleurs sont fidèles aux photos. Je recommande.",
+      "reviewerName": "Yanis M.",
+      "date": "2026-05-07",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 497,
+      "kind": "goodies",
+      "rating": 4,
+      "title": "Bon achat",
+      "comment": "Bonne surprise à la réception. Le délai de livraison était un peu long. Fun et efficace.",
+      "reviewerName": "Louis P.",
+      "date": "2026-06-12",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 498,
+      "kind": "goodies",
+      "rating": 3,
+      "title": "Moyen",
+      "comment": "Rien d'exceptionnel. La couleur a un peu passé au lavage. Le tissu est plus fin que prévu. Pour le prix, ça passe.",
+      "reviewerName": "Jade K.",
+      "date": "2026-07-04",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 499,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Parfait",
+      "comment": "Commandé pour rire, finalement je l'utilise tous les jours. Les couleurs sont fidèles aux photos. J'en reprendrai pour Noël.",
+      "reviewerName": "Sofia S.",
+      "date": "2026-01-02",
+      "verifiedPurchase": true
+    },
+    {
+      "id": 500,
+      "kind": "goodies",
+      "rating": 5,
+      "title": "Trop stylé",
+      "comment": "Offert à un ami pour son anniversaire, il a adoré. Il fait toujours rire au bureau. Les couleurs sont fidèles aux photos. J'en reprendrai pour Noël.",
+      "reviewerName": "Margaux M.",
+      "date": "2026-10-24",
+      "verifiedPurchase": true
+    }
+  ],
+  "total": 500
+}
