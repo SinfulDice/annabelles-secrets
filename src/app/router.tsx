@@ -1,0 +1,27 @@
+import { createBrowserRouter } from 'react-router'
+import { Layout } from '../components/layout/Layout'
+import { FavoritesPage } from '../pages/FavoritesPage'
+import { HomePage } from '../pages/HomePage'
+import { NotFoundPage } from '../pages/NotFoundPage'
+import { ProductCreatePage } from '../pages/ProductCreatePage'
+import { ProductDetailPage } from '../pages/ProductDetailPage'
+import { ProductsPage } from '../pages/ProductsPage'
+
+/**
+ * One parent route (the Layout, with header and footer) and its child pages.
+ * Static paths win over dynamic ones: /produits/nouveau never matches /produits/:id.
+ */
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: 'produits', element: <ProductsPage /> },
+      { path: 'produits/nouveau', element: <ProductCreatePage /> },
+      { path: 'produits/:id', element: <ProductDetailPage /> },
+      { path: 'favoris', element: <FavoritesPage /> },
+      { path: '*', element: <NotFoundPage /> },
+    ],
+  },
+])

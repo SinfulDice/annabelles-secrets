@@ -1,5 +1,9 @@
 import type { Category, SortOption } from '../types'
 
+export const SITE_NAME = "Annabelle's Secrets"
+/** Where « Quitter » sends people who are under 18. */
+export const AGE_GATE_EXIT_URL = 'https://www.google.fr'
+
 export const PAGE_SIZE = 12
 export const DEBOUNCE_MS = 300
 export const TOAST_DURATION_MS = 4000
