@@ -12,7 +12,13 @@ function GifDialog({ onClose }: { onClose: () => void }) {
     <Modal labelledBy="ad-gag-title" initialFocusRef={closeRef} onEscape={onClose}>
       <div className="flex flex-col items-center gap-4 text-center">
         {AD_GAG_GIF_URL && (
-          <img src={AD_GAG_GIF_URL} alt={AD_GAG_GIF_ALT} className="w-full rounded-card" />
+          <img
+            src={AD_GAG_GIF_URL}
+            alt={AD_GAG_GIF_ALT}
+            width={400}
+            height={290}
+            className="h-auto w-full rounded-card"
+          />
         )}
         <h2 id="ad-gag-title" className="text-3xl font-bold">
           C&apos;était une fausse pub 😉
