@@ -180,7 +180,67 @@ lève une erreur hors du Provider, valeur mémorisée avec `useMemo`.
 
 ---
 
-## 2. Questions probables du prof
+## 2. La stack : ce qu'on a ajouté à React et TypeScript
+
+Tout est dans `package.json`. Une seule bibliothèque part dans le site final, le reste sert à coder.
+
+### Envoyé au navigateur (`dependencies`)
+
+| Paquet | Rôle |
+| --- | --- |
+| `react` | Composants et hooks. |
+| `react-dom` | Affiche React dans la page HTML (`createRoot` dans `src/main.tsx`). |
+| `react-router` | Associe une URL à une page sans recharger le site : `createBrowserRouter`, `<Link>`, `<Outlet>`, `useParams` (`src/app/router.tsx`). |
+
+### Outils de développement (`devDependencies`, absents du site final)
+
+| Outil | Rôle |
+| --- | --- |
+| Vite (+ `@vitejs/plugin-react`) | Serveur de dev avec rechargement instantané (`npm run dev`) et build vers `dist/` (`npm run build`). Le plugin lui apprend le JSX. |
+| Tailwind CSS (+ `@tailwindcss/vite`) | Le style par classes dans le JSX. Les couleurs des maquettes sont définies une fois dans `src/index.css` (`@theme`). |
+| Vitest | Les tests (`npm test`) : les `*.test.ts` de `src/utils/` et `src/contexts/`. |
+| ESLint (+ plugins) | Repère les erreurs sans lancer le code (`npm run lint`) : `react-hooks` (règles des hooks), `jsx-a11y` (accessibilité), `typescript-eslint`, `react-refresh`. |
+| Prettier (+ `prettier-plugin-tailwindcss`) | Met le code en forme (`npm run format`) et trie les classes Tailwind. `eslint-config-prettier` évite qu'ESLint et Prettier se contredisent. |
+| `@types/react`, `@types/react-dom`, `@types/node` | Les types TypeScript de ces bibliothèques. |
+| `globals` | La liste des variables globales (`window`, `document`…) pour ESLint. |
+
+### Services externes (rien à installer)
+
+DummyJSON (l'API imposée : Custom Response pour les 45 produits, `POST` / `PUT` / `DELETE`
+simulés), Vercel (hébergement), Google Fonts (Inter, Space Grotesk, JetBrains Mono), Unsplash
+(photos du mode NSFW).
+
+### Questions probables sur la stack
+
+**Pourquoi pas Redux, Zustand, TanStack Query ou Axios ?**
+Choix volontaire (R2). Les données partagées passent par les contextes, les requêtes par `fetch` et
+des hooks maison. À cette taille (45 produits, une dizaine de pages), ces bibliothèques ajouteraient
+des concepts sans rien résoudre de plus, et je peux expliquer chaque ligne du code.
+
+**Pourquoi React Router ?**
+React seul n'a pas de notion d'URL. Le routeur affiche la bonne page pour chaque adresse, gère les
+paramètres (`:id`) et le bouton Retour du navigateur, sans recharger le site.
+
+**Pourquoi Tailwind plutôt que des fichiers CSS ?**
+Le style est à côté du JSX qu'il décore, donc pas de noms de classes à inventer ni de CSS mort. Les
+couleurs des maquettes sont des variables (`@theme`) : `bg-page` change seul en mode sombre.
+
+**Quelle différence entre ESLint et Prettier ?**
+Prettier s'occupe de la forme (espaces, guillemets, longueur des lignes). ESLint s'occupe du fond
+(« ce hook est appelé dans un `if` », « cette image n'a pas d'`alt` »).
+
+**Pourquoi Vite ?**
+Le démarrage et le rechargement sont quasi instantanés en dev. Au build, il produit des fichiers
+minifiés, avec un hash dans le nom pour le cache, et découpés : la fiche produit est un fichier à part
+grâce à `lazy`.
+
+**Que fait `tsc -b` dans `npm run build` ?**
+Il vérifie les types avant le build. Vite ne vérifie pas les types : il enlève seulement le TypeScript.
+Sans `tsc -b`, une erreur de type pourrait partir en production.
+
+---
+
+## 3. Questions probables du prof
 
 **Pourquoi filtrer côté client et pas côté API ?**
 Mon endpoint Custom Response renvoie un JSON figé : il ignore `?q=`, `?limit=`, `?skip=`. Je charge
@@ -251,7 +311,7 @@ au mauvais produit. L'id est stable.
 
 ---
 
-## 3. Modifications qu'on pourrait me demander
+## 4. Modifications qu'on pourrait me demander
 
 | Demande | Où modifier |
 | --- | --- |
