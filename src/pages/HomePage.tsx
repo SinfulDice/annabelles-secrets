@@ -40,7 +40,7 @@ export function HomePage() {
       <ProductShowcase
         id="top-rated-title"
         title="Les mieux notés"
-        columns={4}
+        cardCount={TOP_RATED_COUNT}
         pickProducts={pickTopRated}
         seeAllLink={
           <Link to={SHOP_PATH} onClick={() => selectCategory('all')} className={seeAllClasses}>
@@ -52,7 +52,7 @@ export function HomePage() {
         id="goodies-title"
         title="Les goodies de la maison"
         subtitle="Produits dérivés Annabelle's Secrets, à porter sans rougir."
-        columns={5}
+        cardCount={5}
         pickProducts={pickGoodies}
         seeAllLink={
           <Link to={SHOP_PATH} onClick={() => selectCategory('goodies')} className={seeAllClasses}>

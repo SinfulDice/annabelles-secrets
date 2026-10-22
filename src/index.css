@@ -78,6 +78,21 @@
   --color-on-accent: #141017;
 }
 
+/*
+ * Product cards: as many columns as fit. Each is at least 130px on mobile (2 columns even at
+ * 320px) and 220px from the `sm` breakpoint (2 on tablet, 4 on desktop).
+ * auto-fill (not auto-fit) keeps the empty columns, so 1 or 2 search results never stretch
+ * across the whole width; a short row leaves free space on the right instead.
+ * min(100%, …) stops a card from overflowing a container narrower than the minimum.
+ */
+@utility grid-cards {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 130px), 1fr));
+
+  @variant sm {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  }
+}
+
 @layer base {
   /*
    * The header is sticky: when the page scrolls by itself (link to #avis, focus moved with Tab…),

@@ -13,12 +13,13 @@ type ProductShowcaseProps = {
   seeAllLink: ReactNode
   /** Chooses which loaded products to show. */
   pickProducts: (products: Product[]) => Product[]
-  columns: 4 | 5
+  /** Grey cards shown while loading: as many as the row will have. */
+  cardCount: number
 }
 
 /** A titled row of product cards on the home page, with its own loading and error states. */
 export function ProductShowcase(props: ProductShowcaseProps) {
-  const { id, title, subtitle, seeAllLink, pickProducts, columns } = props
+  const { id, title, subtitle, seeAllLink, pickProducts, cardCount } = props
   const { state, retry } = useProductsContext()
 
   return (
@@ -34,11 +35,9 @@ export function ProductShowcase(props: ProductShowcaseProps) {
       </div>
       {state.status === 'error' && <ProductsError message={state.error} onRetry={retry} />}
       {(state.status === 'idle' || state.status === 'loading') && (
-        <ProductsLoading cardCount={columns} />
+        <ProductsLoading cardCount={cardCount} />
       )}
-      {state.status === 'success' && (
-        <ProductGrid products={pickProducts(state.products)} columns={columns} />
-      )}
+      {state.status === 'success' && <ProductGrid products={pickProducts(state.products)} />}
     </section>
   )
 }

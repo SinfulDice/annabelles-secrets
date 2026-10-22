@@ -31,10 +31,7 @@ export function ProductsLoading({ cardCount }: ProductsLoadingProps) {
         <Spinner />
         <span className="text-ink">Chargement des produits…</span>
       </p>
-      <div
-        aria-hidden="true"
-        className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4"
-      >
+      <div aria-hidden="true" className="grid grid-cards gap-3 sm:gap-5">
         {placeholders.map((placeholder) => (
           <ProductCardSkeleton key={placeholder} />
         ))}

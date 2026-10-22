@@ -88,7 +88,7 @@ Références : `docs/projet-react.md` (cahier des charges), `docs/PROMPT_CLAUDE_
 - R80 [V1] En-tête : logo, navigation (Accueil, Boutique, Femme, Homme, Goodies), favoris avec compteur, compte, bascules ; menu burger sur mobile (sauf logo et favoris).
 - R81 [V1] Les liens Femme / Homme / Goodies et les tuiles d'accueil règlent la catégorie dans le contexte puis ouvrent `/produits`.
 - R82 [V1] Accueil : hero, engagements, tuiles d'univers, 4 produits les mieux notés, les 5 goodies, bloc newsletter.
-- R83 [V1] Aucun débordement horizontal de 320 px à 1440 px ; grille 2 colonnes sur mobile ; filtres secondaires derrière « Plus de filtres ».
+- R83 [V1] Aucun débordement horizontal de 320 px à 1440 px ; grille de cartes `grid-cards` (`repeat(auto-fill, minmax(min(100%, 130px), 1fr))`, minimum 220 px à partir de `sm`) : 2 colonnes sur mobile et tablette, 4 sur ordinateur ; les colonnes vides sont gardées, donc une carte ne s'étire jamais ; mêmes colonnes pour le chargement (décision du 2026-10-22) ; filtres secondaires derrière « Plus de filtres ».
 - R84 [V1] Tous les champs ont un label ; radios et cases groupées dans `fieldset` + `legend`.
 - R85 [V1] Focus visible partout, navigation complète au clavier, lien « Aller au contenu ».
 - R86 [V1] Boutons icônes avec `aria-label` ; SVG décoratifs en `aria-hidden` ; contraste ≥ 4.5:1.
