@@ -10,6 +10,7 @@ Références : `docs/projet-react.md` (cahier des charges), `docs/PROMPT_CLAUDE_
 - R2 [V1] Stack : Vite + React + TypeScript `strict` (aucun `any`, aucun `@ts-ignore`), Tailwind CSS v4, React Router (mode data), `fetch` + hooks maison. Pas de TanStack / Redux / Zustand.
 - R3 [V1] `npm run lint`, `format:check`, `typecheck`, `test` et `build` passent sans erreur ni warning avant chaque commit.
 - R4 [V1] Tests automatiques avec **Vitest** sur les fonctions pures (utils, reducers) ; chaque test cite le numéro de règle.
+  **Tests de bout en bout avec Playwright** (`tests/*.spec.ts`, lancés par `npm run test:e2e`) sur les parcours principaux : vérification d'âge, boutique, favoris, compte, administration. L'API des produits est simulée (`page.route`) avec `data/products.json` : les tests ne dépendent ni d'Internet ni du fichier `.env`, et peuvent simuler une panne et les réponses de DummyJSON (POST / PUT / DELETE). Objectif : 32 tests couvrant tout le site (12 + 20, décision du 2026-10-23). Chaque test cite aussi le numéro de règle. (Décision du 2026-10-23.)
 - R5 [V1] Favicon : « A. » bordeaux `#8A2846` sur un rond rose pâle `#F3E3E8`, en SVG (`/favicon.svg`) + PNG 32×32 et `apple-touch-icon` 180×180.
 - R6 [V1] Code et identifiants en anglais, textes d'interface en français. Clés `localStorage` préfixées `annabelle:` et centralisées dans `STORAGE_KEYS`.
 - R7 [V1] Titre d'onglet mis à jour à chaque route : « Page – Annabelle's Secrets ».
