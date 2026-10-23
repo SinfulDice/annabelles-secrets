@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useSessionProducts } from '../contexts/SessionProductsContext'
 import { isAbortError } from '../services/http'
 import { createProduct } from '../services/productsApi'
 import type { CreatedProductResponse, ProductFormValues } from '../types'
@@ -13,7 +13,7 @@ export type CreateProductState =
 
 /** Sends the form, then adds the created product to the shop (R73–R78). */
 export function useCreateProduct() {
-  const { state: productsState, addProduct } = useProductsContext()
+  const { mutations, addProduct } = useSessionProducts()
   const [state, setState] = useState<CreateProductState>({ status: 'idle' })
   // useRef: the controller must survive re-renders, but changing it must not cause one.
   const controllerRef = useRef<AbortController | null>(null)
@@ -30,8 +30,8 @@ export function useCreateProduct() {
 
       try {
         const response = await createProduct(payload, controller.signal)
-        const usedIds =
-          productsState.status === 'success' ? productsState.products.map((p) => p.id) : []
+        // R78: two products created in this session never share an address.
+        const usedIds = mutations.created.map((product) => product.id)
         const product = buildCreatedProduct(response, payload, usedIds)
         addProduct(product)
         setState({ status: 'success', response, productId: product.id })
@@ -41,7 +41,7 @@ export function useCreateProduct() {
         setState({ status: 'error', message })
       }
     },
-    [productsState, addProduct],
+    [mutations, addProduct],
   )
 
   const reset = useCallback(() => setState({ status: 'idle' }), [])

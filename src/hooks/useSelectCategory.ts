@@ -1,8 +1,8 @@
 import { useCallback } from 'react'
 import { useFilters } from '../contexts/FiltersContext'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useCatalogSummary } from '../contexts/CatalogContext'
 import type { CategoryFilter } from '../types'
-import { getAvailableTypes } from '../utils/filterProducts'
+import { typesForCategory } from '../utils/catalogTypes'
 
 /**
  * Used by the header links and the home tiles: puts the category in the filters context
@@ -10,17 +10,16 @@ import { getAvailableTypes } from '../utils/filterProducts'
  */
 export function useSelectCategory() {
   const { dispatch } = useFilters()
-  const { state } = useProductsContext()
+  const catalog = useCatalogSummary()
 
   return useCallback(
     (category: CategoryFilter) => {
-      const products = state.status === 'success' ? state.products : []
       dispatch({
         type: 'categoryChanged',
         category,
-        typesInCategory: getAvailableTypes(products, category),
+        typesInCategory: typesForCategory(catalog, category),
       })
     },
-    [dispatch, state],
+    [dispatch, catalog],
   )
 }

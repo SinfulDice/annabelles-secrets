@@ -10,10 +10,12 @@ import { buttonClasses } from '../components/ui/buttonClasses'
 import { PageLoading } from '../components/ui/PageLoading'
 import { StateMessage } from '../components/ui/StateMessage'
 import { SHOP_PATH } from '../constants/navigation'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useSessionProducts } from '../contexts/SessionProductsContext'
 import { usePageTitle } from '../hooks/usePageTitle'
+import { useRemoteData } from '../hooks/useRemoteData'
 import { ALL_REVIEWS } from '../services/reviews'
-import { lookupProduct } from '../utils/lookupProduct'
+import type { Product } from '../types'
+import { lookupProduct, productPath } from '../utils/lookupProduct'
 import { getProductReviews } from '../utils/productReviews'
 
 const pageClasses = 'mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:py-10'
@@ -21,8 +23,10 @@ const pageClasses = 'mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:py-10'
 export function ProductDetailPage() {
   // useParams reads the ":id" part of the address /produits/:id.
   const { id } = useParams()
-  const { state, retry } = useProductsContext()
-  const lookup = lookupProduct(state, id)
+  const { mutations } = useSessionProducts()
+  // R53: the page loads ITS product from the server (unless it was created in this session).
+  const { state, retry } = useRemoteData<Product>(productPath(id, mutations))
+  const lookup = lookupProduct(id, state, mutations)
   usePageTitle(lookup.status === 'found' ? lookup.product.title : 'Fiche produit')
 
   if (lookup.status === 'loading') return <PageLoading label="Chargement du produit…" />

@@ -38,13 +38,21 @@ export function productMutationsReducer(
   }
 }
 
-/** The list the shop shows: loaded + created, minus deleted, with the edits applied. */
-export function applyMutations(loaded: Product[], mutations: ProductMutations): Product[] {
+/**
+ * Products received from the server, as this browser must show them (R114): deleted ones
+ * hidden, edits applied. The page may then show one card less: the server doesn't know.
+ */
+export function applySessionChanges(products: Product[], mutations: ProductMutations): Product[] {
   const deleted = new Set(mutations.deletedIds)
-  return [...loaded, ...mutations.created]
+  return products
     .filter((product) => !deleted.has(product.id))
     .map((product) => {
       const changes = mutations.updated[product.id]
       return changes ? { ...product, ...changes } : product
     })
+}
+
+/** The products created in this session (R77), with their own later edits and deletions. */
+export function sessionCreatedProducts(mutations: ProductMutations): Product[] {
+  return applySessionChanges(mutations.created, mutations)
 }

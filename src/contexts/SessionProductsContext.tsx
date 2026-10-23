@@ -1,25 +1,27 @@
 import { createContext, useCallback, useContext, useMemo, useReducer, type ReactNode } from 'react'
-import { useProducts, type ProductsState } from '../hooks/useProducts'
 import type { Product } from '../types'
 import {
-  applyMutations,
   initialMutations,
   productMutationsReducer,
+  type ProductMutations,
 } from '../utils/productMutations'
 
-type ProductsContextValue = {
-  /** Loaded products with this session's creations, edits and deletions applied. */
-  state: ProductsState
-  retry: () => void
+type SessionProductsContextValue = {
+  /** Products created, edited and deleted in this browser since the page was opened. */
+  mutations: ProductMutations
   addProduct: (product: Product) => void
   updateProduct: (id: number, changes: Partial<Product>) => void
   removeProduct: (id: number) => void
 }
 
-const ProductsContext = createContext<ProductsContextValue | null>(null)
+const SessionProductsContext = createContext<SessionProductsContextValue | null>(null)
 
-export function ProductsProvider({ children }: { children: ReactNode }) {
-  const { state: loadState, retry } = useProducts()
+/**
+ * DummyJSON only simulates writes, and our API only reads (R10): the admin's changes live
+ * here until the page is reloaded (R77, R112, R114). The pages from the server are shown
+ * with these changes applied (see utils/productMutations.ts).
+ */
+export function SessionProductsProvider({ children }: { children: ReactNode }) {
   // A reducer for the 3 kinds of changes (created / updated / deleted), tested on its own.
   const [mutations, dispatch] = useReducer(productMutationsReducer, initialMutations)
 
@@ -32,21 +34,18 @@ export function ProductsProvider({ children }: { children: ReactNode }) {
 
   // useMemo: without it, a new object would be created on every render and every component
   // reading this context would re-render, even when nothing changed.
-  const value = useMemo<ProductsContextValue>(() => {
-    const state: ProductsState =
-      loadState.status === 'success'
-        ? { status: 'success', products: applyMutations(loadState.products, mutations) }
-        : loadState
-    return { state, retry, addProduct, updateProduct, removeProduct }
-  }, [loadState, mutations, retry, addProduct, updateProduct, removeProduct])
+  const value = useMemo<SessionProductsContextValue>(
+    () => ({ mutations, addProduct, updateProduct, removeProduct }),
+    [mutations, addProduct, updateProduct, removeProduct],
+  )
 
-  return <ProductsContext value={value}>{children}</ProductsContext>
+  return <SessionProductsContext value={value}>{children}</SessionProductsContext>
 }
 
-export function useProductsContext(): ProductsContextValue {
-  const context = useContext(ProductsContext)
+export function useSessionProducts(): SessionProductsContextValue {
+  const context = useContext(SessionProductsContext)
   if (!context) {
-    throw new Error('useProductsContext doit être utilisé dans <ProductsProvider>.')
+    throw new Error('useSessionProducts doit être utilisé dans <SessionProductsProvider>.')
   }
   return context
 }

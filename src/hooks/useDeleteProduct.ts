@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router'
 import { SHOP_PATH } from '../constants/navigation'
 import { useAccount } from '../contexts/AccountContext'
 import { useFavorites } from '../contexts/FavoritesContext'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useSessionProducts } from '../contexts/SessionProductsContext'
 import { useToast } from '../contexts/ToastContext'
 import { isAbortError } from '../services/http'
 import { deleteProduct } from '../services/productsApi'
@@ -15,7 +15,7 @@ export type DeleteProductState =
 /** DELETE, then removes the product from the shop and the favorites, toast, back to /produits. */
 export function useDeleteProduct(product: Product) {
   const { isAdmin } = useAccount()
-  const { removeProduct } = useProductsContext()
+  const { removeProduct } = useSessionProducts()
   const { forgetProduct } = useFavorites()
   const { showToast } = useToast()
   const navigate = useNavigate()

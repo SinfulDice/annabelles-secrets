@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
-import { useProductsContext } from '../../contexts/ProductsContext'
-import type { Product } from '../../types'
+import { useSessionProducts } from '../../contexts/SessionProductsContext'
+import { useRemoteData } from '../../hooks/useRemoteData'
+import type { ProductPage } from '../../types'
+import { applySessionChanges } from '../../utils/productMutations'
 import { ProductGrid } from '../products/ProductGrid'
 import { ProductsError } from '../products/ProductsError'
 import { ProductsLoading } from '../products/ProductsLoading'
@@ -11,16 +13,17 @@ type ProductShowcaseProps = {
   subtitle?: string
   /** Link shown next to the title (« Tout voir dans la boutique »…). */
   seeAllLink: ReactNode
-  /** Chooses which loaded products to show. */
-  pickProducts: (products: Product[]) => Product[]
+  /** The products to show: an address of our API, e.g. `/api/products?category=goodies`. */
+  path: string
   /** Grey cards shown while loading: as many as the row will have. */
   cardCount: number
 }
 
 /** A titled row of product cards on the home page, with its own loading and error states. */
 export function ProductShowcase(props: ProductShowcaseProps) {
-  const { id, title, subtitle, seeAllLink, pickProducts, cardCount } = props
-  const { state, retry } = useProductsContext()
+  const { id, title, subtitle, seeAllLink, path, cardCount } = props
+  const { state, retry } = useRemoteData<ProductPage>(path)
+  const { mutations } = useSessionProducts()
 
   return (
     <section aria-labelledby={id} className="flex flex-col gap-5">
@@ -34,10 +37,10 @@ export function ProductShowcase(props: ProductShowcaseProps) {
         {seeAllLink}
       </div>
       {state.status === 'error' && <ProductsError message={state.error} onRetry={retry} />}
-      {(state.status === 'idle' || state.status === 'loading') && (
-        <ProductsLoading cardCount={cardCount} />
+      {state.status === 'loading' && <ProductsLoading cardCount={cardCount} />}
+      {state.status === 'success' && (
+        <ProductGrid products={applySessionChanges(state.data.products, mutations)} />
       )}
-      {state.status === 'success' && <ProductGrid products={pickProducts(state.products)} />}
     </section>
   )
 }

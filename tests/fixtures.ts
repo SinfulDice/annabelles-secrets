@@ -1,5 +1,4 @@
 import { test as base } from '@playwright/test'
-import { MOCK_PRODUCTS_URL, productsResponse } from './mock-api'
 
 type Options = {
   /** true (default): the 18+ answer is already stored, the age dialog never shows up. */
@@ -16,9 +15,6 @@ export const test = base.extend<Options>({
   // Playwright calls the 2nd parameter `use` in its docs; renamed so the React hooks lint rule
   // doesn't mistake it for React's use() hook.
   page: async ({ page, ageConfirmed }, runTest) => {
-    // R4: the products request never reaches the internet, Playwright answers it.
-    await page.route(`${MOCK_PRODUCTS_URL}**`, (route) => route.fulfill({ json: productsResponse }))
-
     if (ageConfirmed) {
       // Runs in the browser before the app's own code, on every page load.
       // Same key as STORAGE_KEYS.ageConfirmed (src/constants/config.ts can't be imported here).

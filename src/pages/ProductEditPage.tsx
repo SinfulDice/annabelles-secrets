@@ -5,17 +5,21 @@ import { buttonClasses } from '../components/ui/buttonClasses'
 import { PageLoading } from '../components/ui/PageLoading'
 import { StateMessage } from '../components/ui/StateMessage'
 import { SHOP_PATH } from '../constants/navigation'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useSessionProducts } from '../contexts/SessionProductsContext'
 import { usePageTitle } from '../hooks/usePageTitle'
-import { lookupProduct } from '../utils/lookupProduct'
+import { useRemoteData } from '../hooks/useRemoteData'
+import type { Product } from '../types'
+import { lookupProduct, productPath } from '../utils/lookupProduct'
 
 const pageClasses = 'mx-auto flex max-w-3xl flex-col gap-6 px-4 py-8 sm:py-12'
 
 /** /produits/:id/modifier — admin only (guarded by RequireAdmin in the router). */
 export function ProductEditPage() {
   const { id } = useParams()
-  const { state, retry } = useProductsContext()
-  const lookup = lookupProduct(state, id)
+  const { mutations } = useSessionProducts()
+  // R53: the page loads ITS product from the server (unless it was created in this session).
+  const { state, retry } = useRemoteData<Product>(productPath(id, mutations))
+  const lookup = lookupProduct(id, state, mutations)
   usePageTitle(
     lookup.status === 'found' ? `Modifier ${lookup.product.title}` : 'Modifier un produit',
   )

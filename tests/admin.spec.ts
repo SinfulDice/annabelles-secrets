@@ -50,10 +50,12 @@ test('R73 R76 R77 l’admin crée un produit, voit le récapitulatif, et le retr
   await expect(page.getByText('Plume Test')).toBeVisible()
   await expect(page.getByText('49,90 €')).toBeVisible()
 
-  // R77: the product is in the shop until the next reload (so: a click, not page.goto).
+  // R77: the product is in the shop until the next reload (so: a click, not page.goto),
+  // in its own block: the server doesn't know it, so it can't be in its pages.
   await page.getByRole('link', { name: 'Boutique' }).first().click()
-  await page.getByRole('searchbox', { name: 'Rechercher un produit' }).fill('plume test')
-  await expect(page.getByRole('link', { name: 'Plume Test' })).toBeVisible()
+  const sessionBlock = page.getByRole('region', { name: 'Ajoutés pendant cette session' })
+  await sessionBlock.getByRole('link', { name: 'Plume Test' }).click()
+  await expect(page.getByRole('heading', { level: 1, name: 'Plume Test' })).toBeVisible()
 })
 
 test('R111 R113 l’admin supprime un produit : il disparaît de la boutique et des favoris', async ({
@@ -78,7 +80,8 @@ test('R111 R113 l’admin supprime un produit : il disparaît de la boutique et 
   await dialog.getByRole('button', { name: 'Oui, supprimer' }).click()
 
   await expect(page).toHaveURL('/produits')
-  await expect(page.getByText('44 résultats · Page 1 sur 4')).toBeVisible()
+  // R114: hidden from the page sent by the server (whose total doesn't know about it).
+  await expect(page.getByRole('button', { name: /^Favori : / }).first()).toBeVisible()
   await expect(page.getByRole('link', { name: 'Onde Rosée' })).toHaveCount(0)
   await expect(page.getByRole('link', { name: 'Favoris (0)' })).toBeVisible()
 })

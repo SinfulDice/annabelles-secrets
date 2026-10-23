@@ -1,5 +1,4 @@
 import { defineConfig, devices } from '@playwright/test'
-import { MOCK_PRODUCTS_URL } from './tests/mock-api'
 
 /** Its own port, so the tests never reuse the `npm run dev` you have open on 5173. */
 const PORT = 5174
@@ -29,8 +28,7 @@ export default defineConfig({
   webServer: {
     command: `npm run dev -- --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}`,
+    // The Vite plugin serves our API too (R10): no internet, no .env needed (R4).
     reuseExistingServer: !process.env.CI,
-    // Variables given here win over the .env file: the app asks the fake API (R4).
-    env: { VITE_PRODUCTS_URL: MOCK_PRODUCTS_URL },
   },
 })

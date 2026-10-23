@@ -4,6 +4,29 @@ Boutique en ligne **fictive** de bien-être intime (projet de cours React, B3 fr
 Trois univers : **Femme**, **Homme** et **Goodies** (produits dérivés de la marque).
 Aucun paiement, aucune vraie commande : c'est une démonstration.
 
+> **Branche `feat/server-side-api` : ajouts faits après l'oral**
+>
+> La version rendue est sur `main`. Cette branche répond à la remarque de l'oral : « imagine
+> 25 000 produits, tu ne vas pas tout télécharger pour trier dessus ».
+>
+> - **Notre propre API** (fonctions Vercel en TypeScript, dossiers `api/` et `server/`) remplace la
+>   lecture DummyJSON. Le **serveur** cherche, filtre, trie et découpe le catalogue ; le navigateur ne
+>   reçoit que **la page affichée** (12 produits) :
+>   - `GET /api/products?q=…&category=…&type=…&maxPrice=…&waterproof=true&sort=…&page=…` → une page
+>     et le total ;
+>   - `GET /api/products/{id}` → un produit (404 s'il n'existe pas) ;
+>   - `GET /api/catalog` → nombre de produits et types par catégorie (accueil, filtre « Type »).
+> - Le serveur ne fait pas confiance à l'URL : une valeur invalide prend sa valeur par défaut, et
+>   une page fait 48 produits au maximum.
+> - Chaque changement de filtre ou de page envoie une requête ; la précédente est annulée. Pendant le
+>   chargement, l'ancienne page reste affichée, grisée, avec « Mise à jour… ».
+> - Plus de variable d'environnement : `npm run dev` sert aussi l'API (plugin dans `vite.config.ts`).
+> - Les produits créés par l'admin s'affichent dans un encart « Ajoutés pendant cette session ».
+> - Tests : 381 tests Vitest (dont 33 pour l'API) et 33 tests Playwright (`npm run test:e2e`).
+>
+> Les règles modifiées sont dans `SPEC.md` (R10, R11, R17 à R19, R41, R53, R77, R82, R114) ; le
+> détail est plus bas dans « Choix techniques » et « Limites ».
+
 > **Tester l'accès admin**
 >
 > Page **Mon compte** (icône en haut à droite) → onglet « Se connecter » :
@@ -19,13 +42,19 @@ Aucun paiement, aucune vraie commande : c'est une démonstration.
 
 ## Sujet et API
 
-Le site utilise l'API [DummyJSON](https://dummyjson.com/) de deux façons :
+Le site lit ses produits avec **sa propre petite API** (fonctions Vercel en TypeScript), et utilise
+[DummyJSON](https://dummyjson.com/) pour simuler les écritures :
 
-| Besoin               | Endpoint                                                                       | Pourquoi                                                                                                                                 |
-| -------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Lire les 45 produits | [Custom Response](https://dummyjson.com/custom-response) (`VITE_PRODUCTS_URL`) | Les produits de DummyJSON (téléphones, parfums…) ne collent pas au thème : j'ai publié mon propre jeu de données (`data/products.json`). |
-| Créer un produit     | `POST https://dummyjson.com/products/add`                                      | Endpoint de création officiel ; DummyJSON simule l'enregistrement et renvoie le produit avec un id.                                      |
-| Modifier / supprimer | `PUT` / `DELETE https://dummyjson.com/products/{id}`                           | Endpoints officiels ; DummyJSON simule la modification et la suppression.                                                                |
+| Besoin               | Endpoint                                             | Pourquoi                                                                                                                     |
+| -------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Une page de produits | `GET /api/products?q=…&category=…&page=…` (la nôtre) | Le serveur cherche, filtre, trie et découpe en pages : le navigateur ne reçoit que les 12 produits affichés.                 |
+| Un produit           | `GET /api/products/{id}` (la nôtre)                  | La fiche charge son produit (accès direct à l'URL) ; 404 si l'id est inconnu.                                                |
+| Résumé du catalogue  | `GET /api/catalog` (la nôtre)                        | Nombre de produits par catégorie et liste des types (accueil, filtre « Type ») : petit, quel que soit le nombre de produits. |
+| Créer un produit     | `POST https://dummyjson.com/products/add`            | Endpoint de création officiel ; DummyJSON simule l'enregistrement et renvoie le produit avec un id.                          |
+| Modifier / supprimer | `PUT` / `DELETE https://dummyjson.com/products/{id}` | Endpoints officiels ; DummyJSON simule la modification et la suppression.                                                    |
+
+Les produits de DummyJSON (téléphones, parfums…) ne collent pas au thème : notre API lit notre propre
+jeu de données, `data/products.json` (45 produits).
 
 Les **500 avis clients** (`src/data/reviews.json`) sont livrés avec l'application et répartis de façon
 déterministe : un même produit affiche toujours les mêmes avis.
@@ -41,8 +70,7 @@ déterministe : un même produit affiche toujours les mêmes avis.
 git clone https://github.com/SinfulDice/annabelles-secrets.git
 cd annabelles-secrets
 npm install
-cp .env.example .env        # puis coller l'URL de l'API dans .env (voir Configuration)
-npm run dev                 # http://localhost:5173
+npm run dev                 # http://localhost:5173 (le site ET l'API /api/…)
 ```
 
 | Commande                          | Rôle                                                  |
@@ -53,60 +81,64 @@ npm run dev                 # http://localhost:5173
 | `npm run lint`                    | ESLint (échoue au moindre avertissement)              |
 | `npm run format` / `format:check` | Prettier : corrige / vérifie la mise en forme         |
 | `npm run typecheck`               | Vérification TypeScript                               |
-| `npm test`                        | Tests Vitest (342 tests)                              |
+| `npm test`                        | Tests Vitest (381 tests)                              |
+| `npm run test:e2e`                | Tests Playwright de bout en bout (33 tests)           |
 
 ## Configuration
 
-Une seule variable d'environnement, dans `.env` :
+**Aucune variable d'environnement.** En production, Vercel transforme les fichiers de `api/` en
+adresses `/api/…`. En développement, un petit plugin Vite (dans `vite.config.ts`) sert les mêmes
+adresses avec le même code (`server/routes.ts`) : `npm run dev` suffit.
 
-```bash
-VITE_PRODUCTS_URL=https://dummyjson.com/c/76f2-b083-42df-a6fa
-```
-
-Sans elle, l'application affiche un message clair au lieu de planter.
-
-**L'endpoint Custom Response expire après 90 jours.** Pour en créer un nouveau :
-
-1. Ouvrir <https://dummyjson.com/custom-response>.
-2. Coller le contenu de `data/products.json` et valider.
-3. Copier l'URL obtenue dans `.env` (et dans les variables d'environnement Vercel).
-
-`data/products.json` n'est **jamais importé** par l'application : c'est seulement la copie de
-sauvegarde qui sert à régénérer l'endpoint.
+Pour changer les produits, modifier `data/products.json` puis redéployer. Ce fichier est lu par le
+serveur uniquement : le code du navigateur (`src/`) ne l'importe jamais.
 
 **Changer les images du mode NSFW** (mode prévu en extra) : modifier les tableaux `nsfwImages` et
-`nsfwImageCredits` de `data/products.json`, puis régénérer l'endpoint (voir `docs/NSFW_IMAGES.md`).
+`nsfwImageCredits` de `data/products.json`, puis redéployer (voir `docs/NSFW_IMAGES.md`).
 
 ## Choix techniques
 
-**Recherche, filtres, tri et pagination côté client.** L'endpoint Custom Response renvoie un JSON
-figé : il ne sait ni chercher, ni filtrer, ni paginer. L'application charge donc **une seule fois** les
-45 produits, puis applique des **fonctions pures** (`utils/filterProducts.ts`, `utils/paginate.ts`) sur
-la liste complète, jamais seulement sur la page visible. Avec 45 produits, c'est instantané. Ces
-résultats sont calculés pendant le rendu (pas stockés dans un état), donc toujours à jour.
+**Recherche, filtres, tri et pagination côté serveur.** Dans la première version, l'application
+chargeait les 45 produits une seule fois et filtrait dans le navigateur. À l'oral, la remarque a été :
+« imagine 25 000 produits ». Tout télécharger serait alors lent et lourd. Maintenant :
+
+- les filtres du contexte deviennent une adresse (`utils/productQuery.ts`) :
+  `/api/products?category=femme&page=2` ;
+- le serveur (`server/catalog.ts`) filtre, trie et découpe **tout** le catalogue avec les mêmes
+  fonctions pures qu'avant (`utils/filterProducts.ts`, `utils/paginate.ts`), puis renvoie **une seule
+  page** (12 produits, 48 au maximum) avec le total. Avec une vraie base de données, ce serait une
+  requête SQL (`WHERE … ORDER BY … LIMIT 12 OFFSET 12`) ;
+- le serveur ne fait jamais confiance à l'URL : une valeur invalide prend sa valeur par défaut ;
+- chaque changement de critère ou de page envoie une requête ; la précédente est annulée
+  (`AbortController`), donc une vieille réponse n'écrase jamais une plus récente. La recherche texte
+  attend 300 ms après la dernière frappe ;
+- pendant le chargement de la page suivante, l'ancienne reste affichée, grisée, avec « Mise à jour… »
+  (les squelettes ne servent qu'au tout premier chargement).
 
 **Contextes React** (dans `src/contexts/`, chacun avec son hook qui lève une erreur hors du Provider) :
 
-| Contexte             | Rôle                                                                                                                                                                                                                                 |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `ProductsContext`    | Charge les produits une fois pour toute l'app, expose l'état (chargement / succès / erreur), `retry`, et applique par-dessus les créations, modifications et suppressions de la session (un `useReducer` testé à part).              |
-| `FiltersContext`     | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
-| `AccountContext`     | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
-| `ThemeContext`       | Thème clair / sombre : choix sauvegardé, sinon réglage du système ; met la classe `dark` sur `<html>`.                                                                                                                               |
-| `AgeGateContext`     | Réponse à la vérification d'âge, utilisée par la modale, les pubs et le mode NSFW.                                                                                                                                                   |
-| `ContentModeContext` | Mode SFW / NSFW et images déjà affichées.                                                                                                                                                                                            |
-| `AdsContext`         | Formats de pubs fermés et étapes de la blague des pubs.                                                                                                                                                                              |
-| `NewsletterContext`  | Abonnés de la newsletter factice dans `localStorage` (`annabelle:newsletter`), avec une attente simulée.                                                                                                                             |
-| `FavoritesContext`   | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
-| `ToastContext`       | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
+| Contexte                 | Rôle                                                                                                                                                                                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `CatalogContext`         | Charge une fois le petit résumé du catalogue (`/api/catalog`) : nombre de produits par catégorie et types, pour l'accueil et le filtre « Type ».                                                                                     |
+| `SessionProductsContext` | Garde les créations, modifications et suppressions de l'admin pendant la session (un `useReducer` testé à part) ; elles sont appliquées par-dessus les pages reçues du serveur.                                                      |
+| `FiltersContext`         | Recherche, catégorie, type, prix, étanche, tri et page, gérés par un `useReducer`. Placé au-dessus du routeur : les critères survivent à un aller-retour liste ↔ fiche. Le reducer remet la page à 1 à chaque changement de critère. |
+| `AccountContext`         | Comptes de démonstration et session, dans `localStorage` (`annabelle:accounts`, `annabelle:session`) ; expose `currentUser`, `isAdmin`, inscription, connexion, modification, suppression.                                           |
+| `ThemeContext`           | Thème clair / sombre : choix sauvegardé, sinon réglage du système ; met la classe `dark` sur `<html>`.                                                                                                                               |
+| `AgeGateContext`         | Réponse à la vérification d'âge, utilisée par la modale, les pubs et le mode NSFW.                                                                                                                                                   |
+| `ContentModeContext`     | Mode SFW / NSFW et images déjà affichées.                                                                                                                                                                                            |
+| `AdsContext`             | Formats de pubs fermés et étapes de la blague des pubs.                                                                                                                                                                              |
+| `NewsletterContext`      | Abonnés de la newsletter factice dans `localStorage` (`annabelle:newsletter`), avec une attente simulée.                                                                                                                             |
+| `FavoritesContext`       | Favoris sans doublon, sauvegardés dans `localStorage` (`annabelle:favorites`) sous forme d'instantanés : la page Favoris fonctionne même si l'API est en panne.                                                                      |
+| `ToastContext`           | Notifications temporaires (`role="status"`).                                                                                                                                                                                         |
 
 **Requêtes** : une seule fonction `httpRequest` (`services/http.ts`) vérifie `response.ok`, transforme
-les échecs en `HttpError` (code + message en français) et accepte un `AbortController`. Les requêtes
-lancées dans un `useEffect` sont annulées au démontage. L'état de chargement est une **union
-discriminée** (`idle | loading | success | error`) plutôt que plusieurs booléens.
+les échecs en `HttpError` (code + message en français) et accepte un `AbortController`. Un seul hook,
+`useRemoteData(adresse)`, charge une page de produits, un produit ou le catalogue : il relance la
+requête quand l'adresse change et annule la précédente. Son état est une **union discriminée**
+(`loading | success | error`) plutôt que plusieurs booléens.
 
-**Pas de TanStack Query, Redux ni Zustand** : le besoin est petit (une requête de lecture, une
-création), et les hooks de React suffisent. Le cours demande de savoir expliquer `useState`,
+**Pas de TanStack Query, Redux ni Zustand** : le besoin reste petit (trois adresses de lecture, trois
+écritures simulées), et les hooks de React suffisent. Le cours demande de savoir expliquer `useState`,
 `useEffect`, `useRef` et `useContext` sur son propre code. Les explications de chaque hook sont dans
 [`docs/ORAL.md`](docs/ORAL.md).
 
@@ -116,12 +148,15 @@ création), et les hooks de React suffisent. Le cours demande de savoir explique
 **Structure** :
 
 ```
+api/            fichiers des fonctions Vercel (une ligne chacun : ils appellent server/)
+server/         notre API : routes.ts (requête → réponse) et catalog.ts (filtre, tri, pages), testés
+data/           products.json, le catalogue lu par le serveur
 src/
   app/          routeur, empilement des contextes
   pages/        une page par route
   components/   layout/, products/, home/, ui/ (composants génériques sans logique métier)
   contexts/     contextes + reducer des filtres
-  hooks/        hooks maison (useProducts, useDebouncedValue, useLocalStorage, useFocusTrap…)
+  hooks/        hooks maison (useRemoteData, useDebouncedValue, useLocalStorage, useFocusTrap…)
   services/     appels réseau (http.ts, productsApi.ts)
   utils/        fonctions pures, toutes testées
   types/        types TypeScript
@@ -157,8 +192,10 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
 - Favoris : ajout / retrait depuis les cartes et la fiche, sans doublon, sauvegardés et restaurés.
 - Création d'un produit : formulaire contrôlé, validation avec messages compréhensibles, `POST` en
   JSON, bouton désactivé pendant l'envoi, valeurs conservées et « Réessayer » en cas d'échec,
-  récapitulatif construit à partir de la réponse de l'API. Le produit apparaît ensuite dans la boutique.
-- États : chargement (squelettes), erreur avec « Réessayer », aucun résultat, aucun favori, produit
+  récapitulatif construit à partir de la réponse de l'API. Le produit apparaît ensuite dans la boutique,
+  dans un encart « Ajoutés pendant cette session ».
+- États : chargement (squelettes au premier chargement, puis anciens résultats grisés avec
+  « Mise à jour… »), erreur avec « Réessayer », aucun résultat, aucun favori, produit
   introuvable, page 404.
 - Responsive de 320 à 1440 px (menu burger, filtres repliables, barre favori collante sur mobile).
 - Accessibilité : labels sur tous les champs, textes alternatifs, navigation au clavier, focus
@@ -206,21 +243,24 @@ ESLint reste en version 9 car `eslint-plugin-jsx-a11y` ne supporte pas encore ES
 CRUD complet ; **thème sombre** partagé par un contexte (`ThemeContext`), sauvegardé dans
 `localStorage` (`annabelle:theme`) et restauré à l'ouverture, qui suit le réglage du système tant
 qu'on n'a rien choisi (un petit script dans `index.html` l'applique avant React pour éviter un flash
-blanc) ; déploiement Vercel (`vercel.json` réécrit toutes les routes vers `index.html`).
+blanc) ; déploiement Vercel (`vercel.json` réécrit toutes les routes sauf `/api/…` vers `index.html`) ;
+**API maison** avec recherche, filtres et pagination côté serveur ; **33 tests Playwright** de bout en
+bout, en plus des tests Vitest.
 
 Tous les extras prévus sont réalisés.
 
 ## Limites et problèmes connus
 
-- **L'endpoint Custom Response expire après 90 jours** : il faut alors le régénérer (voir Configuration).
-- **Bug de cache CORS de DummyJSON** : les réponses Custom Response sont mises en cache 24 h avec
-  l'autorisation CORS du _premier_ site qui les a demandées ; les autres sites étaient bloqués
-  (« Impossible de joindre le serveur »). Contournement : l'adresse du site est ajoutée à l'URL
-  (`?origin=…`), ce qui donne une entrée de cache par site.
+- **Le « serveur » lit un fichier JSON**, pas une base de données : pour 25 000 produits, il faudrait
+  une vraie base (PostgreSQL…) avec des index, et la recherche sans accents se ferait en SQL.
 - **Créations non persistées** : DummyJSON simule l'enregistrement ; les produits créés disparaissent
-  au rechargement (autorisé par le cahier des charges).
+  au rechargement (autorisé par le cahier des charges). Notre API ne les connaît pas : ils sont
+  montrés à part, dans l'encart « Ajoutés pendant cette session », sans filtre ni pagination.
+- **Produit supprimé pendant la session** : il est masqué de la page reçue du serveur, qui montre
+  alors une carte de moins, et le nombre de résultats n'est pas corrigé.
 - **DummyJSON renvoie toujours l'id 195** à la création : l'application donne au produit le premier
-  id libre (195, 196…) pour que deux produits créés n'aient pas la même adresse. Le récapitulatif
+  id libre (195, 196…) parmi les produits créés, pour que deux produits créés n'aient pas la même
+  adresse. Avec plus de 195 produits côté serveur, cet id pourrait déjà exister. Le récapitulatif
   affiche l'id renvoyé par l'API et signale l'écart.
 - **Réponse de `PUT` ignorée** : pour les ids 1 à 45, DummyJSON renvoie _son_ produit du même id
   (un mascara…) mélangé avec nos champs. L'application ne garde que le statut HTTP et applique ce

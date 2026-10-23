@@ -49,10 +49,3 @@ export type Product = {
   /** Created in this browser: unknown to DummyJSON, so PUT/DELETE stay local. */
   isLocal?: boolean
 }
-
-export type ProductsResponse = {
-  products: Product[]
-  total: number
-  skip: number
-  limit: number
-}

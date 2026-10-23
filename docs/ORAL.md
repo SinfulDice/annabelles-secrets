@@ -11,7 +11,7 @@ Puis les questions probables du prof, avec une réponse courte.
 
 | Où | Pourquoi |
 | --- | --- |
-| `hooks/useProducts.ts` : `state`, `attempt` | L'état de la requête (chargement / succès / erreur) et un compteur de tentatives pour « Réessayer ». |
+| `hooks/useRemoteData.ts` : `result`, `attempt` | La dernière réponse reçue (étiquetée avec la requête à laquelle elle répond) et un compteur de tentatives pour « Réessayer ». |
 | `components/products/ProductForm.tsx` : `values`, `failedAttempts` | Le formulaire **contrôlé** : chaque champ affiche `values[champ]` et le modifie à chaque frappe. |
 | `hooks/useSearchText.ts` : `searchText` | Le texte tapé, mis à jour à chaque touche (le contexte, lui, ne reçoit la valeur qu'après 300 ms). |
 | `ProductGallery`, `ProductReviews`, `Header`, `SearchForm` | Image choisie, filtre d'étoiles, menu ouvert, « Plus de filtres » : un état **local**, car aucun autre composant n'en a besoin. |
@@ -30,7 +30,7 @@ rien de nouveau. L'écran ne suivrait pas les actions de l'utilisateur.
 
 | Où | Ce qu'il synchronise | Le nettoyage (`return () => …`) |
 | --- | --- | --- |
-| `useProducts.ts` | Lance le `fetch` des produits ; relancé quand `attempt` change (« Réessayer »). | `controller.abort()` : annule la requête si le composant disparaît. |
+| `useRemoteData.ts` | Lance le `fetch` d'une adresse de notre API ; relancé quand l'adresse change (nouveau filtre, nouvelle page) ou quand `attempt` change (« Réessayer »). | `controller.abort()` : annule la requête précédente, donc une vieille réponse n'écrase jamais une plus récente. |
 | `useDebouncedValue.ts` | Lance un minuteur de 300 ms à chaque nouvelle valeur. | `clearTimeout` : chaque frappe **annule** le minuteur précédent. C'est ça, le debounce. |
 | `useSearchText.ts` | Envoie la recherche « calmée » au contexte des filtres. | — |
 | `useLocalStorage.ts` | Sauvegarde la valeur à chaque changement. | — |
@@ -47,10 +47,12 @@ rien de nouveau. L'écran ne suivrait pas les actions de l'utilisateur.
 fois, au montage. Le linter (`react-hooks/exhaustive-deps`) vérifie qu'on n'oublie rien : il m'a
 d'ailleurs signalé un `[]` recréé à chaque rendu dans `useSelectCategory`.
 
-**Ce que je ne fais PAS avec `useEffect`** : calculer la liste filtrée. Elle est calculée **pendant le
-rendu** dans `ProductsPage` (`filterProducts` → `sortProducts` → `paginate`). La stocker dans un état
-mis à jour par un effet ferait un rendu en trop et risquerait d'afficher une liste en retard sur les
-filtres.
+**Ce que je ne fais PAS avec `useEffect`** : calculer ce qui se déduit d'autre chose. L'adresse de la
+page à demander est calculée **pendant le rendu** dans `ProductsPage`
+(`productPagePath(toProductQuery(filters))`), et l'état « chargement » de `useRemoteData` aussi
+(« la dernière réponse est pour une autre adresse »). Les stocker dans un état mis à jour par un effet
+ferait un rendu en trop et risquerait d'afficher une page en retard sur les filtres. Le seul effet
+sert à ce qui est vraiment extérieur : la requête réseau.
 
 **Pourquoi les effets tournent deux fois en développement ?** `<StrictMode>` (dans `main.tsx`) monte,
 démonte puis remonte chaque composant pour vérifier que les nettoyages sont corrects. En production,
@@ -105,7 +107,7 @@ useEffect(() => {
 
 ### `useContext` : lire une valeur partagée sans la passer de parent en enfant
 
-Utilisé à l'intérieur de chaque hook de contexte (`useFilters`, `useFavorites`, `useProductsContext`,
+Utilisé à l'intérieur de chaque hook de contexte (`useFilters`, `useFavorites`, `useCatalog`, `useSessionProducts`,
 `useToast`). Chacun vérifie qu'il est bien sous son Provider et lève une erreur claire sinon.
 
 **Sans lui** : il faudrait passer `filters`, `favorites`, etc. en props à travers toutes les couches
@@ -126,15 +128,15 @@ Dans `contexts/FiltersContext.tsx`, avec le reducer `contexts/filtersReducer.ts`
 
 ### `useMemo` et `useCallback` : garder la même valeur / la même fonction d'un rendu à l'autre
 
-- `useMemo` sur la **valeur des contextes** (`ProductsContext`, `FiltersContext`, `FavoritesContext`,
+- `useMemo` sur la **valeur des contextes** (`CatalogContext`, `SessionProductsContext`, `FiltersContext`, `FavoritesContext`,
   `ToastContext`) : sans lui, un nouvel objet `{ ... }` serait créé à chaque rendu du Provider et
   **tous** les composants qui lisent le contexte se réafficheraient.
 - `useCallback` sur les fonctions données aux contextes ou utilisées dans des dépendances d'effets
   (`retry`, `toggleFavorite`, `closeMenu`…). Exemple : `MobileMenu` a un effet qui dépend de
   `onClose` ; si `closeMenu` changeait à chaque rendu, l'écouteur Échap serait retiré et remis en
   boucle.
-- Je n'utilise **pas** `useMemo` pour filtrer les 45 produits : c'est instantané, l'optimisation serait
-  inutile.
+- `useMemo` dans `useRemoteData` : l'état « chargement » est **calculé** (« la dernière réponse est
+  pour une autre requête »), pas stocké ; `useMemo` garde le même objet d'un rendu à l'autre.
 
 ### Le thème sombre : des variables CSS plutôt que `dark:` partout
 
@@ -162,7 +164,7 @@ la logique des composants pour la réutiliser et la nommer.
 
 | Hook | Ce qu'il fait |
 | --- | --- |
-| `useProducts` | Charge les produits, état en union discriminée, `retry`, annulation. |
+| `useRemoteData` | Charge une adresse de notre API (page de produits, produit, catalogue) : union discriminée, `retry`, annulation, ancienne page gardée pendant le chargement. |
 | `useDebouncedValue` | Renvoie une valeur seulement après 300 ms sans changement. |
 | `useSearchText` | Texte du champ de recherche + envoi retardé au contexte. |
 | `useLocalStorage` | Comme `useState`, mais restauré et sauvegardé dans le `localStorage` (valeur vérifiée). |
@@ -206,15 +208,15 @@ Tout est dans `package.json`. Une seule bibliothèque part dans le site final, l
 
 ### Services externes (rien à installer)
 
-DummyJSON (l'API imposée : Custom Response pour les 45 produits, `POST` / `PUT` / `DELETE`
-simulés), Vercel (hébergement), Google Fonts (Inter, Space Grotesk, JetBrains Mono), Unsplash
+DummyJSON (`POST` / `PUT` / `DELETE` simulés), Vercel (hébergement du site **et** de notre API
+`/api/…`, des fonctions TypeScript dans `api/`), Google Fonts (Inter, Space Grotesk, JetBrains Mono), Unsplash
 (photos du mode NSFW).
 
 ### Questions probables sur la stack
 
 **Pourquoi pas Redux, Zustand, TanStack Query ou Axios ?**
 Choix volontaire (R2). Les données partagées passent par les contextes, les requêtes par `fetch` et
-des hooks maison. À cette taille (45 produits, une dizaine de pages), ces bibliothèques ajouteraient
+des hooks maison. À cette taille (trois adresses de lecture, une dizaine de pages), ces bibliothèques ajouteraient
 des concepts sans rien résoudre de plus, et je peux expliquer chaque ligne du code.
 
 **Pourquoi React Router ?**
@@ -242,13 +244,19 @@ Sans `tsc -b`, une erreur de type pourrait partir en production.
 
 ## 3. Questions probables du prof
 
-**Pourquoi filtrer côté client et pas côté API ?**
-Mon endpoint Custom Response renvoie un JSON figé : il ignore `?q=`, `?limit=`, `?skip=`. Je charge
-donc les 45 produits une fois et j'applique des fonctions pures sur toute la liste. C'est instantané à
-cette taille. Avec 10 000 produits, il faudrait une API qui pagine et filtre côté serveur.
+**Pourquoi filtrer côté serveur ?**
+Remarque de l'oral : « imagine 25 000 produits, tu ne vas pas tout télécharger pour trier dessus ».
+Avant, je chargeais les 45 produits et je filtrais dans le navigateur, parce que l'endpoint Custom
+Response de DummyJSON renvoyait un JSON figé. J'ai donc écrit ma propre API (`server/`, déployée en
+fonctions Vercel dans `api/`) : les filtres deviennent une adresse
+(`/api/products?category=femme&page=2`), le serveur filtre, trie et découpe tout le catalogue, et le
+navigateur ne reçoit que la page affichée (12 produits, 48 au maximum). Le serveur réutilise les mêmes
+fonctions pures qu'avant, déjà testées. Avec une vraie base, ce serait une requête SQL avec `LIMIT` et
+`OFFSET`.
 
 **Quel est le rôle de chaque contexte ?**
-Produits (chargés une fois, + produits créés), Filtres (critères + page, avec un reducer), Favoris
+Catalogue (petit résumé chargé une fois : compteurs et types), Produits de la session (créations,
+modifications et suppressions de l'admin), Filtres (critères + page, avec un reducer), Favoris
 (sauvegardés dans le `localStorage`), Notifications. Ils sont placés au-dessus du routeur, donc ils
 survivent aux changements de page.
 
@@ -292,14 +300,16 @@ de l'API et produit ajouté au contexte.
 suite de nombres. `Math.random()` changerait à chaque visite.
 
 **Quelles sont les limites du projet ?**
-Endpoint qui expire après 90 jours ; produits créés perdus au rechargement ; DummyJSON renvoie
-toujours l'id 195 (je prends le premier id libre) ; bug de cache CORS de DummyJSON contourné avec
-`?origin=` ; pas de paiement. Voir le README.
+Le serveur lit un fichier JSON, pas une vraie base de données ; produits créés perdus au rechargement
+(et montrés à part, car le serveur ne les connaît pas) ; un produit supprimé laisse une carte de moins
+sur sa page ; DummyJSON renvoie toujours l'id 195 (je prends le premier id libre) ; pas de paiement.
+Voir le README.
 
 **Qu'est-ce que le bug CORS que vous avez rencontré ?**
-DummyJSON gardait en cache 24 h la réponse avec l'autorisation CORS du premier site qui l'avait
-demandée. Mon navigateur, sur un autre port, était bloqué. J'ai ajouté l'adresse du site dans l'URL :
-chaque site a sa propre entrée de cache.
+(Première version.) DummyJSON gardait en cache 24 h la réponse avec l'autorisation CORS du premier
+site qui l'avait demandée. Mon navigateur, sur un autre port, était bloqué. J'avais ajouté l'adresse du
+site dans l'URL. Depuis que les produits viennent de notre API, sur la même adresse que le site, le
+problème n'existe plus : il n'y a plus de CORS pour la lecture.
 
 **Pourquoi un `key` sur la galerie et les avis de la fiche ?**
 En passant d'un produit à un autre, React réutilise les mêmes composants et garde leur état local

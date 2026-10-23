@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest'
-// The app never imports this backup file (R11): only the tests use it, as realistic input.
+// The browser code never imports this file (R11): only the server and the tests read it.
 import productsData from '../../data/products.json'
 import reviewsData from '../data/reviews.json'
-import type { Product, ProductsResponse, Review } from '../types'
+import type { Product, Review } from '../types'
 import { getProductReviews } from './productReviews'
 import { mulberry32 } from './seededRandom'
 
-const products = (productsData as ProductsResponse).products
+const products = productsData.products as Product[]
 const allReviews = reviewsData.reviews as Review[]
 
 function productById(id: number): Product {

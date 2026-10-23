@@ -15,8 +15,13 @@ export const MAX_REVIEWS_PER_PRODUCT = 12
 /** Chance that a review is one star below the rating drawn around the product rating. */
 export const REVIEW_DIP_CHANCE = 0.12
 
+/** Biggest page our API accepts (R17): a client can't ask for the whole catalogue at once. */
+export const MAX_PAGE_SIZE = 48
+
 export const API_URLS = {
-  products: import.meta.env.VITE_PRODUCTS_URL,
+  /** Our own API (R10): same address as the site, served by Vercel or by the Vite plugin. */
+  products: '/api/products',
+  catalog: '/api/catalog',
   createProduct: 'https://dummyjson.com/products/add',
   /** PUT and DELETE go to `${productsBase}/{id}`. */
   productsBase: 'https://dummyjson.com/products',

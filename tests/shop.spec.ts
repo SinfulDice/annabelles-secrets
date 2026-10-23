@@ -1,6 +1,5 @@
 import type { Page } from '@playwright/test'
 import { expect, test } from './fixtures'
-import { MOCK_PRODUCTS_URL } from './mock-api'
 
 // The line « 45 résultats · Page 1 sur 4 » above the grid (R33).
 const resultCount = (page: Page) => page.getByText(/\d+ résultats? · Page \d+ sur \d+/)
@@ -66,8 +65,10 @@ test('R42 si l’API est en panne, un message clair et « Réessayer » qui rech
 }) => {
   // Added after the fixture's route, so it is asked first. fallback() = "let the fixture answer".
   let apiIsDown = true
-  await page.route(`${MOCK_PRODUCTS_URL}**`, (route) =>
-    apiIsDown ? route.fulfill({ status: 500 }) : route.fallback(),
+  // Only the list (/api/products?…), not one product nor the catalogue.
+  await page.route(
+    (url) => url.pathname === '/api/products',
+    (route) => (apiIsDown ? route.fulfill({ status: 500 }) : route.fallback()),
   )
 
   await page.goto('/produits')
@@ -138,4 +139,43 @@ test('R43 aucun résultat : un message, les critères rappelés, et de quoi tout
   // Two « Réinitialiser » buttons now (chips + message): we use the message's one.
   await page.getByRole('button', { name: 'Réinitialiser les filtres' }).last().click()
   await expect(page.getByText('45 résultats · Page 1 sur 4')).toBeVisible()
+})
+
+test('R11 R19 R41 le navigateur ne reçoit qu’une page, et garde l’ancienne grisée pendant le chargement', async ({
+  page,
+}) => {
+  // R11: we look at what the server really sends. route.fetch() lets the request go to the
+  // server, then we keep a copy of the answer before passing it to the page.
+  let lastAnswer: { products: unknown[]; total: number } | null = null
+  await page.route(
+    (url) => url.pathname === '/api/products',
+    async (route) => {
+      const response = await route.fetch()
+      lastAnswer = (await response.json()) as { products: unknown[]; total: number }
+      // In dev, React runs effects twice: the first request is cancelled, nobody waits for it.
+      await route.fulfill({ response }).catch(() => {})
+    },
+  )
+  await page.goto('/produits')
+  await expect(page.getByText('45 résultats · Page 1 sur 4')).toBeVisible()
+  expect(lastAnswer).toMatchObject({ total: 45 })
+  expect(lastAnswer!.products).toHaveLength(12)
+
+  // The next page is slowed down on purpose, to see what happens while it travels.
+  let releasePage2: () => void = () => {}
+  const page2Delay = new Promise<void>((resolve) => (releasePage2 = resolve))
+  await page.route('**/api/products?page=2', async (route) => {
+    await page2Delay
+    await route.fallback()
+  })
+
+  await page.getByRole('button', { name: 'Page 2' }).click()
+  // R41: no skeletons, the old cards stay (greyed out) with « Mise à jour… ».
+  await expect(page.getByText('Mise à jour…')).toBeVisible()
+  await expect(page.locator('[aria-busy="true"]')).toBeVisible()
+  await expect(page.getByRole('button', { name: /^Favori : / })).toHaveCount(12)
+
+  releasePage2()
+  await expect(page.getByText('45 résultats · Page 2 sur 4')).toBeVisible()
+  await expect(page.getByText('Mise à jour…')).toBeHidden()
 })

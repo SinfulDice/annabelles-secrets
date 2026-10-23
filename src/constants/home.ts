@@ -26,3 +26,4 @@ export const UNIVERSE_TILES: { category: Category; description: string; classes:
 ]
 
 export const TOP_RATED_COUNT = 4
+export const HOME_GOODIES_COUNT = 5

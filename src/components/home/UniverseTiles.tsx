@@ -3,18 +3,17 @@ import { CATEGORY_LABELS } from '../../constants/config'
 import { UNIVERSE_TILES } from '../../constants/home'
 import { SHOP_PATH } from '../../constants/navigation'
 import { useSelectCategory } from '../../hooks/useSelectCategory'
-import type { Category, Product } from '../../types'
+import type { CatalogSummary } from '../../types'
 import { formatCount } from '../../utils/formatRating'
 import { ArrowRightIcon } from '../ui/icons'
 
 type UniverseTilesProps = {
-  products: Product[]
+  /** null while /api/catalog is loading: the tiles are shown without their counts. */
+  catalog: CatalogSummary | null
 }
 
-export function UniverseTiles({ products }: UniverseTilesProps) {
+export function UniverseTiles({ catalog }: UniverseTilesProps) {
   const selectCategory = useSelectCategory()
-  const countIn = (category: Category) =>
-    products.filter((product) => product.category === category).length
 
   return (
     <section aria-labelledby="universes-title" className="flex flex-col gap-5">
@@ -33,8 +32,8 @@ export function UniverseTiles({ products }: UniverseTilesProps) {
               <span className="flex items-end justify-between gap-4 text-sm opacity-90">
                 <span>
                   {description}
-                  {products.length > 0 &&
-                    ` · ${formatCount(countIn(category), 'produit', 'produits')}`}
+                  {catalog &&
+                    ` · ${formatCount(catalog.categories[category].count, 'produit', 'produits')}`}
                 </span>
                 <span className="grid size-11 shrink-0 place-items-center rounded-full bg-page text-ink transition-transform group-hover:translate-x-1">
                   <ArrowRightIcon />

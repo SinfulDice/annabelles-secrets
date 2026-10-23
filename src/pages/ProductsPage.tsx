@@ -2,31 +2,37 @@ import { AdBanner } from '../components/ads/AdBanner'
 import { ProductsError } from '../components/products/ProductsError'
 import { ProductsLoading } from '../components/products/ProductsLoading'
 import { SearchForm } from '../components/products/SearchForm'
+import { SessionProducts } from '../components/products/SessionProducts'
 import { ShopResults } from '../components/products/ShopResults'
-import { PAGE_SIZE } from '../constants/config'
+import { useCatalogSummary } from '../contexts/CatalogContext'
 import { useFilters } from '../contexts/FiltersContext'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useSessionProducts } from '../contexts/SessionProductsContext'
 import { usePageTitle } from '../hooks/usePageTitle'
+import { useRemoteData } from '../hooks/useRemoteData'
 import { useSelectCategory } from '../hooks/useSelectCategory'
 import { useSearchText } from '../hooks/useSearchText'
+import type { ProductPage } from '../types'
 import type { FilterKey } from '../utils/activeFilters'
-import { filterProducts, getAvailableTypes, sortProducts } from '../utils/filterProducts'
-import { paginate } from '../utils/paginate'
+import { typesForCategory } from '../utils/catalogTypes'
+import { applySessionChanges, sessionCreatedProducts } from '../utils/productMutations'
+import { productPagePath, toProductQuery } from '../utils/productQuery'
 
 const LOADING_CARD_COUNT = 8
 
 export function ProductsPage() {
   usePageTitle('Boutique')
-  const { state, retry } = useProductsContext()
   const { filters, dispatch } = useFilters()
+  const { mutations } = useSessionProducts()
+  const catalog = useCatalogSummary()
   const { searchText, setSearchText, clearSearchText } = useSearchText()
   const selectCategory = useSelectCategory()
 
-  // Computed during render, not stored in state: it is always in sync with the filters,
-  // and filtering 45 products is instant, so no useMemo is needed.
-  const products = state.status === 'success' ? state.products : []
-  const results = sortProducts(filterProducts(products, filters), filters.sort)
-  const page = paginate(results, filters.page, PAGE_SIZE)
+  // R11 R19: the server filters, sorts and cuts. Each new address (new criterion or page)
+  // is one request; the browser never receives more than one page.
+  const { state, retry } = useRemoteData<ProductPage>(productPagePath(toProductQuery(filters)))
+  // While the next page loads, the previous one stays on screen (R41).
+  const shownPage =
+    state.status === 'success' ? state.data : state.status === 'loading' ? state.previous : null
 
   function resetFilters() {
     clearSearchText()
@@ -64,20 +70,23 @@ export function ProductsPage() {
         searchText={searchText}
         onSearchTextChange={setSearchText}
         onClearSearch={clearSearchText}
-        availableTypes={getAvailableTypes(products, filters.category)}
+        availableTypes={typesForCategory(catalog, filters.category)}
         onRemoveFilter={removeFilter}
         onReset={resetFilters}
       />
       <AdBanner />
 
+      <SessionProducts products={sessionCreatedProducts(mutations)} />
+
       {state.status === 'error' && <ProductsError message={state.error} onRetry={retry} />}
-      {(state.status === 'idle' || state.status === 'loading') && (
+      {/* Skeletons only for the very first load: later, the old cards wait greyed out. */}
+      {state.status === 'loading' && shownPage === null && (
         <ProductsLoading cardCount={LOADING_CARD_COUNT} />
       )}
-      {state.status === 'success' && (
+      {shownPage && state.status !== 'error' && (
         <ShopResults
-          resultCount={results.length}
-          page={page}
+          page={{ ...shownPage, products: applySessionChanges(shownPage.products, mutations) }}
+          isUpdating={state.status === 'loading'}
           onPageChange={changePage}
           onReset={resetFilters}
         />

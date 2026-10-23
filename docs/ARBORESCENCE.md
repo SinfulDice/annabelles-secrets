@@ -12,23 +12,27 @@ projet-b3-front-end/
 ├── index.html            ← la seule page HTML ; React s'y installe dans <div id="root">
 ├── src/                  ← TOUT le code de l'application (TypeScript + React)
 ├── public/               ← fichiers copiés tels quels (favicons)
-├── data/                 ← copie de sauvegarde des 45 produits (jamais importée)
+├── api/                  ← les fonctions Vercel : chaque fichier devient une adresse /api/…
+├── server/               ← notre API : routes.ts (requête → réponse), catalog.ts (filtres, pages)
+├── data/                 ← products.json : le catalogue, lu par le serveur seulement
+├── tests/                ← tests Playwright de bout en bout (npm run test:e2e)
 ├── docs/                 ← cahier des charges, maquettes, préparation de l'oral
 │
 ├── package.json          ← dépendances + commandes npm (dev, build, test…)
 ├── package-lock.json     ← versions exactes installées (généré par npm)
-├── vite.config.ts        ← config de Vite (plugins React + Tailwind) et de Vitest
-├── tsconfig*.json        ← config de TypeScript (3 fichiers, voir §6)
+├── vite.config.ts        ← config de Vite (React, Tailwind, plugin qui sert /api/… en dev) et de Vitest
+├── playwright.config.ts  ← config de Playwright (navigateurs, lancement du site)
+├── tsconfig*.json        ← config de TypeScript (4 fichiers, voir §6)
 ├── eslint.config.js      ← règles du linter (ESLint)
 ├── .prettierrc.json      ← règles de mise en forme (Prettier)
 ├── .prettierignore       ← dossiers que Prettier ne touche pas
-├── vercel.json           ← config de l'hébergement Vercel
-├── .env.example          ← modèle du fichier .env (variables d'environnement)
+├── vercel.json           ← config de l'hébergement Vercel (pages et /api/…)
+├── .env.example          ← ancien modèle du .env : plus utilisé (aucune variable nécessaire)
 ├── .gitignore            ← ce que Git ne doit jamais enregistrer
 ├── README.md             ← présentation du projet, installation, limites
 └── SPEC.md               ← les règles numérotées (R1, R2…), source de vérité
 │
-├── .env                  ← (pas sur GitHub) l'URL réelle de l'API
+├── .env                  ← (pas sur GitHub) plus nécessaire depuis notre API
 ├── node_modules/         ← (pas sur GitHub) les bibliothèques installées par npm
 └── dist/                 ← (pas sur GitHub) le site compilé par `npm run build`
 ```
@@ -67,7 +71,7 @@ Chaque dossier a **un seul rôle**. C'est ce qui permet de retrouver un fichier 
 src/
 ├── main.tsx          point d'entrée (voir §2)
 ├── index.css         Tailwind + les couleurs/polices des maquettes (@theme) + mode sombre
-├── vite-env.d.ts     dit à TypeScript que import.meta.env.VITE_PRODUCTS_URL existe
+├── vite-env.d.ts     les types de Vite (import.meta.env, imports d'images…)
 │
 ├── app/              assemblage de l'appli : App, providers, router
 ├── pages/            une page = une route (une URL)
@@ -136,11 +140,12 @@ pas de JSX : seulement des classes Tailwind partagées.
 
 Un contexte = une donnée que **plusieurs composants éloignés** doivent lire, sans la passer de
 parent en enfant à la main (*prop drilling*). Chaque fichier contient le `Provider` et un hook
-pour le lire (ex. `useProductsContext()`).
+pour le lire (ex. `useCatalog()`).
 
 | Fichier | Ce qu'il partage |
 | --- | --- |
-| `ProductsContext.tsx` | Les 45 produits chargés + les ajouts/modifs/suppressions de la session |
+| `CatalogContext.tsx` | Le petit résumé du catalogue (`/api/catalog`) : nombre de produits et types par catégorie |
+| `SessionProductsContext.tsx` | Les ajouts / modifs / suppressions de l'admin pendant la session |
 | `FiltersContext.tsx` + `filtersReducer.ts` | Recherche, catégorie, prix, tri, page. Le reducer est à part pour être testé seul. |
 | `FavoritesContext.tsx` | La liste des favoris (sauvegardée dans `localStorage`) |
 | `AccountContext.tsx` | Comptes et session (qui est connecté, est-ce l'admin ?) |
@@ -156,7 +161,8 @@ pour le lire (ex. `useProductsContext()`).
 Les hooks maison (leur nom commence toujours par `use`). Ils regroupent de la **logique React**
 (état, effets) pour la sortir des composants.
 
-- Réseau : `useProducts` (charger la liste), `useCreateProduct`, `useEditProduct`, `useDeleteProduct`.
+- Réseau : `useRemoteData` (charger une adresse de notre API : page, produit, catalogue), `useCreateProduct`,
+  `useEditProduct`, `useDeleteProduct`.
 - Navigateur : `useLocalStorage`, `usePageTitle` (titre de l'onglet), `useFocusTrap` (garder le
   clavier dans une fenêtre).
 - Divers : `useDebouncedValue` (attendre que l'utilisateur arrête de taper), `useSearchText`,
@@ -220,14 +226,17 @@ pages/  →  components/  →  contexts/  →  hooks/  →  services/  →  (ré
 ### Exemple : le chemin des produits, de l'API à l'écran
 
 ```
-DummyJSON (URL dans .env)
+pages/ProductsPage.tsx         lit les filtres (FiltersContext)
+  → utils/productQuery.ts      filtres → adresse : /api/products?category=femme&page=2
+  → hooks/useRemoteData.ts     lance la requête, annule la précédente, « loading / success / error »
   → services/http.ts           httpRequest : fetch + gestion des erreurs
-  → services/productsApi.ts    fetchProducts
-  → hooks/useProducts.ts       état « loading / success / error », bouton Réessayer
-  → contexts/ProductsContext   partage la liste + applique les ajouts/modifs de la session
-  → pages/ProductsPage.tsx     lit le contexte et les filtres
-  → utils/filterProducts.ts    garde les bons produits, dans le bon ordre
-  → components/products/ProductGrid → ProductCard   affiche
+        ── réseau ──
+  → api/products/index.ts      (Vercel) ou le plugin de vite.config.ts (npm run dev)
+  → server/routes.ts           lit l'adresse, choisit la réponse
+  → server/catalog.ts          filtre, trie et découpe data/products.json → UNE page
+        ── réseau ──
+  → utils/productMutations.ts  applique les modifs de la session (SessionProductsContext)
+  → components/products/ShopResults → ProductGrid → ProductCard   affiche
 ```
 
 ---
@@ -236,14 +245,12 @@ DummyJSON (URL dans .env)
 
 | Fichier | Utilisé par l'appli ? | Rôle |
 | --- | --- | --- |
-| `.env` → `VITE_PRODUCTS_URL` | **Oui** | L'adresse d'où l'appli télécharge les 45 produits. |
-| `data/products.json` | Non | Copie de sauvegarde : on la recolle sur DummyJSON quand l'URL expire (90 jours). |
+| `data/products.json` | Par le **serveur** seulement | Le catalogue (45 produits), lu par notre API ; le code du navigateur ne l'importe jamais. |
 | `src/data/reviews.json` | **Oui** | Les 500 avis, intégrés au fichier JS au moment du build. |
 | `docs/products.json`, `docs/reviews.json` | Non | Les fichiers fournis au départ avec le prompt. Ils sont **identiques** à `data/products.json` et `src/data/reviews.json`. |
 
-`.env.example` est le **modèle** de `.env` : il est sur GitHub et montre quelle variable remplir,
-sans sa vraie valeur. Le préfixe `VITE_` est obligatoire : Vite ne donne au code du navigateur que
-les variables qui commencent par `VITE_`.
+Il n'y a plus de variable d'environnement : depuis que les produits viennent de notre API (sur la même
+adresse que le site), `.env` et `.env.example` ne servent plus.
 
 ---
 
@@ -252,13 +259,15 @@ les variables qui commencent par `VITE_`.
 | Fichier | Rôle |
 | --- | --- |
 | `package.json` | Nom du projet, bibliothèques (`dependencies` : React, React Router ; `devDependencies` : outils utilisés seulement pendant le développement) et commandes (`npm run dev`, `build`, `test`, `lint`, `format`, `typecheck`). |
-| `vite.config.ts` | Active les plugins React et Tailwind ; dit à Vitest de lancer les `src/**/*.test.ts`. |
-| `tsconfig.json` | Ne fait que pointer vers les deux autres. |
+| `vite.config.ts` | Active les plugins React et Tailwind, plus un petit plugin qui répond aux adresses `/api/…` pendant `npm run dev` ; dit à Vitest de lancer les `src/**/*.test.ts` et `server/**/*.test.ts`. |
+| `playwright.config.ts` | Les tests de bout en bout : navigateurs utilisés, et lancement automatique du site sur le port 5174. |
+| `tsconfig.json` | Ne fait que pointer vers les trois autres. |
 | `tsconfig.app.json` | Règles TypeScript pour le code du **navigateur** (`src/`), en mode `strict`. |
-| `tsconfig.node.json` | Règles pour les fichiers qui tournent dans **Node** (comme `vite.config.ts`). |
+| `tsconfig.node.json` | Règles pour le code qui tourne **hors du navigateur** : `vite.config.ts`, `server/` et `api/`. |
+| `tsconfig.e2e.json` | Règles pour les tests Playwright (`tests/`). |
 | `eslint.config.js` | Le linter : il repère les erreurs probables (règles des hooks, accessibilité avec `jsx-a11y`…). |
 | `.prettierrc.json` | La mise en forme : pas de `;`, guillemets simples, 100 caractères par ligne, et tri automatique des classes Tailwind. |
-| `vercel.json` | Renvoie toutes les URLs vers `index.html`. Sans ça, recharger `/produits/3` donnerait une erreur 404 chez Vercel, car ce fichier n'existe pas sur le serveur : c'est React Router qui gère l'URL dans le navigateur. |
+| `vercel.json` | Renvoie toutes les URLs **sauf `/api/…`** vers `index.html`. Sans ça, recharger `/produits/3` donnerait une erreur 404 chez Vercel, car ce fichier n'existe pas sur le serveur : c'est React Router qui gère l'URL dans le navigateur. |
 
 ---
 

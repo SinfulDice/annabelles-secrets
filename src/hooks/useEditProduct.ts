@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useFavorites } from '../contexts/FavoritesContext'
-import { useProductsContext } from '../contexts/ProductsContext'
+import { useSessionProducts } from '../contexts/SessionProductsContext'
 import { isAbortError } from '../services/http'
 import { updateProduct as putProduct } from '../services/productsApi'
 import type { Product, ProductFormValues } from '../types'
@@ -15,7 +15,7 @@ export type EditProductState =
 
 /** Saves the edit form with PUT, then updates the shop and the favorites (R110, R112). */
 export function useEditProduct(product: Product) {
-  const { updateProduct } = useProductsContext()
+  const { updateProduct } = useSessionProducts()
   const { refreshFavorite } = useFavorites()
   const [state, setState] = useState<EditProductState>({ status: 'idle' })
   const controllerRef = useRef<AbortController | null>(null)
