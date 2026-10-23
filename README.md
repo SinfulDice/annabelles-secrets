@@ -4,6 +4,13 @@ Boutique en ligne **fictive** de bien-être intime (projet de cours React, B3 fr
 Trois univers : **Femme**, **Homme** et **Goodies** (produits dérivés de la marque).
 Aucun paiement, aucune vraie commande : c'est une démonstration.
 
+> **Une seconde branche avec une API : [`feat/server-side-api`](https://github.com/SinfulDice/annabelles-secrets/tree/feat/server-side-api)**
+>
+> `main` est la version rendue : elle charge les 45 produits une fois et filtre dans le navigateur.
+> Après l'oral (« imagine 25 000 produits »), la branche `feat/server-side-api` ajoute **notre propre
+> API** (fonctions Vercel en TypeScript) : le **serveur** cherche, filtre, trie et pagine, et le
+> navigateur ne reçoit que la page affichée. Le détail est en haut de son README.
+
 > **Tester l'accès admin**
 >
 > Page **Mon compte** (icône en haut à droite) → onglet « Se connecter » :
